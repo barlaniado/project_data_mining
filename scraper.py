@@ -102,3 +102,4 @@ def all_data_from_all_symbols():
 
 
 my_dict = all_data_from_all_symbols()
+print("")
