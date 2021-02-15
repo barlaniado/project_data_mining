@@ -5,15 +5,33 @@ import time
 import random
 from datetime import datetime
 import math
-#SECTORS = ["Technology", "Basic materials", "Healthcare", "Energy"]
-SECTORS = ["Basic materials"]
-COUNT = 100
-headers = {
-    'user-agent':
-        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
-}
+import conf
+import logging
+import sys
+import project_conf
+
+logger = logging.getLogger('data_mining')
+logger.setLevel(logging.DEBUG)
+
+# Create Formatter
+formatter = logging.Formatter('%(asctime)s-%(levelname)s-FILE:%(filename)s-FUNC:%(funcName)s-LINE:%(lineno)d-%(message)s')
+
+# create a file handler and add it to logger
+file_handler = logging.FileHandler('data_mining.log')
+file_handler.setLevel(logging.DEBUG)
+file_handler.setFormatter(formatter)
+logger.addHandler(file_handler)
+
+stream_handler = logging.StreamHandler(sys.stdout)
+stream_handler.setLevel(logging.INFO)
+stream_handler.setFormatter(formatter)
+logger.addHandler(stream_handler)
+
 
 def program_sleep(counter=None):
+    """
+    The function sends the program to sleep so as not to overload the server.
+    """
     if counter == None:
         time.sleep(random.randint(4, 7))
     else:
@@ -24,51 +42,89 @@ def program_sleep(counter=None):
         else:
             time.sleep(random.randint(7, 12))
 
+
 def get_content_sector_page(page_url):
-    page = requests.get(page_url, headers = headers)
+    page = requests.get(page_url, headers=project_conf.headers)
     program_sleep()
     page_soup = BeautifulSoup(page.text, 'html.parser')
     return page_soup
 
 
 def get_how_many_symbols_in_sector(first_page):
+    """
+    the function retrieve the number of companies in each sector.
+    """
     content = first_page.find("div", class_="Pos(r) Pos(r) Mih(265px)")
     return int(content.find("span", class_="Mstart(15px) Fw(500) Fz(s)").text.split(" ")[-2])
 
+
 def calculate_how_many_pages(how_many_symbols):
-    return math.ceil(how_many_symbols / COUNT)
+    """
+    The function receive the number of companies in a sector and calculate the number of pages.
+    Each page contain 100 companies at most.
+    """
+    return math.ceil(how_many_symbols / project_conf.COUNT)
+
 
 def build_url(sector, offset, count):
+    """
+    The function creates the wanted url.
+    """
     url = f'https://finance.yahoo.com/screener/predefined/ms_{sector.lower().replace(" ", "_")}?offset={offset}&count={count}'
     return url
 
+
 def get_price(tr):
+    """
+    The function retrieve the daily price of a stock of a company.
+    """
     data_list = tr.find_all('span', class_="Trsdu(0.3s)")
     price = data_list[0].text
     return price
 
+
 def get_symbol(tr):
+    """
+    The function retrieve the symbol of a company.
+    """
     data_list = tr.find_all("a")
     symbol = data_list[0].text
     return symbol
 
+
 def get_price_change(tr):
+    """
+    The function retrieve the difference between the last price of a stock from yesterday
+    and the current price of that stock.
+    """
     data_list = tr.find_all('span', class_="Trsdu(0.3s)")
     price_change = data_list[1].text
     return price_change
 
 
 def get_price_change_percentage(tr):
+    """
+    The function retrieve the difference in percentage, between the last price of a stock from yesterday
+    and the current price of that stock.
+    """
     data_list = tr.find_all('span', class_="Trsdu(0.3s)")
     price_change_percentage = data_list[2].text
     return price_change_percentage
 
+
 def get_volume(tr):
+    """
+    The function retrieve the volume of a company.
+    """
     data_list = tr.find_all('span', class_="Trsdu(0.3s)")
     volume = data_list[3].text
     return volume
 
+
 def get_avg_vol(tr):
+    """
+    The function retrieve the average volume of a company.
+    """
     data_list = tr.find_all('td')
     for data in data_list:
         if data.attrs['aria-label'] == "Avg Vol (3 month)":
@@ -76,7 +132,12 @@ def get_avg_vol(tr):
             break # I put break because I need the first one.
     return avg_vol
 
+
 def build_sectors_and_daily_dict(tbody, sector, symbol_sector_dict, daily_dict):
+    """
+    The function creates a dictionary that contain the daily data of the stocks
+    of all the companies in a sector.
+    """
     all_tr = tbody.find_all("tr")
     for tr in all_tr:
         current_symbol = get_symbol(tr)
@@ -87,21 +148,24 @@ def build_sectors_and_daily_dict(tbody, sector, symbol_sector_dict, daily_dict):
             symbol_sector_dict[current_symbol] = [sector]
         if current_symbol not in daily_dict:
             daily_dict[current_symbol] = {"Time": dateTimeObj, "Price": get_price(tr), "Price change": get_price_change(tr), "Percentage":  get_price_change_percentage(tr), "Volume":  get_volume(tr), "Avg Vol (3 month)": get_avg_vol(tr)}
+    logger.debug("The daily dictionary created successfully")
+    return
 
 def scrape_sector_pages():
     daily_data = {}
     symbol_sector = {}
-    for sector in SECTORS:
-        page = get_content_sector_page(build_url(sector, 0, COUNT))
+    for sector in project_conf.SECTORS:
+        page = get_content_sector_page(build_url(sector, 0, project_conf.COUNT))
         how_many_symbols = get_how_many_symbols_in_sector(page)
         how_many_pages = calculate_how_many_pages(how_many_symbols)
         tbody = page.find_all("tbody")[0]
         build_sectors_and_daily_dict(tbody, sector, symbol_sector, daily_data)
-        for offset in range(100, how_many_pages * COUNT, 100):
-            page = get_content_sector_page(build_url(sector, offset, COUNT))
+        for offset in range(100, how_many_pages * project_conf.COUNT, 100):
+            page = get_content_sector_page(build_url(sector, offset, project_conf.COUNT))
             tbody = page.find_all("tbody")[0]
             build_sectors_and_daily_dict(tbody, sector, symbol_sector, daily_data)
     return (symbol_sector,  daily_data)
+
 
 def get_data_financial_statements(symbol, counter_symbols):
     now_titles = 0
@@ -112,7 +176,7 @@ def get_data_financial_statements(symbol, counter_symbols):
     program_sleep(counter_symbols)
     print(symbol)
     current_url = f'https://finance.yahoo.com/quote/{symbol}/financials?p={symbol}'
-    page = requests.get(current_url, headers = headers)
+    page = requests.get(current_url, headers=project_conf.headers)
     soup = BeautifulSoup(page.text, 'html.parser')
     all_span = soup.find_all("span")
     if len(all_span) < 100:
@@ -144,6 +208,7 @@ def get_data_financial_statements(symbol, counter_symbols):
     else:
         return {symbol: None}
 
+
 def get_all_data_financial_statements(list_symbols):
     counter_symbols = 0
     all_symbols_dict = {}
@@ -153,9 +218,17 @@ def get_all_data_financial_statements(list_symbols):
         counter_symbols += 1
     return all_symbols_dict
 
-tuple_dict = scrape_sector_pages()
-list_symbols = list(tuple_dict[0].keys())
-financial_statements = get_all_data_financial_statements(list_symbols)
-print(financial_statements)
-print(list_symbols)
-print(tuple_dict[1])
+def main():
+    """
+    This is the main function that receive the web site url and parse the data to two dictionaries:
+    a daily and annual financial data of each company in each sector at that wbe site.
+    """
+    tuple_dict = scrape_sector_pages()
+    list_symbols = list(tuple_dict[0].keys())
+    financial_statements = get_all_data_financial_statements(list_symbols)
+    print(financial_statements)
+    print(list_symbols)
+    print(tuple_dict[1])
+
+if __name__ == "__main__":
+    main()
