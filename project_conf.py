@@ -1,3 +1,4 @@
+import logger
 #SECTORS = ["Technology", "Basic materials", "Healthcare", "Energy"]
 SECTORS = ["Basic materials"]
 COUNT = 100
@@ -25,7 +26,7 @@ KEY_PRICE_CHANGE = 'Price change'
 KEY_PRICE_CHANGE_PERCENTAGE = 'Percentage'
 KEY_VOLUME = 'Volume'
 KEY_AVG_VOLUME = 'Avg Vol (3 month)'
-LOGGER_MESSAGE_BUILD_DAILY_SECTOR_DICT = 'The daily dictionary created successfully'
+LOGGER_MESSAGE_BUILD_DAILY_SECTOR_DICT = 'The data was successfully added to the dictionary'
 OFFSET_OF_FIRST_PAGE_SECTOR = 0
 HOW_MANY_SYMBOLS_EACH_PAGE = 100
 TAG_TABLE_IN_PAGE = "tbody"
@@ -40,6 +41,8 @@ REPLACE_DELETED_CHAR_WITH = ""
 KEY_NET_INCOME = 'Net Income'
 VALUE_IF_CANT_CAST_TO_INT = None
 NEXT_TO_COME_TITLES = 'Breakdown'
-NEXT_TO_COME_DATA_NET_INCOME =  'Net Income Common Stockholders'
+NEXT_TO_COME_DATA_NET_INCOME = 'Net Income Common Stockholders'
+
+
 
 

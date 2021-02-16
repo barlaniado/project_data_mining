@@ -8,12 +8,12 @@ def program_sleep(counter=None):
     The function sends the program to sleep so as not to overload the server.
     """
     if counter == None:
-        time.sleep(random.randint(4, 7))
+        time.sleep(random.randint(0,1))
     else:
         if counter % 1000 == 0:
             time.sleep(120)
         elif counter % 100 == 0:
-            time.sleep(30)
+            time.sleep(1)
         else:
             time.sleep(random.randint(7, 12))
 

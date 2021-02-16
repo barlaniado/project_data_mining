@@ -2,17 +2,15 @@ import requests_webpages
 from datetime import datetime
 import project_conf
 import utilities
-import logger
-
-the_logger = logger.define_logger()
-
+import logging
+logger = logging.getLogger('data_mining')
 
 
 def get_price(tr):
     """
     The function retrieve the daily price of a stock of a company.
     """
-    data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_= project_conf.CLASS_GET_DAILY_DATA)
+    data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_=project_conf.CLASS_GET_DAILY_DATA)
     price = data_list[project_conf.PRICE_INDEX].text
     return price
 
@@ -41,7 +39,7 @@ def get_price_change_percentage(tr):
     The function retrieve the difference in percentage, between the last price of a stock from yesterday
     and the current price of that stock.
     """
-    data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_= project_conf.CLASS_GET_DAILY_DATA)
+    data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_=project_conf.CLASS_GET_DAILY_DATA)
     price_change_percentage = data_list[project_conf.PRICE_CHANGE_PERCENTAGE].text
     return price_change_percentage
 
@@ -50,7 +48,7 @@ def get_volume(tr):
     """
     The function retrieve the volume of a company.
     """
-    data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_= project_conf.CLASS_GET_DAILY_DATA)
+    data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_=project_conf.CLASS_GET_DAILY_DATA)
     volume = data_list[project_conf.VOLUME_CURRENT_DAY].text
     return volume
 
@@ -59,7 +57,7 @@ def get_avg_vol(tr):
     """
     The function retrieve the average volume of a company.
     """
-    data_list = tr.find_all([project_conf.FIND_AVG_VOL)
+    data_list = tr.find_all(project_conf.FIND_AVG_VOL)
     for data in data_list:
         if data.attrs[project_conf.ATTRS_AVG_VOL] == project_conf.TITLE_AVG_VOL:
             avg_vol = data.text
@@ -87,7 +85,7 @@ def build_sectors_and_daily_dict(tbody, sector, symbol_sector_dict, daily_dict):
                                           project_conf.KEY_PRICE_CHANGE_PERCENTAGE:  get_price_change_percentage(tr),
                                           project_conf.KEY_VOLUME:  get_volume(tr),
                                           project_conf.KEY_AVG_VOLUME: get_avg_vol(tr)}
-    the_logger.debug(project_conf.LOGGER_MESSAGE_BUILD_DAILY_SECTOR_DICT)
+    logger.debug(project_conf.LOGGER_MESSAGE_BUILD_DAILY_SECTOR_DICT)
     return
 
 def scrape_sector_pages():

@@ -1,8 +1,4 @@
-2021-02-15 21:03:48,209-DEBUG-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:90-The daily dictionary created successfully
-2021-02-15 21:03:53,986-DEBUG-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:90-The daily dictionary created successfully
-2021-02-15 21:04:14,883-DEBUG-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:90-The daily dictionary created successfully
-2021-02-15 21:04:22,827-DEBUG-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:90-The daily dictionary created successfully
-2021-02-15 21:07:46,550-DEBUG-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:90-The daily dictionary created successfully
-2021-02-15 21:07:52,365-DEBUG-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:90-The daily dictionary created successfully
-2021-02-15 21:20:18,022-DEBUG-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:90-The daily dictionary created successfully
-2021-02-15 21:20:26,656-DEBUG-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:90-The daily dictionary created successfully
+2021-02-16 21:15:58,234-DEBUG-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:88-The daily dictionary created successfully
+2021-02-16 21:15:59,777-DEBUG-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:88-The daily dictionary created successfully
+2021-02-16 21:18:00,254-DEBUG-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:88-The daily dictionary created successfully
+2021-02-16 21:18:02,786-DEBUG-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:88-The daily dictionary created successfully

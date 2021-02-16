@@ -1,11 +1,5 @@
-import logging
-import sys
 import get_daily_data
 import get_data_of_financial_statements
-
-
-
-
 
 def main():
     """
