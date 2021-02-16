@@ -72,7 +72,7 @@ def build_sectors_and_daily_dict(tbody, sector, symbol_sector_dict, daily_dict):
     The function creates a dictionary that contain the daily data of the stocks
     of all the companies in a sector.
     """
-    all_tr = tbody.find_all("tr")
+    all_tr = tbody.find_all(project_conf.FIND_LINE_TAG)
     for tr in all_tr:
         current_symbol = get_symbol(tr)
         dateTimeObj = datetime.now()
@@ -81,12 +81,12 @@ def build_sectors_and_daily_dict(tbody, sector, symbol_sector_dict, daily_dict):
         else:
             symbol_sector_dict[current_symbol] = [sector]
         if current_symbol not in daily_dict:
-            daily_dict[current_symbol] = {"Time": dateTimeObj,
-                                          "Price": get_price(tr),
-                                          "Price change": get_price_change(tr),
-                                          "Percentage":  get_price_change_percentage(tr),
-                                          "Volume":  get_volume(tr),
-                                          "Avg Vol (3 month)": get_avg_vol(tr)}
+            daily_dict[current_symbol] = {project_conf.KEY_TIME: dateTimeObj,
+                                          project_conf.KEY_PRICE: get_price(tr),
+                                          project_conf.KEY_PRICE_CHANGE: get_price_change(tr),
+                                          project_conf.KEY_PRICE_CHANGE_PERCENTAGE:  get_price_change_percentage(tr),
+                                          project_conf.KEY_VOLUME:  get_volume(tr),
+                                          project_conf.KEY_AVG_VOLUME: get_avg_vol(tr)}
     the_logger.debug("The daily dictionary created successfully")
     return
 
