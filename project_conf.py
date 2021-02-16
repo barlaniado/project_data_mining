@@ -18,3 +18,11 @@ FIND_AVG_VOL = 'td'
 TITLE_AVG_VOL = "Avg Vol (3 month)"
 ATTRS_AVG_VOL = 'aria-label'
 SYMBOL_INDEX = 0
+FIND_LINE_TAG = 'tr'
+KEY_TIME = 'Time'
+KEY_PRICE = 'Price'
+KEY_PRICE_CHANGE = 'Price change'
+KEY_PRICE_CHANGE_PERCENTAGE = 'Percentage'
+KEY_VOLUME = 'Volume'
+KEY_AVG_VOLUME = 'Avg Vol (3 month)'
+LOGGER_MESSAGE
