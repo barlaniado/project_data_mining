@@ -6,3 +6,15 @@ HEADERS = {
     'user-agent':
         'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
 }
+
+# get_daily_data
+TAG_TO_RETRIEVE_DAILY_DATA = 'span'
+CLASS_GET_DAILY_DATA = "Trsdu(0.3s)"
+PRICE_INDEX = 0
+PRICE_CHANGE_INDEX = 1
+PRICE_CHANGE_PERCENTAGE = 2
+VOLUME_CURRENT_DAY = 3
+FIND_AVG_VOL = 'td'
+TITLE_AVG_VOL = "Avg Vol (3 month)"
+ATTRS_AVG_VOL = 'aria-label'
+SYMBOL_INDEX = 0
