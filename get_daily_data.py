@@ -87,20 +87,20 @@ def build_sectors_and_daily_dict(tbody, sector, symbol_sector_dict, daily_dict):
                                           project_conf.KEY_PRICE_CHANGE_PERCENTAGE:  get_price_change_percentage(tr),
                                           project_conf.KEY_VOLUME:  get_volume(tr),
                                           project_conf.KEY_AVG_VOLUME: get_avg_vol(tr)}
-    the_logger.debug("The daily dictionary created successfully")
+    the_logger.debug(project_conf.LOGGER_MESSAGE_BUILD_DAILY_SECTOR_DICT)
     return
 
 def scrape_sector_pages():
     daily_data = {}
     symbol_sector = {}
     for sector in project_conf.SECTORS:
-        page = requests_webpages.get_content_sector_page(utilities.build_url(sector, 0, project_conf.COUNT))
+        page = requests_webpages.get_content_sector_page(utilities.build_url(sector, project_conf.OFFSET_OF_FIRST_PAGE_SECTOR , project_conf.COUNT))
         how_many_symbols = utilities.get_how_many_symbols_in_sector(page)
         how_many_pages = utilities.calculate_how_many_pages(how_many_symbols)
-        tbody = page.find_all("tbody")[0]
+        tbody = page.find_all(project_conf.TAG_TABLE_IN_PAGE)[project_conf.TABLE_CONTENT_INDEX] # We need to add a log here to see the length of the list
         build_sectors_and_daily_dict(tbody, sector, symbol_sector, daily_data)
-        for offset in range(100, how_many_pages * project_conf.COUNT, 100):
+        for offset in range(project_conf.HOW_MANY_SYMBOLS_EACH_PAGE, how_many_pages * project_conf.COUNT, project_conf.HOW_MANY_SYMBOLS_EACH_PAGE):
             page = requests_webpages.get_content_sector_page(utilities.build_url(sector, offset, project_conf.COUNT))
-            tbody = page.find_all("tbody")[0]
+            tbody = page.find_all(project_conf.TAG_TABLE_IN_PAGE)[project_conf.TABLE_CONTENT_INDEX]
             build_sectors_and_daily_dict(tbody, sector, symbol_sector, daily_data)
     return (symbol_sector,  daily_data)
