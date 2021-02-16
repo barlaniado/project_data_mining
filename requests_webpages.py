@@ -9,3 +9,9 @@ def get_content_sector_page(page_url):
     utilities.program_sleep()
     page_soup = BeautifulSoup(page.text, project_conf.HTML_PARSER)
     return page_soup
+
+def get_content_financial_statements(symbol):
+    page_url = utilities.build_url_financials_symbol(symbol)
+    page = requests.get(current_url, headers=project_conf.headers)
+    soup = BeautifulSoup(page.text, 'html.parser')
+    return soup
