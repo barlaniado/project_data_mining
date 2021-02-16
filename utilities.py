@@ -40,3 +40,9 @@ def build_url(sector, offset, count):
     """
     url = f'https://finance.yahoo.com/screener/predefined/ms_{sector.lower().replace(" ", "_")}?offset={offset}&count={count}'
     return url
+
+
+def build_url_financials_symbol(symbol):
+    current_url = f'https://finance.yahoo.com/quote/{symbol}/financials?p={symbol}'
+    return current_url
+    
