@@ -13,7 +13,7 @@ def get_price(tr):
     The function retrieve the daily price of a stock of a company.
     """
     data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_= project_conf.CLASS_GET_DAILY_DATA)
-    price = data_list[0].text
+    price = data_list[project_conf.PRICE_INDEX].text
     return price
 
 
@@ -32,7 +32,7 @@ def get_price_change(tr):
     and the current price of that stock.
     """
     data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_= project_conf.CLASS_GET_DAILY_DATA)
-    price_change = data_list[1].text
+    price_change = data_list[project_conf.PRICE_CHANGE_INDEX].text
     return price_change
 
 
@@ -42,7 +42,7 @@ def get_price_change_percentage(tr):
     and the current price of that stock.
     """
     data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_= project_conf.CLASS_GET_DAILY_DATA)
-    price_change_percentage = data_list[2].text
+    price_change_percentage = data_list[project_conf.PRICE_CHANGE_PERCENTAGE].text
     return price_change_percentage
 
 
@@ -51,7 +51,7 @@ def get_volume(tr):
     The function retrieve the volume of a company.
     """
     data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_= project_conf.CLASS_GET_DAILY_DATA)
-    volume = data_list[3].text
+    volume = data_list[project_conf.VOLUME_CURRENT_DAY].text
     return volume
 
 
@@ -59,9 +59,9 @@ def get_avg_vol(tr):
     """
     The function retrieve the average volume of a company.
     """
-    data_list = tr.find_all('td')
+    data_list = tr.find_all([project_conf.FIND_AVG_VOL)
     for data in data_list:
-        if data.attrs['aria-label'] == "Avg Vol (3 month)":
+        if data.attrs[project_conf.ATTRS_AVG_VOL] == project_conf.TITLE_AVG_VOL:
             avg_vol = data.text
             break # I put break because I need the first one.
     return avg_vol
