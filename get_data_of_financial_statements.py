@@ -1,4 +1,5 @@
 import utilities
+import requests_webpage
 import requests
 from bs4 import BeautifulSoup
 import project_conf
@@ -12,9 +13,7 @@ def get_data_financial_statements(symbol, counter_symbols):
     data_indicator = 0
     utilities.program_sleep(counter_symbols)
     print(symbol)
-    current_url = f'https://finance.yahoo.com/quote/{symbol}/financials?p={symbol}'
-    page = requests.get(current_url, headers=project_conf.headers)
-    soup = BeautifulSoup(page.text, 'html.parser')
+    soup = requests_webpage.get_content_financial_statements(symbol)
     all_span = soup.find_all("span")
     if len(all_span) < 100:
         print("less then",len(all_span))
