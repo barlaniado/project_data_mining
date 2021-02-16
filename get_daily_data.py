@@ -12,7 +12,7 @@ def get_price(tr):
     """
     The function retrieve the daily price of a stock of a company.
     """
-    data_list = tr.find_all('span', class_="Trsdu(0.3s)")
+    data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_= project_conf.CLASS_GET_DAILY_DATA)
     price = data_list[0].text
     return price
 
@@ -31,7 +31,7 @@ def get_price_change(tr):
     The function retrieve the difference between the last price of a stock from yesterday
     and the current price of that stock.
     """
-    data_list = tr.find_all('span', class_="Trsdu(0.3s)")
+    data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_= project_conf.CLASS_GET_DAILY_DATA)
     price_change = data_list[1].text
     return price_change
 
@@ -41,7 +41,7 @@ def get_price_change_percentage(tr):
     The function retrieve the difference in percentage, between the last price of a stock from yesterday
     and the current price of that stock.
     """
-    data_list = tr.find_all('span', class_="Trsdu(0.3s)")
+    data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_= project_conf.CLASS_GET_DAILY_DATA)
     price_change_percentage = data_list[2].text
     return price_change_percentage
 
@@ -50,7 +50,7 @@ def get_volume(tr):
     """
     The function retrieve the volume of a company.
     """
-    data_list = tr.find_all('span', class_="Trsdu(0.3s)")
+    data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_= project_conf.CLASS_GET_DAILY_DATA)
     volume = data_list[3].text
     return volume
 
