@@ -2,18 +2,20 @@ import time
 import random
 import math
 import project_conf
+import utilities
 
 def program_sleep(counter=None):
     """
     The function sends the program to sleep so as not to overload the server.
     """
-    if counter == None:
-        time.sleep(random.randint(0,1))
+    if counter == utilities.PRAM_VALUE_SLEEP_NO_COUNTER:
+        time.sleep(random.randint(utilities.MIN_TIME_SLEEP_NO_COUNTER,
+                                  utilities.MAX_TIME_SLEEP_NO_COUNTER))
     else:
-        if counter % 1000 == 0:
-            time.sleep(120)
-        elif counter % 100 == 0:
-            time.sleep(1)
+        if counter % utilities.WHEN_LONG_SLEEP ==  utilities.NO_REMAINDER:
+            time.sleep(utilities.TIME_LONG_SLEEP)
+        elif counter % (utilities.WHEN_MODERATE_SLEEP == utilities.NO_REMAINDER:
+            time.sleep(utilities.TIME_MODERATE_SLEEP)
         else:
             time.sleep(random.randint(7, 12))
 
