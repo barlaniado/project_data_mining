@@ -32,6 +32,7 @@ OFFSET_IS = '?offset='
 COUNT_IS = '&count='
 START_URL_FINANCIALS = 'https://finance.yahoo.com/quote/'
 REST_URL_FINANCIALS = '/financials?p='
+MESSAGE_HOW_MANY_SYMBOLS_PAGES = f'The {sector} has {how_many_symbols} symbols and {how_many_pages} pages'
 
 # get_daily_data
 TAG_TO_RETRIEVE_DAILY_DATA = 'span'
@@ -52,6 +53,8 @@ KEY_PRICE_CHANGE_PERCENTAGE = 'Percentage'
 KEY_VOLUME = 'Volume'
 KEY_AVG_VOLUME = 'Avg Vol (3 month)'
 LOGGER_MESSAGE_BUILD_DAILY_SECTOR_DICT = 'The data was successfully added to the dictionary'
+LOGGER_MESSAGE_SECTOR = 'The program gets data from '
+LOGGER_HOW_MANY_SYMBOLS = 'There are '
 OFFSET_OF_FIRST_PAGE_SECTOR = 0
 HOW_MANY_SYMBOLS_EACH_PAGE = 100
 TAG_TABLE_IN_PAGE = "tbody"
