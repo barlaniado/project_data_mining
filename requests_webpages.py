@@ -13,5 +13,5 @@ def get_content_sector_page(page_url):
 def get_content_financial_statements(symbol):
     current_url= utilities.build_url_financials_symbol(symbol)
     page = requests.get(current_url, headers=project_conf.HEADERS)
-    soup = BeautifulSoup(page.text, 'html.parser')
+    soup = BeautifulSoup(page.text,  project_conf.HTML_PARSER)
     return soup
