@@ -3,6 +3,8 @@ from datetime import datetime
 import project_conf
 import utilities
 import logging
+
+
 logger = logging.getLogger('data_mining')
 
 
@@ -67,9 +69,13 @@ def get_avg_vol(tr):
 
 def build_sectors_and_daily_dict(tbody, sector, symbol_sector_dict, daily_dict):
     """
-    The function creates a dictionary that contain the daily data of the stocks
-    of all the companies in a sector.
+    The funcion gets content of a table in spesific sector page (tbody), and the sector itself (sector).
+    In addtion, the function gets two dictionaries
+    1) Contain the stock symbols and their sectors (symbol_sector_dict)
+    2) Contain the daily data of the stocks (daily_dict)
+    the function adds more data to these dictionary and changes them inplace.
     """
+    
     all_tr = tbody.find_all(project_conf.FIND_LINE_TAG)
     for tr in all_tr:
         current_symbol = get_symbol(tr)
@@ -82,20 +88,26 @@ def build_sectors_and_daily_dict(tbody, sector, symbol_sector_dict, daily_dict):
             daily_dict[current_symbol] = {project_conf.KEY_TIME: dateTimeObj,
                                           project_conf.KEY_PRICE: get_price(tr),
                                           project_conf.KEY_PRICE_CHANGE: get_price_change(tr),
-                                          project_conf.KEY_PRICE_CHANGE_PERCENTAGE:  get_price_change_percentage(tr),
+                                          project_conf.KEY_PRICE_CHANGE_PERCENTAGE: get_price_change_percentage(tr),
                                           project_conf.KEY_VOLUME:  get_volume(tr),
                                           project_conf.KEY_AVG_VOLUME: get_avg_vol(tr)}
     logger.debug(project_conf.LOGGER_MESSAGE_BUILD_DAILY_SECTOR_DICT)
     return
 
 def scrape_sector_pages():
+    ''' 
+    The function iterates over a list of sector and creates two dictionaries:
+    1) Contain the stock symbols and their sectors (symbol_sector_dict)
+    2) Contain the daily data of the stocks (daily_dict)
+    the function returns tuple of these two dictionaries.
+    '''
     daily_data = {}
     symbol_sector = {}
     for sector in project_conf.SECTORS:
         page = requests_webpages.get_content_sector_page(utilities.build_url(sector, project_conf.OFFSET_OF_FIRST_PAGE_SECTOR , project_conf.COUNT))
         how_many_symbols = utilities.get_how_many_symbols_in_sector(page)
         how_many_pages = utilities.calculate_how_many_pages(how_many_symbols)
-        tbody = page.find_all(project_conf.TAG_TABLE_IN_PAGE)[project_conf.TABLE_CONTENT_INDEX] # We need to add a log here to see the length of the list
+        tbody = page.find_all(project_conf.TAG_TABLE_IN_PAGE)[project_conf.TABLE_CONTENT_INDEX]
         build_sectors_and_daily_dict(tbody, sector, symbol_sector, daily_data)
         for offset in range(project_conf.HOW_MANY_SYMBOLS_EACH_PAGE, how_many_pages * project_conf.COUNT, project_conf.HOW_MANY_SYMBOLS_EACH_PAGE):
             page = requests_webpages.get_content_sector_page(utilities.build_url(sector, offset, project_conf.COUNT))
