@@ -99,7 +99,7 @@ def scrape_sector_pages():
     The function iterates over a list of sector and creates two dictionaries:
     1) Contain the stock symbols and their sectors (symbol_sector_dict)
     2) Contain the daily data of the stocks (daily_dict)
-    the function returns tuple of these two dictionaries.
+    The function returns tuple of these two dictionaries (symbol_sector, daily_data)
     '''
     daily_data = {}
     symbol_sector = {}
@@ -113,4 +113,4 @@ def scrape_sector_pages():
             page = requests_webpages.get_content_sector_page(utilities.build_url(sector, offset, project_conf.COUNT))
             tbody = page.find_all(project_conf.TAG_TABLE_IN_PAGE)[project_conf.TABLE_CONTENT_INDEX]
             build_sectors_and_daily_dict(tbody, sector, symbol_sector, daily_data)
-    return (symbol_sector,  daily_data)
+    return (symbol_sector, daily_data)
