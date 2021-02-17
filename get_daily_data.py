@@ -108,10 +108,16 @@ def scrape_sector_pages():
         how_many_symbols = utilities.get_how_many_symbols_in_sector(page)
         how_many_pages = utilities.calculate_how_many_pages(how_many_symbols)
         logger.info(project_conf.MESSAGE_HOW_MANY_SYMBOLS_PAGES)
-        tbody = page.find_all(project_conf.TAG_TABLE_IN_PAGE)[project_conf.TABLE_CONTENT_INDEX]
+        tbody = page.find_all(project_conf.TAG_TABLE_IN_PAGE)
+        if len(tbody) > 1:
+            logger.warning(project_conf.LOGGER_WARNING_MESSAGE)
+        tbody = tbody[project_conf.TABLE_CONTENT_INDEX]
         build_sectors_and_daily_dict(tbody, sector, symbol_sector, daily_data)
         for offset in range(project_conf.HOW_MANY_SYMBOLS_EACH_PAGE, how_many_pages * project_conf.COUNT, project_conf.HOW_MANY_SYMBOLS_EACH_PAGE):
             page = requests_webpages.get_content_sector_page(utilities.build_url(sector, offset, project_conf.COUNT))
-            tbody = page.find_all(project_conf.TAG_TABLE_IN_PAGE)[project_conf.TABLE_CONTENT_INDEX]
+            tbody = page.find_all(project_conf.TAG_TABLE_IN_PAGE)
+            if len(tbody) > 1:
+                logger.warning(project_conf.LOGGER_WARNING_MESSAGE)
+            tbody = tbody[project_conf.TABLE_CONTENT_INDEX]
             build_sectors_and_daily_dict(tbody, sector, symbol_sector, daily_data)
     return (symbol_sector, daily_data)
