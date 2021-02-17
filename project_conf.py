@@ -25,7 +25,11 @@ SUB_TAG_HOW_MANY_SYMBOLS = 'span'
 SUB_CLASS_HOW_MANY_SYMBOLS = 'Mstart(15px) Fw(500) Fz(s)'
 CHER_SPLIT_TO_GET_HOW_MANY_SYMBOLS = ' '
 INDEX_HOW_MANY_AFTER_SPLIT = -2
-
+START_URL_SECTOR_PAGE = 'https://finance.yahoo.com/screener/predefined/ms_
+SPACE_TO_REPLACE = ' '
+CHAR_INSTEAD_SPACE = '_'
+OFFSET_IS = '?offset='
+COUNT_IS = '&count='
 
 # get_daily_data
 TAG_TO_RETRIEVE_DAILY_DATA = 'span'
