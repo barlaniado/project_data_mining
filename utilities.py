@@ -2,30 +2,32 @@ import time
 import random
 import math
 import project_conf
-import utilities
+
 
 def program_sleep(counter=None):
     """
     The function sends the program to sleep so as not to overload the server.
     """
-    if counter == utilities.PRAM_VALUE_SLEEP_NO_COUNTER:
-        time.sleep(random.randint(utilities.MIN_TIME_SLEEP_NO_COUNTER,
-                                  utilities.MAX_TIME_SLEEP_NO_COUNTER))
+    if counter == project_conf..PRAM_VALUE_SLEEP_NO_COUNTER:
+        time.sleep(random.randint(project_conf..MIN_TIME_SLEEP_NO_COUNTER,
+                                  project_conf.MAX_TIME_SLEEP_NO_COUNTER))
     else:
-        if counter % utilities.WHEN_LONG_SLEEP ==  utilities.NO_REMAINDER:
-            time.sleep(utilities.TIME_LONG_SLEEP)
-        elif counter % (utilities.WHEN_MODERATE_SLEEP == utilities.NO_REMAINDER:
-            time.sleep(utilities.TIME_MODERATE_SLEEP)
+        if counter % project_conf.WHEN_LONG_SLEEP ==  project_conf.NO_REMAINDER:
+            time.sleep(project_conf.TIME_LONG_SLEEP)
+        elif counter % (project_conf.WHEN_MODERATE_SLEEP == project_conf.NO_REMAINDER:
+            time.sleep(project_conf.TIME_MODERATE_SLEEP)
         else:
-            time.sleep(random.randint(7, 12))
+            time.sleep(random.randint(project_conf.MIN_SHORT_SLEEP, project_conf.MAX_SHORT_SLEEP))
 
 
 def get_how_many_symbols_in_sector(first_page):
     """
     the function retrieve the number of companies in each sector.
     """
-    content = first_page.find("div", class_="Pos(r) Pos(r) Mih(265px)")
-    return int(content.find("span", class_="Mstart(15px) Fw(500) Fz(s)").text.split(" ")[-2])
+    content = first_page.find(project_conf.MAIN_TAG_HOW_MANY_SYMBOLS, class_=project_conf.MAIN_CLASS_HOW_MANY_SYMBOLS)
+    return int(content.find(project_conf.SUB_TAG_HOW_MANY_SYMBOLS,\
+                            class_=project_conf.SUB_CLASS_HOW_MANY_SYMBOLS).text.\
+               split(project_conf.CHER_SPLIT_TO_GET_HOW_MANY_SYMBOLS)[project_conf.INDEX_HOW_MANY_AFTER_SPLIT])
 
 
 def calculate_how_many_pages(how_many_symbols):
@@ -38,7 +40,7 @@ def calculate_how_many_pages(how_many_symbols):
 
 def build_url(sector, offset, count):
     """
-    The function creates the wanted url.
+    The function creates the url to the sector page.
     """
     url = f'https://finance.yahoo.com/screener/predefined/ms_{sector.lower().replace(" ", "_")}?offset={offset}&count={count}'
     return url
