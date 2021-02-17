@@ -10,7 +10,6 @@ def get_data_financial_statements(symbol, counter_symbols):
     data_dict = {}
     data_indicator = 0
     utilities.program_sleep(counter_symbols)
-    print(symbol) # MAKE THIS PRING LOG
     soup = requests_webpages.get_content_financial_statements(symbol)
     all_span = soup.find_all(project_conf.TAG_DATA_FINANCIAL_STATEMENTS)
     for i in all_span:

@@ -3,6 +3,7 @@ from datetime import datetime
 import project_conf
 import utilities
 import logging
+import logger
 
 
 logger = logging.getLogger('data_mining')
@@ -94,30 +95,39 @@ def build_sectors_and_daily_dict(tbody, sector, symbol_sector_dict, daily_dict):
     logger.info(project_conf.LOGGER_MESSAGE_BUILD_DAILY_SECTOR_DICT)
     return
 
+
 def scrape_sector_pages():
-    ''' 
+    """
     The function iterates over a list of sector and creates two dictionaries:
     1) Contain the stock symbols and their sectors (symbol_sector_dict)
     2) Contain the daily data of the stocks (daily_dict)
     The function returns tuple of these two dictionaries (symbol_sector, daily_data)
-    '''
+    """
+
+    logger.info(project_conf.START_SCRAPE_SECTOR_MESSAGE)
     daily_data = {}
     symbol_sector = {}
     for sector in project_conf.SECTORS:
-        page = requests_webpages.get_content_sector_page(utilities.build_url(sector, project_conf.OFFSET_OF_FIRST_PAGE_SECTOR , project_conf.COUNT))
+        page = requests_webpages.get_content_sector_page\
+            (utilities.build_url(sector, project_conf.OFFSET_OF_FIRST_PAGE_SECTOR, project_conf.COUNT))
         how_many_symbols = utilities.get_how_many_symbols_in_sector(page)
         how_many_pages = utilities.calculate_how_many_pages(how_many_symbols)
-        logger.info(project_conf.MESSAGE_HOW_MANY_SYMBOLS_PAGES)
+        logger.info(utilities.build_message_how_many_symbols_pages_for_logger
+                    (sector, how_many_symbols, how_many_pages))
         tbody = page.find_all(project_conf.TAG_TABLE_IN_PAGE)
         if len(tbody) > 1:
             logger.warning(project_conf.LOGGER_WARNING_MESSAGE)
         tbody = tbody[project_conf.TABLE_CONTENT_INDEX]
         build_sectors_and_daily_dict(tbody, sector, symbol_sector, daily_data)
-        for offset in range(project_conf.HOW_MANY_SYMBOLS_EACH_PAGE, how_many_pages * project_conf.COUNT, project_conf.HOW_MANY_SYMBOLS_EACH_PAGE):
+        for offset in range(project_conf.HOW_MANY_SYMBOLS_EACH_PAGE, how_many_pages * project_conf.COUNT,
+                            project_conf.HOW_MANY_SYMBOLS_EACH_PAGE):
             page = requests_webpages.get_content_sector_page(utilities.build_url(sector, offset, project_conf.COUNT))
             tbody = page.find_all(project_conf.TAG_TABLE_IN_PAGE)
-            if len(tbody) > 1:
+            if len(tbody) > project_conf.ASSUMPTION_TBODY_LEN:
                 logger.warning(project_conf.LOGGER_WARNING_MESSAGE)
             tbody = tbody[project_conf.TABLE_CONTENT_INDEX]
             build_sectors_and_daily_dict(tbody, sector, symbol_sector, daily_data)
-    return (symbol_sector, daily_data)
+            logger.info(project_conf.FINISH_SECTOR_SCRAPING_MESSAGE)
+            logger.info(project_conf.LEN_OF_DICT_SECTOR_LOGGER_MESSAGE + str(len(symbol_sector)) + "\n" +
+                        project_conf.LEN_OF_DICT_DAILY_LOGGER_MESSAGE + str(len(daily_data)))
+    return symbol_sector, daily_data

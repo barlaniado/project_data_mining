@@ -1,4 +1,679 @@
-2021-02-16 21:15:58,234-DEBUG-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:88-The daily dictionary created successfully
-2021-02-16 21:15:59,777-DEBUG-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:88-The daily dictionary created successfully
-2021-02-16 21:18:00,254-DEBUG-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:88-The daily dictionary created successfully
-2021-02-16 21:18:02,786-DEBUG-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:88-The daily dictionary created successfully
+2021-02-17 21:01:47,337-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:107-Started to scrape sectors pages
+2021-02-17 21:01:49,040-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:12-The code of the current request: 200
+2021-02-17 21:01:55,267-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:15-Return a BeautifulSoup object
+2021-02-17 21:01:55,270-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:115-The Basic materials has 167 symbols and 2 pages
+2021-02-17 21:01:55,301-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:95-The data was successfully added to the dictionary
+2021-02-17 21:01:56,987-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:12-The code of the current request: 200
+2021-02-17 21:02:02,140-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:15-Return a BeautifulSoup object
+2021-02-17 21:02:02,160-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:95-The data was successfully added to the dictionary
+2021-02-17 21:02:02,160-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:130-Finished to scrape sectors pages
+2021-02-17 21:02:02,160-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:131-The length of the symbols-sectors dict that was created is: 167
+The length of the daily data dict that was created is: 167
+2021-02-17 21:04:02,177-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: BHP
+2021-02-17 21:04:02,178-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/BHP/financials?p=BHP
+2021-02-17 21:04:03,434-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:04:03,524-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:04:14,536-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: BBL
+2021-02-17 21:04:14,536-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/BBL/financials?p=BBL
+2021-02-17 21:04:15,918-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:04:15,987-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:04:24,993-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: LIN
+2021-02-17 21:04:24,994-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/LIN/financials?p=LIN
+2021-02-17 21:04:26,572-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:04:26,638-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:04:33,644-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: RIO
+2021-02-17 21:04:33,645-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/RIO/financials?p=RIO
+2021-02-17 21:04:34,859-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:04:34,966-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:04:45,977-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: CTA-PB
+2021-02-17 21:04:45,978-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/CTA-PB/financials?p=CTA-PB
+2021-02-17 21:04:47,356-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:04:47,419-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:04:57,424-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: VALE
+2021-02-17 21:04:57,425-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/VALE/financials?p=VALE
+2021-02-17 21:04:58,942-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:04:59,011-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:05:08,021-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: CTA-PA
+2021-02-17 21:05:08,021-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/CTA-PA/financials?p=CTA-PA
+2021-02-17 21:05:09,251-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:05:09,320-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:05:21,322-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: SHW
+2021-02-17 21:05:21,323-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/SHW/financials?p=SHW
+2021-02-17 21:05:22,730-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:05:22,847-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:05:33,859-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: ECL
+2021-02-17 21:05:33,860-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/ECL/financials?p=ECL
+2021-02-17 21:05:35,099-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:05:35,190-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:05:43,204-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: APD
+2021-02-17 21:05:43,204-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/APD/financials?p=APD
+2021-02-17 21:05:44,681-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:05:44,791-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:05:56,796-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: SCCO
+2021-02-17 21:05:56,796-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/SCCO/financials?p=SCCO
+2021-02-17 21:05:59,653-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:05:59,701-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:06:11,716-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: FCX
+2021-02-17 21:06:11,716-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/FCX/financials?p=FCX
+2021-02-17 21:06:13,070-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:06:13,151-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:06:21,168-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: NEM
+2021-02-17 21:06:21,169-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/NEM/financials?p=NEM
+2021-02-17 21:06:23,372-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:06:23,450-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:06:31,458-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: DOW
+2021-02-17 21:06:31,458-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/DOW/financials?p=DOW
+2021-02-17 21:06:32,944-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:06:33,034-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:06:44,047-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: DD
+2021-02-17 21:06:44,047-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/DD/financials?p=DD
+2021-02-17 21:06:54,111-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 404
+2021-02-17 21:06:54,113-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:07:02,116-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: GOLD
+2021-02-17 21:07:02,117-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/GOLD/financials?p=GOLD
+2021-02-17 21:07:03,774-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:07:03,844-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:07:10,854-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: CRH
+2021-02-17 21:07:10,854-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/CRH/financials?p=CRH
+2021-02-17 21:07:12,034-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:07:12,109-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:07:19,119-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: IFF
+2021-02-17 21:07:19,119-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/IFF/financials?p=IFF
+2021-02-17 21:07:20,579-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:07:20,662-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:07:28,671-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: CTVA
+2021-02-17 21:07:28,671-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/CTVA/financials?p=CTVA
+2021-02-17 21:07:29,979-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:07:30,043-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:07:42,054-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: LYB
+2021-02-17 21:07:42,055-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/LYB/financials?p=LYB
+2021-02-17 21:07:43,687-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:07:43,794-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:07:50,803-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: PPG
+2021-02-17 21:07:50,804-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/PPG/financials?p=PPG
+2021-02-17 21:07:51,932-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:07:51,999-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:08:04,014-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: NTR
+2021-02-17 21:08:04,015-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/NTR/financials?p=NTR
+2021-02-17 21:08:05,283-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:08:05,368-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:08:16,373-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: MT
+2021-02-17 21:08:16,373-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/MT/financials?p=MT
+2021-02-17 21:08:17,493-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:08:17,565-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:08:27,582-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: FNV
+2021-02-17 21:08:27,583-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/FNV/financials?p=FNV
+2021-02-17 21:08:28,949-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:08:29,010-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:08:39,018-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: VMC
+2021-02-17 21:08:39,019-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/VMC/financials?p=VMC
+2021-02-17 21:08:40,315-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:08:40,430-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:08:48,446-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: MLM
+2021-02-17 21:08:48,447-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/MLM/financials?p=MLM
+2021-02-17 21:08:49,985-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:08:50,042-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:09:00,049-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: PKX
+2021-02-17 21:09:00,049-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/PKX/financials?p=PKX
+2021-02-17 21:09:01,395-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:09:01,457-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:09:08,462-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: ALB
+2021-02-17 21:09:08,463-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/ALB/financials?p=ALB
+2021-02-17 21:09:09,578-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:09:09,642-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:09:16,650-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: SUZ
+2021-02-17 21:09:16,651-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/SUZ/financials?p=SUZ
+2021-02-17 21:09:18,445-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:09:18,550-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:09:26,556-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: NUE
+2021-02-17 21:09:26,557-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/NUE/financials?p=NUE
+2021-02-17 21:09:28,250-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:09:28,378-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:09:35,386-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: AVTR
+2021-02-17 21:09:35,387-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/AVTR/financials?p=AVTR
+2021-02-17 21:09:36,950-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:09:37,021-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:09:46,036-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: WPM
+2021-02-17 21:09:46,037-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/WPM/financials?p=WPM
+2021-02-17 21:09:47,565-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:09:47,633-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:09:57,642-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: AVTR-PA
+2021-02-17 21:09:57,643-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/AVTR-PA/financials?p=AVTR-PA
+2021-02-17 21:09:59,046-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:09:59,148-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:10:07,152-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: CE
+2021-02-17 21:10:07,152-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/CE/financials?p=CE
+2021-02-17 21:10:08,992-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:10:09,061-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:10:18,067-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: AEM
+2021-02-17 21:10:18,068-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/AEM/financials?p=AEM
+2021-02-17 21:10:19,274-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:10:19,371-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:10:30,379-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: EMN
+2021-02-17 21:10:30,380-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/EMN/financials?p=EMN
+2021-02-17 21:10:31,723-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:10:31,799-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:10:43,802-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: SQM
+2021-02-17 21:10:43,803-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/SQM/financials?p=SQM
+2021-02-17 21:10:45,267-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:10:45,351-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:10:52,362-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: FMC
+2021-02-17 21:10:52,363-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/FMC/financials?p=FMC
+2021-02-17 21:10:54,197-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:10:54,304-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:11:03,322-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: JHX
+2021-02-17 21:11:03,322-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/JHX/financials?p=JHX
+2021-02-17 21:11:05,116-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:11:05,237-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:11:16,252-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: SBSW
+2021-02-17 21:11:16,252-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/SBSW/financials?p=SBSW
+2021-02-17 21:11:17,818-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:11:17,906-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:11:24,908-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: SMG
+2021-02-17 21:11:24,909-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/SMG/financials?p=SMG
+2021-02-17 21:11:26,507-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:11:26,598-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:11:38,607-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: MOS
+2021-02-17 21:11:38,608-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/MOS/financials?p=MOS
+2021-02-17 21:11:39,914-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:11:40,004-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:11:52,020-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: WLK
+2021-02-17 21:11:52,020-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/WLK/financials?p=WLK
+2021-02-17 21:11:53,336-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:11:53,439-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:12:04,446-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: RPM
+2021-02-17 21:12:04,446-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/RPM/financials?p=RPM
+2021-02-17 21:12:05,729-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:12:05,793-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:12:14,794-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: TECK
+2021-02-17 21:12:14,795-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/TECK/financials?p=TECK
+2021-02-17 21:12:15,890-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:12:15,968-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:12:23,982-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: ACH
+2021-02-17 21:12:23,983-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/ACH/financials?p=ACH
+2021-02-17 21:12:25,209-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:12:25,335-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:12:35,350-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: CF
+2021-02-17 21:12:35,350-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/CF/financials?p=CF
+2021-02-17 21:12:36,736-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:12:36,812-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:12:47,820-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: VEDL
+2021-02-17 21:12:47,821-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/VEDL/financials?p=VEDL
+2021-02-17 21:12:49,247-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:12:49,320-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:13:01,326-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: CX
+2021-02-17 21:13:01,327-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/CX/financials?p=CX
+2021-02-17 21:13:02,732-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:13:02,865-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:13:14,878-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: KL
+2021-02-17 21:13:14,879-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/KL/financials?p=KL
+2021-02-17 21:13:16,263-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:13:16,376-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:13:26,384-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: AU
+2021-02-17 21:13:26,385-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/AU/financials?p=AU
+2021-02-17 21:13:28,390-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:13:28,457-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:13:38,468-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: WFG
+2021-02-17 21:13:38,468-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/WFG/financials?p=WFG
+2021-02-17 21:13:39,697-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:13:39,819-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:13:46,825-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: KGC
+2021-02-17 21:13:46,826-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/KGC/financials?p=KGC
+2021-02-17 21:13:48,132-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:13:48,196-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:13:57,200-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: STLD
+2021-02-17 21:13:57,201-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/STLD/financials?p=STLD
+2021-02-17 21:13:58,577-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:13:58,663-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:14:08,672-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: CLF
+2021-02-17 21:14:08,672-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/CLF/financials?p=CLF
+2021-02-17 21:14:09,907-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:14:09,987-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:14:18,002-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: SID
+2021-02-17 21:14:18,002-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/SID/financials?p=SID
+2021-02-17 21:14:19,252-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:14:19,319-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:14:27,328-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: RS
+2021-02-17 21:14:27,329-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/RS/financials?p=RS
+2021-02-17 21:14:28,928-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:14:29,009-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:14:38,014-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: GFI
+2021-02-17 21:14:38,015-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/GFI/financials?p=GFI
+2021-02-17 21:14:39,529-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:14:39,617-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:14:48,624-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: ICL
+2021-02-17 21:14:48,625-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/ICL/financials?p=ICL
+2021-02-17 21:14:49,716-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:14:49,802-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:14:56,806-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: RGLD
+2021-02-17 21:14:56,807-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/RGLD/financials?p=RGLD
+2021-02-17 21:14:58,083-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:14:58,162-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:15:06,164-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: MP
+2021-02-17 21:15:06,165-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/MP/financials?p=MP
+2021-02-17 21:15:07,752-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:15:07,812-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:15:16,827-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: PAAS
+2021-02-17 21:15:16,828-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/PAAS/financials?p=PAAS
+2021-02-17 21:15:18,114-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:15:18,199-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:15:27,207-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: AXTA
+2021-02-17 21:15:27,208-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/AXTA/financials?p=AXTA
+2021-02-17 21:15:28,564-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:15:28,633-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:15:35,637-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: HUN
+2021-02-17 21:15:35,638-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/HUN/financials?p=HUN
+2021-02-17 21:15:36,893-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:15:37,025-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:15:48,042-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: TX
+2021-02-17 21:15:48,043-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/TX/financials?p=TX
+2021-02-17 21:15:49,573-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:15:49,644-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:15:56,662-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: MDU
+2021-02-17 21:15:56,663-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/MDU/financials?p=MDU
+2021-02-17 21:15:58,050-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:15:58,159-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:16:05,172-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: ASH
+2021-02-17 21:16:05,173-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/ASH/financials?p=ASH
+2021-02-17 21:16:06,672-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:16:06,753-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:16:14,764-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: EXP
+2021-02-17 21:16:14,766-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/EXP/financials?p=EXP
+2021-02-17 21:16:16,614-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:16:16,662-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:16:24,676-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: KWR
+2021-02-17 21:16:24,676-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/KWR/financials?p=KWR
+2021-02-17 21:16:26,141-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:16:26,221-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:16:37,227-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: X
+2021-02-17 21:16:37,228-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/X/financials?p=X
+2021-02-17 21:16:38,612-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:16:38,676-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:16:48,687-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: OLN
+2021-02-17 21:16:48,688-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/OLN/financials?p=OLN
+2021-02-17 21:16:50,404-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:16:50,492-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:16:57,506-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: WDFC
+2021-02-17 21:16:57,506-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/WDFC/financials?p=WDFC
+2021-02-17 21:16:58,533-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:16:58,607-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:17:09,619-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: ESI
+2021-02-17 21:17:09,620-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/ESI/financials?p=ESI
+2021-02-17 21:17:11,145-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:17:11,200-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:17:22,206-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: BAK
+2021-02-17 21:17:22,207-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/BAK/financials?p=BAK
+2021-02-17 21:17:23,526-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:17:23,638-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:17:32,649-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: CC
+2021-02-17 21:17:32,650-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/CC/financials?p=CC
+2021-02-17 21:17:34,141-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:17:34,302-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:17:43,317-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: NEU
+2021-02-17 21:17:43,318-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/NEU/financials?p=NEU
+2021-02-17 21:17:44,735-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:17:44,810-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:17:54,817-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: AA
+2021-02-17 21:17:54,819-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/AA/financials?p=AA
+2021-02-17 21:17:56,197-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:17:56,303-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:18:06,310-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: AVNT
+2021-02-17 21:18:06,310-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/AVNT/financials?p=AVNT
+2021-02-17 21:18:07,691-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:18:07,787-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:18:17,796-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: DNMR
+2021-02-17 21:18:17,797-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/DNMR/financials?p=DNMR
+2021-02-17 21:18:19,725-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:18:19,779-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:18:28,784-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: GRA
+2021-02-17 21:18:28,785-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/GRA/financials?p=GRA
+2021-02-17 21:18:30,287-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:18:30,353-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:18:39,359-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: AG
+2021-02-17 21:18:39,360-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/AG/financials?p=AG
+2021-02-17 21:18:41,099-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:18:41,183-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:18:51,187-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: BCPC
+2021-02-17 21:18:51,188-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/BCPC/financials?p=BCPC
+2021-02-17 21:18:52,391-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:18:52,452-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:19:03,457-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: UFPI
+2021-02-17 21:19:03,458-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/UFPI/financials?p=UFPI
+2021-02-17 21:19:05,049-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:19:05,131-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:19:13,133-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: AMRS
+2021-02-17 21:19:13,133-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/AMRS/financials?p=AMRS
+2021-02-17 21:19:14,673-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:19:14,757-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:19:23,770-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: UNVR
+2021-02-17 21:19:23,771-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/UNVR/financials?p=UNVR
+2021-02-17 21:19:25,244-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:19:25,312-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:19:34,318-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: SSRM
+2021-02-17 21:19:34,320-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/SSRM/financials?p=SSRM
+2021-02-17 21:19:35,973-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:19:36,037-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:19:48,045-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: SXT
+2021-02-17 21:19:48,046-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/SXT/financials?p=SXT
+2021-02-17 21:19:49,574-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:19:49,661-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:20:00,669-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: LTHM
+2021-02-17 21:20:00,670-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/LTHM/financials?p=LTHM
+2021-02-17 21:20:01,888-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:20:01,948-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:20:11,952-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: HL
+2021-02-17 21:20:11,953-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/HL/financials?p=HL
+2021-02-17 21:20:13,581-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:20:13,654-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:20:21,659-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: AGI
+2021-02-17 21:20:21,659-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/AGI/financials?p=AGI
+2021-02-17 21:20:23,242-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:20:23,315-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:20:35,329-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: TRQ
+2021-02-17 21:20:35,330-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/TRQ/financials?p=TRQ
+2021-02-17 21:20:37,243-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:20:37,329-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:20:44,336-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: FUL
+2021-02-17 21:20:44,337-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/FUL/financials?p=FUL
+2021-02-17 21:20:45,536-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:20:45,611-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:20:53,615-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: NGVT
+2021-02-17 21:20:53,616-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/NGVT/financials?p=NGVT
+2021-02-17 21:20:54,994-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:20:55,063-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:21:05,071-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: MEOH
+2021-02-17 21:21:05,071-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/MEOH/financials?p=MEOH
+2021-02-17 21:21:06,285-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:21:06,346-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:21:15,360-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: CBT
+2021-02-17 21:21:15,360-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/CBT/financials?p=CBT
+2021-02-17 21:21:16,753-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:21:16,824-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:21:23,836-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: CMC
+2021-02-17 21:21:23,837-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/CMC/financials?p=CMC
+2021-02-17 21:21:25,347-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:21:25,469-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:21:33,480-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: SUM
+2021-02-17 21:21:33,481-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/SUM/financials?p=SUM
+2021-02-17 21:21:34,566-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:21:34,689-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:21:42,692-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: SCL
+2021-02-17 21:21:42,693-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/SCL/financials?p=SCL
+2021-02-17 21:21:43,849-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:21:43,916-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:21:53,919-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: TROX
+2021-02-17 21:21:53,920-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/TROX/financials?p=TROX
+2021-02-17 21:21:55,684-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:21:55,764-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:22:05,766-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: BVN
+2021-02-17 21:22:05,767-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/BVN/financials?p=BVN
+2021-02-17 21:22:07,013-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:22:07,131-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:22:37,132-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: LAC
+2021-02-17 21:22:37,132-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/LAC/financials?p=LAC
+2021-02-17 21:22:38,829-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:22:38,931-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:22:48,945-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: IOSP
+2021-02-17 21:22:48,945-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/IOSP/financials?p=IOSP
+2021-02-17 21:22:49,962-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:22:50,042-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:22:59,051-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: TSE
+2021-02-17 21:22:59,052-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/TSE/financials?p=TSE
+2021-02-17 21:23:00,599-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:23:00,679-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:23:09,692-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: MTX
+2021-02-17 21:23:09,692-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/MTX/financials?p=MTX
+2021-02-17 21:23:11,117-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:23:11,203-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:23:21,217-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: CDE
+2021-02-17 21:23:21,217-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/CDE/financials?p=CDE
+2021-02-17 21:23:22,892-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:23:22,969-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:23:34,972-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: EGO
+2021-02-17 21:23:34,973-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/EGO/financials?p=EGO
+2021-02-17 21:23:36,208-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:23:36,276-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:23:46,287-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: PQG
+2021-02-17 21:23:46,287-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/PQG/financials?p=PQG
+2021-02-17 21:23:47,574-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:23:47,682-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:23:55,694-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: CMP
+2021-02-17 21:23:55,694-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/CMP/financials?p=CMP
+2021-02-17 21:23:57,312-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:23:57,375-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:24:07,376-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: EVA
+2021-02-17 21:24:07,377-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/EVA/financials?p=EVA
+2021-02-17 21:24:09,076-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:24:09,176-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:24:18,192-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: BCC
+2021-02-17 21:24:18,192-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/BCC/financials?p=BCC
+2021-02-17 21:24:19,742-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:24:19,823-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:24:30,833-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: PVG
+2021-02-17 21:24:30,834-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/PVG/financials?p=PVG
+2021-02-17 21:24:32,232-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:24:32,307-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:24:40,318-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: CSTM
+2021-02-17 21:24:40,319-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/CSTM/financials?p=CSTM
+2021-02-17 21:24:41,912-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:24:42,018-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:24:49,029-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: GCP
+2021-02-17 21:24:49,030-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/GCP/financials?p=GCP
+2021-02-17 21:24:50,250-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:24:50,321-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:24:59,324-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: UFS
+2021-02-17 21:24:59,325-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/UFS/financials?p=UFS
+2021-02-17 21:25:00,693-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:25:00,788-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:25:08,792-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: OR
+2021-02-17 21:25:08,793-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/OR/financials?p=OR
+2021-02-17 21:25:10,118-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:25:10,189-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:25:20,193-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: HBM
+2021-02-17 21:25:20,193-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/HBM/financials?p=HBM
+2021-02-17 21:25:21,689-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:25:21,766-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:25:31,778-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: KALU
+2021-02-17 21:25:31,778-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/KALU/financials?p=KALU
+2021-02-17 21:25:33,077-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:25:33,146-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:25:43,159-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: KRO
+2021-02-17 21:25:43,160-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/KRO/financials?p=KRO
+2021-02-17 21:25:44,372-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:25:44,440-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:25:51,455-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: MTRN
+2021-02-17 21:25:51,456-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/MTRN/financials?p=MTRN
+2021-02-17 21:25:53,124-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:25:53,192-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:26:05,200-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: FSM
+2021-02-17 21:26:05,201-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/FSM/financials?p=FSM
+2021-02-17 21:26:06,510-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:26:06,630-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:26:14,637-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: SA
+2021-02-17 21:26:14,638-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/SA/financials?p=SA
+2021-02-17 21:26:15,983-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:26:16,047-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:26:23,048-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: SWM
+2021-02-17 21:26:23,049-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/SWM/financials?p=SWM
+2021-02-17 21:26:24,670-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:26:24,728-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:26:31,736-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: SAND
+2021-02-17 21:26:31,737-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/SAND/financials?p=SAND
+2021-02-17 21:26:33,154-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:26:33,236-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:26:41,252-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: NEXA
+2021-02-17 21:26:41,253-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/NEXA/financials?p=NEXA
+2021-02-17 21:26:42,835-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:26:42,884-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:26:49,896-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: FOE
+2021-02-17 21:26:49,897-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/FOE/financials?p=FOE
+2021-02-17 21:26:51,060-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:26:51,152-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:27:02,192-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: LOMA
+2021-02-17 21:27:02,193-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/LOMA/financials?p=LOMA
+2021-02-17 21:27:03,458-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:27:03,530-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:27:11,547-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: KRA
+2021-02-17 21:27:11,548-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/KRA/financials?p=KRA
+2021-02-17 21:27:13,000-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:27:13,110-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:27:23,113-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: CENX
+2021-02-17 21:27:23,114-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/CENX/financials?p=CENX
+2021-02-17 21:27:24,439-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:27:24,507-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:27:35,510-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: HCC
+2021-02-17 21:27:35,511-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/HCC/financials?p=HCC
+2021-02-17 21:27:37,013-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:27:37,113-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:27:47,128-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: HL-PB
+2021-02-17 21:27:47,128-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/HL-PB/financials?p=HL-PB
+2021-02-17 21:27:48,630-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:27:48,722-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:27:57,729-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: OEC
+2021-02-17 21:27:57,729-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/OEC/financials?p=OEC
+2021-02-17 21:27:59,084-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:27:59,166-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:28:08,182-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: SCHN
+2021-02-17 21:28:08,183-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/SCHN/financials?p=SCHN
+2021-02-17 21:28:09,811-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:28:09,899-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:28:21,904-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: NP
+2021-02-17 21:28:21,905-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/NP/financials?p=NP
+2021-02-17 21:28:23,238-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:28:23,315-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:28:30,329-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: GPRE
+2021-02-17 21:28:30,330-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/GPRE/financials?p=GPRE
+2021-02-17 21:28:31,656-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:28:31,724-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:28:38,725-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: EXK
+2021-02-17 21:28:38,726-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/EXK/financials?p=EXK
+2021-02-17 21:28:40,315-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:28:40,459-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:28:47,462-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: GATO
+2021-02-17 21:28:47,462-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/GATO/financials?p=GATO
+2021-02-17 21:28:48,708-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:28:48,784-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:28:56,787-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: MERC
+2021-02-17 21:28:56,788-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/MERC/financials?p=MERC
+2021-02-17 21:28:58,065-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:28:58,130-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:29:07,140-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: WLKP
+2021-02-17 21:29:07,140-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/WLKP/financials?p=WLKP
+2021-02-17 21:29:08,655-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:29:08,732-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:29:15,747-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: USCR
+2021-02-17 21:29:15,748-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/USCR/financials?p=USCR
+2021-02-17 21:29:17,075-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:29:17,150-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:29:24,164-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: DRD
+2021-02-17 21:29:24,165-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/DRD/financials?p=DRD
+2021-02-17 21:29:25,572-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:29:25,654-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:29:36,661-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: RFP
+2021-02-17 21:29:36,662-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/RFP/financials?p=RFP
+2021-02-17 21:29:38,244-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:29:38,313-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:29:46,320-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: USLM
+2021-02-17 21:29:46,321-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/USLM/financials?p=USLM
+2021-02-17 21:29:47,821-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:29:47,913-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:29:56,922-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: ASIX
+2021-02-17 21:29:56,922-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/ASIX/financials?p=ASIX
+2021-02-17 21:29:58,277-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:29:58,347-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:30:06,360-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: KOP
+2021-02-17 21:30:06,361-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/KOP/financials?p=KOP
+2021-02-17 21:30:08,023-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:30:08,097-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:30:16,107-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: CPAC
+2021-02-17 21:30:16,108-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/CPAC/financials?p=CPAC
+2021-02-17 21:30:17,404-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:30:17,498-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:30:27,505-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: GLT
+2021-02-17 21:30:27,507-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/GLT/financials?p=GLT
+2021-02-17 21:30:28,786-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:30:28,858-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:30:38,871-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: CLW
+2021-02-17 21:30:38,872-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/CLW/financials?p=CLW
+2021-02-17 21:30:40,250-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:30:40,328-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:30:48,336-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: FF
+2021-02-17 21:30:48,336-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/FF/financials?p=FF
+2021-02-17 21:30:49,552-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:30:49,630-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:31:00,637-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: HWKN
+2021-02-17 21:31:00,637-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/HWKN/financials?p=HWKN
+2021-02-17 21:31:01,965-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:31:02,043-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:31:10,051-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: AVD
+2021-02-17 21:31:10,051-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/AVD/financials?p=AVD
+2021-02-17 21:31:11,502-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:31:11,572-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:31:21,581-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: SXC
+2021-02-17 21:31:21,582-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/SXC/financials?p=SXC
+2021-02-17 21:31:22,850-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:31:22,915-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:31:29,925-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: RYAM
+2021-02-17 21:31:29,925-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/RYAM/financials?p=RYAM
+2021-02-17 21:31:31,141-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:31:31,304-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:31:39,322-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: TG
+2021-02-17 21:31:39,323-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/TG/financials?p=TG
+2021-02-17 21:31:40,823-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:31:40,888-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:31:48,903-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: VHI
+2021-02-17 21:31:48,905-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/VHI/financials?p=VHI
+2021-02-17 21:31:50,389-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:31:50,464-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:32:01,468-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: VRS
+2021-02-17 21:32:01,469-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/VRS/financials?p=VRS
+2021-02-17 21:32:02,984-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:32:03,054-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:32:10,056-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: IPI
+2021-02-17 21:32:10,057-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/IPI/financials?p=IPI
+2021-02-17 21:32:11,085-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:32:11,151-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:32:19,153-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: MSB
+2021-02-17 21:32:19,154-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/MSB/financials?p=MSB
+2021-02-17 21:32:20,227-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:32:20,380-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:32:29,384-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: TMST
+2021-02-17 21:32:29,386-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/TMST/financials?p=TMST
+2021-02-17 21:32:30,761-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:32:30,842-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:32:41,859-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: ODC
+2021-02-17 21:32:41,859-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/ODC/financials?p=ODC
+2021-02-17 21:32:43,002-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:32:43,064-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:32:52,085-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: CINR
+2021-02-17 21:32:52,085-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/CINR/financials?p=CINR
+2021-02-17 21:32:53,084-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:32:53,375-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:33:01,403-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: UAN
+2021-02-17 21:33:01,404-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/UAN/financials?p=UAN
+2021-02-17 21:33:02,394-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:33:02,451-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:33:11,469-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: ZEUS
+2021-02-17 21:33:11,471-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/ZEUS/financials?p=ZEUS
+2021-02-17 21:33:12,859-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:33:13,042-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:33:22,057-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: TREC
+2021-02-17 21:33:22,058-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/TREC/financials?p=TREC
+2021-02-17 21:33:23,300-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:33:23,370-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:33:30,379-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: SPPP
+2021-02-17 21:33:30,380-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/SPPP/financials?p=SPPP
+2021-02-17 21:33:31,648-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:33:31,708-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:33:39,718-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: USAP
+2021-02-17 21:33:39,718-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/USAP/financials?p=USAP
+2021-02-17 21:33:41,016-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:33:41,066-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:33:52,075-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: CGA
+2021-02-17 21:33:52,075-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/CGA/financials?p=CGA
+2021-02-17 21:33:53,681-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:33:53,746-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object
+2021-02-17 21:34:05,762-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:19-extract data from the financial statements of: IFFT
+2021-02-17 21:34:05,763-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:21-Sending a request to: https://finance.yahoo.com/quote/IFFT/financials?p=IFFT
+2021-02-17 21:34:07,046-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:23-The code of the current request: 200
+2021-02-17 21:34:07,118-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:25-Return a BeautifulSoup object

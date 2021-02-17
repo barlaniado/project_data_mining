@@ -25,14 +25,15 @@ SUB_TAG_HOW_MANY_SYMBOLS = 'span'
 SUB_CLASS_HOW_MANY_SYMBOLS = 'Mstart(15px) Fw(500) Fz(s)'
 CHER_SPLIT_TO_GET_HOW_MANY_SYMBOLS = ' '
 INDEX_HOW_MANY_AFTER_SPLIT = -2
-START_URL_SECTOR_PAGE = 'https://finance.yahoo.com/screener/predefined/ms_
+START_URL_SECTOR_PAGE = 'https://finance.yahoo.com/screener/predefined/ms_'
 SPACE_TO_REPLACE = ' '
 CHAR_INSTEAD_SPACE = '_'
 OFFSET_IS = '?offset='
 COUNT_IS = '&count='
 START_URL_FINANCIALS = 'https://finance.yahoo.com/quote/'
 REST_URL_FINANCIALS = '/financials?p='
-MESSAGE_HOW_MANY_SYMBOLS_PAGES = f'The {sector} has {how_many_symbols} symbols and {how_many_pages} pages'
+LONG_SLEEP_DEBUG_LOGGER = "The program is sleeping"
+
 
 # get_daily_data
 TAG_TO_RETRIEVE_DAILY_DATA = 'span'
@@ -57,7 +58,11 @@ OFFSET_OF_FIRST_PAGE_SECTOR = 0
 HOW_MANY_SYMBOLS_EACH_PAGE = 100
 TAG_TABLE_IN_PAGE = "tbody"
 TABLE_CONTENT_INDEX = 0
-
+START_SCRAPE_SECTOR_MESSAGE = "Started to scrape sectors pages"
+FINISH_SECTOR_SCRAPING_MESSAGE = "Finished to scrape sectors pages"
+ASSUMPTION_TBODY_LEN = 1
+LEN_OF_DICT_SECTOR_LOGGER_MESSAGE = "The length of the symbols-sectors dict that was created is: "
+LEN_OF_DICT_DAILY_LOGGER_MESSAGE = "The length of the daily data dict that was created is: "
 
 # get_data_of_financial_statements
 TAG_DATA_FINANCIAL_STATEMENTS = 'span'

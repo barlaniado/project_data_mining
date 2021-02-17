@@ -2,19 +2,24 @@ import time
 import random
 import math
 import project_conf
+import logger
+import logging
+
+logger = logging.getLogger('data_mining')
 
 
 def program_sleep(counter=None):
     """
     The function sends the program to sleep so as not to overload the server.
     """
-    if counter == project_conf..PRAM_VALUE_SLEEP_NO_COUNTER:
-        time.sleep(random.randint(project_conf..MIN_TIME_SLEEP_NO_COUNTER,
+    if counter == project_conf.PRAM_VALUE_SLEEP_NO_COUNTER:
+        time.sleep(random.randint(project_conf.MIN_TIME_SLEEP_NO_COUNTER,
                                   project_conf.MAX_TIME_SLEEP_NO_COUNTER))
     else:
-        if counter % project_conf.WHEN_LONG_SLEEP ==  project_conf.NO_REMAINDER:
+        if counter % project_conf.WHEN_LONG_SLEEP == project_conf.NO_REMAINDER:
+            logger.debug(project_conf.LONG_SLEEP_DEBUG_LOGGER)
             time.sleep(project_conf.TIME_LONG_SLEEP)
-        elif counter % (project_conf.WHEN_MODERATE_SLEEP == project_conf.NO_REMAINDER:
+        elif counter % project_conf.WHEN_MODERATE_SLEEP == project_conf.NO_REMAINDER:
             time.sleep(project_conf.TIME_MODERATE_SLEEP)
         else:
             time.sleep(random.randint(project_conf.MIN_SHORT_SLEEP, project_conf.MAX_SHORT_SLEEP))
@@ -42,15 +47,17 @@ def build_url(sector, offset, count):
     """
     The function creates the url to the sector page.
     """
-    url = f'{project_conf.START_URL_SECTOR_PAGE}\
-    {sector.lower().replace(project_conf.SPACE_TO_REPLACE,\
-    project_conf.CHAR_INSTEAD_SPACE)}{project_conf.OFFSET_IS}{offset}{project_conf.COUNT_IS}{count}'
+    url = f"{project_conf.START_URL_SECTOR_PAGE}" \
+          f"{sector.lower().replace(project_conf.SPACE_TO_REPLACE,project_conf.CHAR_INSTEAD_SPACE)}" \
+          f"{project_conf.OFFSET_IS}{offset}{project_conf.COUNT_IS}{count}"
     return url
 
 
 def build_url_financials_symbol(symbol):
     current_url = f'{project_conf.START_URL_FINANCIALS}{symbol}{project_conf.REST_URL_FINANCIALS}{symbol}'
     return current_url
-               
-                        
+
+
+def build_message_how_many_symbols_pages_for_logger(sector, how_many_symbols, how_many_pages):
+    return f'The {sector} has {how_many_symbols} symbols and {how_many_pages} pages'
     
