@@ -30,6 +30,8 @@ SPACE_TO_REPLACE = ' '
 CHAR_INSTEAD_SPACE = '_'
 OFFSET_IS = '?offset='
 COUNT_IS = '&count='
+START_URL_FINANCIALS = 'https://finance.yahoo.com/quote/'
+REST_URL_FINANCIALS = '/financials?p='
 
 # get_daily_data
 TAG_TO_RETRIEVE_DAILY_DATA = 'span'
