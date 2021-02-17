@@ -91,7 +91,7 @@ def build_sectors_and_daily_dict(tbody, sector, symbol_sector_dict, daily_dict):
                                           project_conf.KEY_PRICE_CHANGE_PERCENTAGE: get_price_change_percentage(tr),
                                           project_conf.KEY_VOLUME:  get_volume(tr),
                                           project_conf.KEY_AVG_VOLUME: get_avg_vol(tr)}
-    logger.debug(project_conf.LOGGER_MESSAGE_BUILD_DAILY_SECTOR_DICT)
+    logger.info(project_conf.LOGGER_MESSAGE_BUILD_DAILY_SECTOR_DICT)
     return
 
 def scrape_sector_pages():
