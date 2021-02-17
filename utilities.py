@@ -49,6 +49,6 @@ def build_url(sector, offset, count):
 
 
 def build_url_financials_symbol(symbol):
-    current_url = f'https://finance.yahoo.com/quote/{symbol}/financials?p={symbol}'
+    current_url = f'{project_conf.START_URL_FINANCIALS}{symbol}{project_conf.REST_URL_FINANCIALS}{symbol}'
     return current_url
     
