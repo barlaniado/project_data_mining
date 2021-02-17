@@ -42,7 +42,9 @@ def build_url(sector, offset, count):
     """
     The function creates the url to the sector page.
     """
-    url = f'https://finance.yahoo.com/screener/predefined/ms_{sector.lower().replace(" ", "_")}?offset={offset}&count={count}'
+    url = f'{project_conf.START_URL_SECTOR_PAGE}\
+    {sector.lower().replace(project_conf.SPACE_TO_REPLACE,\
+    project_conf.CHAR_INSTEAD_SPACE)}{project_conf.OFFSET_IS}{offset}{project_conf.COUNT_IS}{count}'
     return url
 
 
