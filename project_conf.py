@@ -1,4 +1,7 @@
 import logger
+
+
+# requests_webpages
 #SECTORS = ["Technology", "Basic materials", "Healthcare", "Energy"]
 SECTORS = ["Basic materials"]
 COUNT = 100
