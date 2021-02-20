@@ -44,7 +44,7 @@ def get_data_financial_statements(symbol, counter_symbols):
 def get_all_data_financial_statements(list_symbols):
     counter_symbols = 0
     all_symbols_dict = {}
-    for symbol in list_symbols:
+    for symbol in list_symbols[:20]:
         if symbol not in all_symbols_dict:
             all_symbols_dict.update(get_data_financial_statements(symbol, counter_symbols))
         counter_symbols += 1

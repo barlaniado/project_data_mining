@@ -4,6 +4,8 @@ import math
 import project_conf
 import logger
 import logging
+import json
+from datetime import datetime
 
 logger = logging.getLogger('data_mining')
 
@@ -12,7 +14,7 @@ def program_sleep(counter=None):
     """
     The function sends the program to sleep so as not to overload the server.
     """
-    if counter == project_conf.PRAM_VALUE_SLEEP_NO_COUNTER:
+    if counter == project_conf.VALUE_SLEEP_NO_COUNTER:
         time.sleep(random.randint(project_conf.MIN_TIME_SLEEP_NO_COUNTER,
                                   project_conf.MAX_TIME_SLEEP_NO_COUNTER))
     else:
@@ -60,4 +62,30 @@ def build_url_financials_symbol(symbol):
 
 def build_message_how_many_symbols_pages_for_logger(sector, how_many_symbols, how_many_pages):
     return f'The {sector} has {how_many_symbols} symbols and {how_many_pages} pages'
-    
+
+
+def create_timestamp():
+    now = datetime.now()
+    timestamp = datetime.timestamp(now)
+    return timestamp
+
+
+def to_json_daily_data(daily_data):
+    with open(str(create_timestamp()) + project_conf.DAILY_DATA_FILE_NAME, 'w') as outfile:
+        json.dump(daily_data, outfile, indent=4)
+
+
+def to_json_symbol_sector(symbol_sector_data):
+    with open(str(create_timestamp()) + project_conf.SYMBOL_SECTOR_DATA_FILE_NAME, 'w') as outfile:
+        json.dump(symbol_sector_data, outfile, indent=4)
+
+
+def to_json_financials(financials_data):
+    with open(str(create_timestamp()) + project_conf.FINANCIALS_DATA_FILE_NAME, 'w') as outfile:
+        json.dump(financials_data, outfile, indent=4)
+
+
+def to_json_all(symbol_sector_data, daily_data, financials_data):
+    to_json_daily_data(daily_data)
+    to_json_symbol_sector(symbol_sector_data)
+    to_json_financials(financials_data)

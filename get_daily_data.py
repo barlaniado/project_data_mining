@@ -80,9 +80,12 @@ def build_sectors_and_daily_dict(tbody, sector, symbol_sector_dict, daily_dict):
     all_tr = tbody.find_all(project_conf.FIND_LINE_TAG)
     for tr in all_tr:
         current_symbol = get_symbol(tr)
-        dateTimeObj = datetime.now()
+        logger.info(project_conf.NOW_SYMBOLS_MESSAGE_LOGGER + current_symbol)
+        dateTimeObj = str(datetime.now())
         if current_symbol in symbol_sector_dict:
             symbol_sector_dict[current_symbol].append(sector)
+            logger.info(current_symbol + project_conf.ALREADY_EXIST_SYMBOL)
+
         else:
             symbol_sector_dict[current_symbol] = [sector]
         if current_symbol not in daily_dict:

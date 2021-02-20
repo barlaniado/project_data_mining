@@ -1,6 +1,6 @@
 # requests_webpages
 #SECTORS = ["Technology", "Basic materials", "Healthcare", "Energy"]
-SECTORS = ["Basic materials"]
+SECTORS = ["Technology", "Basic materials"]
 COUNT = 100
 HTML_PARSER = 'html.parser'
 HEADERS = {
@@ -9,14 +9,14 @@ HEADERS = {
 }
 
 # utilities
-PRAM_VALUE_SLEEP_NO_COUNTER = None
+VALUE_SLEEP_NO_COUNTER = None
 MIN_TIME_SLEEP_NO_COUNTER = 5
 MAX_TIME_SLEEP_NO_COUNTER = 7
 WHEN_LONG_SLEEP = 1000
-TIME_LONG_SLEEP = 120
+TIME_LONG_SLEEP = 1
 NO_REMAINDER = 0
 WHEN_MODERATE_SLEEP = 100
-TIME_MODERATE_SLEEP = 30
+TIME_MODERATE_SLEEP = 1
 MIN_SHORT_SLEEP = 7
 MAX_SHORT_SLEEP = 12
 MAIN_TAG_HOW_MANY_SYMBOLS = 'div'
@@ -63,6 +63,11 @@ FINISH_SECTOR_SCRAPING_MESSAGE = "Finished to scrape sectors pages"
 ASSUMPTION_TBODY_LEN = 1
 LEN_OF_DICT_SECTOR_LOGGER_MESSAGE = "The length of the symbols-sectors dict that was created is: "
 LEN_OF_DICT_DAILY_LOGGER_MESSAGE = "The length of the daily data dict that was created is: "
+NOW_SYMBOLS_MESSAGE_LOGGER = "Found the symbol: "
+ALREADY_EXIST_SYMBOL = "already exists in the dictionary"
+DAILY_DATA_FILE_NAME = "_daily_data.json"
+SYMBOL_SECTOR_DATA_FILE_NAME = "_symbol_sector.json"
+FINANCIALS_DATA_FILE_NAME = "_financials.json"
 
 # get_data_of_financial_statements
 TAG_DATA_FINANCIAL_STATEMENTS = 'span'
