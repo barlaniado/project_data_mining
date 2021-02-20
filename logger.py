@@ -5,7 +5,8 @@ import sys
 logger = logging.getLogger('data_mining')
 logger.setLevel(logging.DEBUG)
 # Create Formatter
-formatter = logging.Formatter('%(asctime)s-%(levelname)s-FILE:%(filename)s-FUNC:%(funcName)s-LINE:%(lineno)d-%(message)s')
+formatter = logging.Formatter\
+    ('%(asctime)s-%(levelname)s-FILE:%(filename)s-FUNC:%(funcName)s-LINE:%(lineno)d-%(message)s')
 # create a file handler and add it to logger
 file_handler = logging.FileHandler('data_mining.log')
 file_handler.setLevel(logging.INFO)

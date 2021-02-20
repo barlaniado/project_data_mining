@@ -68,6 +68,7 @@ ALREADY_EXIST_SYMBOL = "already exists in the dictionary"
 DAILY_DATA_FILE_NAME = "_daily_data.json"
 SYMBOL_SECTOR_DATA_FILE_NAME = "_symbol_sector.json"
 FINANCIALS_DATA_FILE_NAME = "_financials.json"
+DATA_LIST_EMPTY = "Can't find the wanted data."
 
 # get_data_of_financial_statements
 TAG_DATA_FINANCIAL_STATEMENTS = 'span'

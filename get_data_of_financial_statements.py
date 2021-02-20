@@ -4,6 +4,11 @@ import project_conf
 
 
 def get_data_financial_statements(symbol, counter_symbols):
+    """
+    The function gets the symbol of the company, retrieve the data about the company financial report
+    and creates a dictionary for each company.
+    the counter_symbols parameter is for the sleep function usage.
+    """
     now_titles = 0
     now_net_income = 0
     title_list = []
@@ -42,6 +47,9 @@ def get_data_financial_statements(symbol, counter_symbols):
 
 
 def get_all_data_financial_statements(list_symbols):
+    """
+    The function gets a list of all the companies symbols and creates one dictionary that includes all the companies.
+    """
     counter_symbols = 0
     all_symbols_dict = {}
     for symbol in list_symbols[:20]:
