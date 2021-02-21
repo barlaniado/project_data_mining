@@ -1,6 +1,9 @@
 # requests_webpages
-#SECTORS = ["Technology", "Basic materials", "Healthcare", "Energy"]
-SECTORS = ["Technology", "Basic materials"]
+SECTORS = ["Technology", "Basic materials", "Healthcare", "Energy", "Communication Services",
+           "Consumer Cyclical", "consumer Defensive", "Financial Services", "Industrials", "Real Estate",
+           "utilities"]
+
+
 COUNT = 100
 HTML_PARSER = 'html.parser'
 HEADERS = {
@@ -13,12 +16,12 @@ VALUE_SLEEP_NO_COUNTER = None
 MIN_TIME_SLEEP_NO_COUNTER = 5
 MAX_TIME_SLEEP_NO_COUNTER = 7
 WHEN_LONG_SLEEP = 1000
-TIME_LONG_SLEEP = 1
+TIME_LONG_SLEEP = 120
 NO_REMAINDER = 0
 WHEN_MODERATE_SLEEP = 100
-TIME_MODERATE_SLEEP = 1
-MIN_SHORT_SLEEP = 7
-MAX_SHORT_SLEEP = 12
+TIME_MODERATE_SLEEP = 30
+MIN_SHORT_SLEEP = 5
+MAX_SHORT_SLEEP = 7
 MAIN_TAG_HOW_MANY_SYMBOLS = 'div'
 MAIN_CLASS_HOW_MANY_SYMBOLS = 'Pos(r) Pos(r) Mih(265px)'
 SUB_TAG_HOW_MANY_SYMBOLS = 'span'

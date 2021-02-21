@@ -7,6 +7,7 @@ import logging
 import json
 from datetime import datetime
 
+
 logger = logging.getLogger('data_mining')
 
 
