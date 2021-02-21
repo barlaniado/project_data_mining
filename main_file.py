@@ -14,7 +14,7 @@ def main():
     list_symbols = list(tuple_dict[0].keys())
     financial_statements = get_data_of_financial_statements.get_all_data_financial_statements(list_symbols)
     logger.logger.info(f"The dictionary of the financial reports was created. the dictionary size is:"
-                       f" {financial_statements}")
+                       f" {len(financial_statements)}")
     utilities.to_json_all(tuple_dict[0], tuple_dict[1], financial_statements)
 
 
