@@ -1,6 +1,6 @@
-import utilities
-import requests_webpages
-import project_conf
+from utilities import utilities
+from getData import requests_webpages
+from configuration import project_conf
 
 
 def get_data_financial_statements(symbol, counter_symbols):

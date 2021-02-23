@@ -1,14 +1,10 @@
 import time
 import random
 import math
-import project_conf
-import logger
-import logging
+from configuration import project_conf
+from logs import logger
 import json
 from datetime import datetime
-
-
-logger = logging.getLogger('data_mining')
 
 
 def program_sleep(counter=None):
@@ -20,7 +16,7 @@ def program_sleep(counter=None):
                                   project_conf.MAX_TIME_SLEEP_NO_COUNTER))
     else:
         if counter % project_conf.WHEN_LONG_SLEEP == project_conf.NO_REMAINDER:
-            logger.debug(project_conf.LONG_SLEEP_DEBUG_LOGGER)
+            logger.logger.debug(project_conf.LONG_SLEEP_DEBUG_LOGGER)
             time.sleep(project_conf.TIME_LONG_SLEEP)
         elif counter % project_conf.WHEN_MODERATE_SLEEP == project_conf.NO_REMAINDER:
             time.sleep(project_conf.TIME_MODERATE_SLEEP)

@@ -1,0 +1,31 @@
+2021-02-23 21:19:29,066-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:86-Started to scrape sectors pages
+2021-02-23 21:19:55,073-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:86-Started to scrape sectors pages
+2021-02-23 21:19:55,080-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:14-https://finance.yahoo.com/screener/predefined/ms_technology?offset=0&count=100ConnectionError
+2021-02-23 21:20:18,433-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:86-Started to scrape sectors pages
+2021-02-23 21:20:18,440-ERROR-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:14-https://finance.yahoo.com/screener/predefined/ms_technology?offset=0&count=100ConnectionError
+2021-02-23 21:21:01,494-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:86-Started to scrape sectors pages
+2021-02-23 21:21:01,505-ERROR-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:14-https://finance.yahoo.com/screener/predefined/ms_technology?offset=0&count=100ConnectionError
+2021-02-23 21:21:30,938-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:86-Started to scrape sectors pages
+2021-02-23 21:21:30,945-ERROR-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:14-https://finance.yahoo.com/screener/predefined/ms_technology?offset=0&count=100ConnectionError
+2021-02-23 21:21:42,928-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:86-Started to scrape sectors pages
+2021-02-23 21:21:42,938-ERROR-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:14-https://finance.yahoo.com/screener/predefined/ms_technology?offset=0&count=100ConnectionError
+2021-02-23 21:22:14,365-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:86-Started to scrape sectors pages
+2021-02-23 21:22:14,374-ERROR-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:14-https://finance.yahoo.com/screener/predefined/ms_technology?offset=0&count=100ConnectionError
+2021-02-23 21:22:24,853-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:86-Started to scrape sectors pages
+2021-02-23 21:22:24,859-ERROR-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:14-https://finance.yahoo.com/screener/predefined/ms_technology?offset=0&count=100ConnectionError
+2021-02-23 21:24:40,957-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:87-Started to scrape sectors pages
+2021-02-23 21:24:40,963-ERROR-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:14-https://finance.yahoo.com/screener/predefined/ms_technology?offset=0&count=100ConnectionError
+2021-02-23 21:25:24,013-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:87-Started to scrape sectors pages
+2021-02-23 21:25:24,020-ERROR-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:14-https://finance.yahoo.com/screener/predefined/ms_technology?offset=0&count=100ConnectionError
+2021-02-23 21:28:07,766-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:87-Started to scrape sectors pages
+2021-02-23 21:28:07,774-ERROR-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:14-https://finance.yahoo.com/screener/predefined/ms_technology?offset=0&count=100ConnectionError
+2021-02-23 21:28:28,090-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:87-Started to scrape sectors pages
+2021-02-23 21:28:28,097-ERROR-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:14-https://finance.yahoo.com/screener/predefined/ms_technology?offset=0&count=100ConnectionError
+2021-02-23 21:29:31,587-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:87-Started to scrape sectors pages
+2021-02-23 21:29:31,594-ERROR-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:14-ConnectionError
+2021-02-23 21:29:37,672-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:87-Started to scrape sectors pages
+2021-02-23 21:29:37,679-ERROR-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:14- ConnectionError
+2021-02-23 21:40:06,532-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:87-Started to scrape sectors pages
+2021-02-23 21:40:07,860-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:16-The code of the current request: 200
+2021-02-23 21:40:17,840-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:87-Started to scrape sectors pages
+2021-02-23 21:40:17,847-ERROR-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:14- ConnectionError

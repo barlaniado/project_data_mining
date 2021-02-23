@@ -1,8 +1,9 @@
-import requests_webpages
+from getData import requests_webpages
 from datetime import datetime
-import project_conf
-import utilities
-import logger
+from configuration import project_conf
+from utilities import utilities
+from logs import logger
+import requests
 
 
 def get_price(tr):
@@ -87,8 +88,11 @@ def scrape_sector_pages():
     daily_data = {}
     symbol_sector = {}
     for sector in project_conf.SECTORS:
-        page = requests_webpages.get_content_sector_page\
-            (utilities.build_url(sector, project_conf.OFFSET_OF_FIRST_PAGE_SECTOR, project_conf.COUNT))
+        try:
+            page = requests_webpages.get_content_sector_page\
+                (utilities.build_url(sector, project_conf.OFFSET_OF_FIRST_PAGE_SECTOR, project_conf.COUNT))
+        except requests.exceptions.ConnectionError:
+            raise requests.exceptions.ConnectionError
         how_many_symbols = utilities.get_how_many_symbols_in_sector(page)
         how_many_pages = utilities.calculate_how_many_pages(how_many_symbols)
         logger.logger.info(utilities.build_message_how_many_symbols_pages_for_logger
@@ -100,7 +104,10 @@ def scrape_sector_pages():
         build_sectors_and_daily_dict(tbody, sector, symbol_sector, daily_data)
         for offset in range(project_conf.HOW_MANY_SYMBOLS_EACH_PAGE, how_many_pages * project_conf.COUNT,
                             project_conf.HOW_MANY_SYMBOLS_EACH_PAGE):
-            page = requests_webpages.get_content_sector_page(utilities.build_url(sector, offset, project_conf.COUNT))
+            try:
+                page = requests_webpages.get_content_sector_page(utilities.build_url(sector, offset, project_conf.COUNT))
+            except requests.exceptions.ConnectionError:
+                raise requests.exceptions.ConnectionError
             tbody = page.find_all(project_conf.TAG_TABLE_IN_PAGE)
             if len(tbody) > project_conf.ASSUMPTION_TBODY_LEN:
                 logger.logger.warning(project_conf.LOGGER_WARNING_MESSAGE)

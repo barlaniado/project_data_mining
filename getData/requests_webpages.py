@@ -1,14 +1,18 @@
 import requests
 from bs4 import BeautifulSoup
-import project_conf
-import utilities
+from configuration import project_conf
+from utilities import utilities
 import logging
 
 logger = logging.getLogger('data_mining')
 
 
 def get_content_sector_page(page_url):
-    page = requests.get(page_url, headers=project_conf.HEADERS)
+    try:
+        page = requests.get(page_url, headers=project_conf.HEADERS)
+    except requests.exceptions.ConnectionError:
+        logger.error(" ConnectionError")
+        raise requests.exceptions.ConnectionError
     logger.info("The code of the current request: " + str(page.status_code))
     utilities.program_sleep()
     page_soup = BeautifulSoup(page.text, project_conf.HTML_PARSER)

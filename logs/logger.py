@@ -8,7 +8,7 @@ logger.setLevel(logging.DEBUG)
 formatter = logging.Formatter\
     ('%(asctime)s-%(levelname)s-FILE:%(filename)s-FUNC:%(funcName)s-LINE:%(lineno)d-%(message)s')
 # create a file handler and add it to logger
-file_handler = logging.FileHandler('data_mining.log')
+file_handler = logging.FileHandler('./logs/data_mining.log')
 file_handler.setLevel(logging.INFO)
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)

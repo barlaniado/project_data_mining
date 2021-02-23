@@ -1,14 +1,20 @@
-import get_daily_data
-import get_data_of_financial_statements
-import utilities
-import logger
+from getData import get_daily_data
+from getData import get_data_of_financial_statements
+from utilities import utilities
+from logs import logger
+import requests
+
 
 def main():
     """
     This is the main function that receive the web site url and parse the data to two dictionaries:
     a daily and annual financial data of each company in each sector at that wbe site.
     """
-    tuple_dict = get_daily_data.scrape_sector_pages()
+    try:
+        tuple_dict = get_daily_data.scrape_sector_pages()
+    except requests.exceptions.ConnectionError:
+        print("No connection, please check the connection and try again.")
+        exit()
     logger.logger.info(f"The Tuple dictionaries was created. the dictionaries size are: {len(tuple_dict[0])}"
                               f" and {len(tuple_dict[1])}")
     list_symbols = list(tuple_dict[0].keys())
