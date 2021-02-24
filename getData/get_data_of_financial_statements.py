@@ -2,6 +2,7 @@ from utilities import utilities
 from getData import requests_webpages
 from configuration import project_conf
 from logs import logger
+import requests
 
 
 def get_data_financial_statements(symbol, counter_symbols):
