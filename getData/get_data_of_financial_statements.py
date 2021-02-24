@@ -1,6 +1,7 @@
 from utilities import utilities
 from getData import requests_webpages
 from configuration import project_conf
+from logs import logger
 
 
 def get_data_financial_statements(symbol, counter_symbols):
@@ -15,7 +16,11 @@ def get_data_financial_statements(symbol, counter_symbols):
     data_dict = {}
     data_indicator = 0
     utilities.program_sleep(counter_symbols)
-    soup = requests_webpages.get_content_financial_statements(symbol)
+    try:
+        soup = requests_webpages.get_content_financial_statements(symbol)
+    except requests.exceptions.ConnectionError:
+        logger.logger.warning(f"Could not get {symbol}'s financial statements")
+        return {symbol: None}
     all_span = soup.find_all(project_conf.TAG_DATA_FINANCIAL_STATEMENTS)
     for i in all_span:
         current_text = i.text

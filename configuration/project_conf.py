@@ -1,9 +1,8 @@
 # requests_webpages
-SECTORS = ["Technology", "Basic materials", "Healthcare", "Energy", "Communication Services",
-           "Consumer Cyclical", "consumer Defensive", "Financial Services", "Industrials", "Real Estate",
-           "utilities"]
-
-
+#SECTORS = ["Technology", "Basic materials", "Healthcare", "Energy", "Communication Services",
+#           "Consumer Cyclical", "consumer Defensive", "Financial Services", "Industrials", "Real Estate",
+#          "utilities"]
+SECTORS = ["utilities"]
 COUNT = 100
 HTML_PARSER = 'html.parser'
 HEADERS = {
@@ -36,6 +35,8 @@ COUNT_IS = '&count='
 START_URL_FINANCIALS = 'https://finance.yahoo.com/quote/'
 REST_URL_FINANCIALS = '/financials?p='
 LONG_SLEEP_DEBUG_LOGGER = "The program is sleeping"
+JSON_FILES_PATH = "./json_files/"
+CREATE_JSON_FOLDER_MESSAGE = "Json folder was created"
 
 
 # get_daily_data
@@ -51,6 +52,7 @@ ATTRS_AVG_VOL = 'aria-label'
 SYMBOL_INDEX = 0
 FIND_LINE_TAG = 'tr'
 KEY_TIME = 'Time'
+KEY_SECTOR = 'Sector'
 KEY_PRICE = 'Price'
 KEY_PRICE_CHANGE = 'Price change'
 KEY_PRICE_CHANGE_PERCENTAGE = 'Percentage'
@@ -64,7 +66,6 @@ TABLE_CONTENT_INDEX = 0
 START_SCRAPE_SECTOR_MESSAGE = "Started to scrape sectors pages"
 FINISH_SECTOR_SCRAPING_MESSAGE = "Finished to scrape sectors pages"
 ASSUMPTION_TBODY_LEN = 1
-LEN_OF_DICT_SECTOR_LOGGER_MESSAGE = "The length of the symbols-sectors dict that was created is: "
 LEN_OF_DICT_DAILY_LOGGER_MESSAGE = "The length of the daily data dict that was created is: "
 NOW_SYMBOLS_MESSAGE_LOGGER = "Found the symbol: "
 ALREADY_EXIST_SYMBOL = "already exists in the dictionary"

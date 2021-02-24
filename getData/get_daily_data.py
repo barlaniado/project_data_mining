@@ -4,6 +4,7 @@ from configuration import project_conf
 from utilities import utilities
 from logs import logger
 import requests
+import sys
 
 
 def get_price(tr):
@@ -86,13 +87,17 @@ def scrape_sector_pages():
     """
     logger.logger.info(project_conf.START_SCRAPE_SECTOR_MESSAGE)
     daily_data = {}
-    symbol_sector = {}
+    symbol_list = []
     for sector in project_conf.SECTORS:
         try:
             page = requests_webpages.get_content_sector_page\
                 (utilities.build_url(sector, project_conf.OFFSET_OF_FIRST_PAGE_SECTOR, project_conf.COUNT))
         except requests.exceptions.ConnectionError:
-            raise requests.exceptions.ConnectionError
+            logger.logger.warning(f" ConnectionError occured while trying to scrape the first page of {sector}, therefore all companies in the {sector} sector will not be scraped.")
+            continue
+        except requests.exceptions.HTTPError:
+            logger.logger.warning(f" HTTPError occured while trying to scrape the first page of {sector}, therefore all companies in the {sector} sector will not be scraped.")
+            continue
         how_many_symbols = utilities.get_how_many_symbols_in_sector(page)
         how_many_pages = utilities.calculate_how_many_pages(how_many_symbols)
         logger.logger.info(utilities.build_message_how_many_symbols_pages_for_logger
@@ -101,25 +106,28 @@ def scrape_sector_pages():
         if len(tbody) > 1:
             logger.logger.warning(project_conf.LOGGER_WARNING_MESSAGE)
         tbody = tbody[project_conf.TABLE_CONTENT_INDEX]
-        build_sectors_and_daily_dict(tbody, sector, symbol_sector, daily_data)
+        build_sectors_and_daily_dict(tbody, sector, symbol_list, daily_data)
         for offset in range(project_conf.HOW_MANY_SYMBOLS_EACH_PAGE, how_many_pages * project_conf.COUNT,
                             project_conf.HOW_MANY_SYMBOLS_EACH_PAGE):
             try:
                 page = requests_webpages.get_content_sector_page(utilities.build_url(sector, offset, project_conf.COUNT))
             except requests.exceptions.ConnectionError:
-                raise requests.exceptions.ConnectionError
+                logger.logger.warning(f" ConnectionError occured while trying to scrape the a page of {sector} (which is not the first page of that sector), therefore the companies in this page will not be scraped.")
+                continue
+            except requests.exceptions.HTTPError:
+                logger.logger.warning(f" HTTPError occured while trying to scrape the first page of {sector}, therefore all companies in the {sector} sector will not be scraped.")
+                continue
             tbody = page.find_all(project_conf.TAG_TABLE_IN_PAGE)
             if len(tbody) > project_conf.ASSUMPTION_TBODY_LEN:
                 logger.logger.warning(project_conf.LOGGER_WARNING_MESSAGE)
             tbody = tbody[project_conf.TABLE_CONTENT_INDEX]
-            build_sectors_and_daily_dict(tbody, sector, symbol_sector, daily_data)
+            build_sectors_and_daily_dict(tbody, sector, symbol_list, daily_data)
             logger.logger.info(project_conf.FINISH_SECTOR_SCRAPING_MESSAGE)
-            logger.logger.info(project_conf.LEN_OF_DICT_SECTOR_LOGGER_MESSAGE + str(len(symbol_sector)) + "\n" +
-                        project_conf.LEN_OF_DICT_DAILY_LOGGER_MESSAGE + str(len(daily_data)))
-    return symbol_sector, daily_data
+            logger.logger.info(project_conf.LEN_OF_DICT_DAILY_LOGGER_MESSAGE + str(len(daily_data)))
+    return symbol_list, daily_data
 
 
-def build_sectors_and_daily_dict(tbody, sector, symbol_sector_dict, daily_dict):
+def build_sectors_and_daily_dict(tbody, sector, symbol_list, daily_dict):
     """
     The function gets content of a table in specific sector page (tbody), and the sector itself (sector)
     and adding more data from the current sector page to the two dictionaries (symbol_sector_dict, daily_dict).
@@ -136,13 +144,10 @@ def build_sectors_and_daily_dict(tbody, sector, symbol_sector_dict, daily_dict):
         current_symbol = get_symbol(tr)
         logger.logger.info(project_conf.NOW_SYMBOLS_MESSAGE_LOGGER + current_symbol)
         date_time_obj = str(datetime.now())
-        if current_symbol in symbol_sector_dict:
-            symbol_sector_dict[current_symbol].append(sector)
-            logger.logger.info(current_symbol + project_conf.ALREADY_EXIST_SYMBOL)
-        else:
-            symbol_sector_dict[current_symbol] = [sector]
         if current_symbol not in daily_dict:
+            symbol_list.append(current_symbol)
             daily_dict[current_symbol] = {project_conf.KEY_TIME: date_time_obj,
+                                          project_conf.KEY_SECTOR: sector,
                                           project_conf.KEY_PRICE: get_price(tr),
                                           project_conf.KEY_PRICE_CHANGE: get_price_change(tr),
                                           project_conf.KEY_PRICE_CHANGE_PERCENTAGE:

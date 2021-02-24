@@ -5,6 +5,7 @@ from configuration import project_conf
 from logs import logger
 import json
 from datetime import datetime
+import os
 
 
 def program_sleep(counter=None):
@@ -66,23 +67,26 @@ def create_timestamp():
     timestamp = datetime.timestamp(now)
     return timestamp
 
+def check_if_json_folder_exist_and_create():
+    if not os.path.exists(project_conf.JSON_FILES_PATH):
+        os.makedirs(project_conf.JSON_FILES_PATH)
+        logger.logger.info(project_conf.CREATE_JSON_FOLDER_MESSAGE)
+
 
 def to_json_daily_data(daily_data):
-    with open(str(create_timestamp()) + project_conf.DAILY_DATA_FILE_NAME, 'w') as outfile:
+    check_if_json_folder_exist_and_create()
+    with open(project_conf.JSON_FILES_PATH + str(create_timestamp()).replace(".","-") + project_conf.DAILY_DATA_FILE_NAME, 'w') as outfile:
         json.dump(daily_data, outfile, indent=4)
+    logger.logger.info("A json file with the daily data was created")
 
-
-def to_json_symbol_sector(symbol_sector_data):
-    with open(str(create_timestamp()) + project_conf.SYMBOL_SECTOR_DATA_FILE_NAME, 'w') as outfile:
-        json.dump(symbol_sector_data, outfile, indent=4)
 
 
 def to_json_financials(financials_data):
-    with open(str(create_timestamp()) + project_conf.FINANCIALS_DATA_FILE_NAME, 'w') as outfile:
+    with open(project_conf.JSON_FILES_PATH + str(create_timestamp()).replace(".","-") + project_conf.FINANCIALS_DATA_FILE_NAME, 'w') as outfile:
         json.dump(financials_data, outfile, indent=4)
+    logger.logger.info("A json file with the financials data was created")
 
 
-def to_json_all(symbol_sector_data, daily_data, financials_data):
+def to_json_all(daily_data, financials_data):
     to_json_daily_data(daily_data)
-    to_json_symbol_sector(symbol_sector_data)
     to_json_financials(financials_data)
