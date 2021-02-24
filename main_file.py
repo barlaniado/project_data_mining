@@ -2,8 +2,6 @@ from getData import get_daily_data
 from getData import get_data_of_financial_statements
 from utilities import utilities
 from logs import logger
-from getData import requests_webpages
-import requests
 
 
 def main():
