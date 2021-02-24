@@ -34,11 +34,3 @@ def test_build_url():
            "https://finance.yahoo.com/screener/predefined/ms_technology?offset=0&count=100"
 
 
-def main():
-    test_calculate_how_many_pages()
-    test_get_how_many_symbols_in_sector()
-    test_build_url()
-
-
-if __name__ == '__main__':
-    main()

@@ -33,8 +33,9 @@ def get_data_financial_statements(symbol, counter_symbols):
             data_dict[current_title] = {}
         elif now_net_income == 1:
             try:
-                data_dict[title_list[counter]][project_conf.KEY_NET_INCOME] =\
-                int(current_text.replace(project_conf.DELETE_FROM_NET_INCOME_STRING, project_conf.REPLACE_DELETED_CHAR_WITH))
+                data_dict[title_list[counter]][project_conf.KEY_NET_INCOME] = \
+                    int(current_text.replace(project_conf.DELETE_FROM_NET_INCOME_STRING,
+                                             project_conf.REPLACE_DELETED_CHAR_WITH))
             except ValueError:
                 data_dict[title_list[counter]][project_conf.KEY_NET_INCOME] = project_conf.VALUE_IF_CANT_CAST_TO_INT
             counter += 1
@@ -58,7 +59,7 @@ def get_all_data_financial_statements(list_symbols):
     """
     counter_symbols = 0
     all_symbols_dict = {}
-    for symbol in list_symbols:
+    for symbol in list_symbols[:2]:
         if symbol not in all_symbols_dict:
             all_symbols_dict.update(get_data_financial_statements(symbol, counter_symbols))
         counter_symbols += 1

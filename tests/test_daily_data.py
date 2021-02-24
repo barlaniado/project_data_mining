@@ -1,5 +1,6 @@
 import json
-import os
+
+
 
 # load daily data
 
@@ -203,14 +204,3 @@ def test_get_volume():
     # Technology
     assert daily_data['ORCL']['Volume'][0] == '1'
     assert daily_data['ORCL']['Volume'][-1] == 'M'
-
-
-def main():
-    test_get_price()
-    test_get_change()
-    test_get_change_percentage()
-    test_get_volume()
-
-
-if __name__ == '__main__':
-    main()

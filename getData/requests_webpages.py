@@ -6,6 +6,9 @@ from logs import logger
 
 
 def get_content_sector_page(page_url):
+    """
+    The function gets a url to a sector page and returns the content of the page as BeautifulSoup object.
+    """
     try:
         page = requests.get(page_url, headers=project_conf.HEADERS)
         page.raise_for_status() # raise an exception if status is not 200
@@ -18,14 +21,19 @@ def get_content_sector_page(page_url):
     response_code = page.status_code
     if response_code == 200:
         logger.logger.info("The code of the current request: " + str(page.status_code))
-    elif  response_code == 404:
+    elif response_code == 404:
         logger.logger.warning("The code of the current request: " + str(page.status_code) + ":" + "Page not found")
     utilities.program_sleep()
     page_soup = BeautifulSoup(page.text, project_conf.HTML_PARSER)
     logger.logger.info("Return a BeautifulSoup object")
     return page_soup
 
+
 def get_content_financial_statements(symbol):
+    """
+    The function gets a symbol, build the url for the financials reports of this company and returns
+    a BeautifulSoup object that contains the contents of the reports page.
+    """
     logger.logger.info(' Extract data from the financial statements of: ' + symbol)
     current_url= utilities.build_url_financials_symbol(symbol)
     logger.logger.info('Sending a request to: ' + current_url)

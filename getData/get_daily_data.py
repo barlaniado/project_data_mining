@@ -80,10 +80,10 @@ def get_avg_vol(tr):
 
 def scrape_sector_pages():
     """
-    The function iterates over a list of sector and creates two dictionaries:
-    1) "symbol_sector_dict" contain the stock symbols and their sectors
+    The function iterates over a list of sector and create a list of symbols and a dictionary:
+    1) "symbol_list" contain the stock symbols
     2) "daily_dict" contain the daily data of the stocks.
-    The function returns tuple of these two dictionaries (symbol_sector, daily_data)
+    The function returns tuple of these two (symbol_list, daily_data)
     """
     logger.logger.info(project_conf.START_SCRAPE_SECTOR_MESSAGE)
     daily_data = {}
