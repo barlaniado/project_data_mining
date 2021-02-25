@@ -1,0 +1,617 @@
+2021-02-25 20:04:05,650-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:110-Started to scrape sectors pages
+2021-02-25 20:04:07,433-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:22-The code of the current request: 200
+2021-02-25 20:15:01,513-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:106-Started to scrape sectors pages
+2021-02-25 20:33:51,742-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:108-Started to scrape sectors pages
+2021-02-25 20:33:53,134-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:23-The code of the current request: 200
+2021-02-25 20:34:00,379-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:28-Return a BeautifulSoup object
+2021-02-25 20:34:00,385-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:123-The Technology has 442 symbols and 5 pages
+2021-02-25 20:34:00,394-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: AAPL
+2021-02-25 20:34:00,395-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,395-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: MSFT
+2021-02-25 20:34:00,395-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,396-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: TSM
+2021-02-25 20:34:00,396-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,397-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: NVDA
+2021-02-25 20:34:00,397-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,397-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: INTC
+2021-02-25 20:34:00,398-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,400-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ASML
+2021-02-25 20:34:00,401-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,401-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ADBE
+2021-02-25 20:34:00,402-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,402-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CRM
+2021-02-25 20:34:00,403-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,403-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ORCL
+2021-02-25 20:34:00,404-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,405-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CSCO
+2021-02-25 20:34:00,406-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,406-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: AVGO
+2021-02-25 20:34:00,407-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,407-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ACN
+2021-02-25 20:34:00,408-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,408-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: TXN
+2021-02-25 20:34:00,410-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,410-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: QCOM
+2021-02-25 20:34:00,411-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,411-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SHOP
+2021-02-25 20:34:00,411-ERROR-FILE:get_daily_data.py-FUNC:get_price-LINE:24-Invalid price
+2021-02-25 20:34:00,412-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,412-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SAP
+2021-02-25 20:34:00,413-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,413-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SNE
+2021-02-25 20:34:00,414-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,414-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: IBM
+2021-02-25 20:34:00,415-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,415-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: INTU
+2021-02-25 20:34:00,416-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,416-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: AMAT
+2021-02-25 20:34:00,417-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,417-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: NOW
+2021-02-25 20:34:00,417-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,417-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SQ
+2021-02-25 20:34:00,418-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,418-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: MU
+2021-02-25 20:34:00,419-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,419-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: AMD
+2021-02-25 20:34:00,419-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,420-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: UBER
+2021-02-25 20:34:00,420-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,421-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: FIS
+2021-02-25 20:34:00,422-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,422-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: LRCX
+2021-02-25 20:34:00,423-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,423-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: FISV
+2021-02-25 20:34:00,424-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,424-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: INFY
+2021-02-25 20:34:00,425-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,425-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SNOW
+2021-02-25 20:34:00,426-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,426-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ADSK
+2021-02-25 20:34:00,427-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,427-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: WDAY
+2021-02-25 20:34:00,428-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,428-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: VMW
+2021-02-25 20:34:00,429-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,430-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: DELL
+2021-02-25 20:34:00,430-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,433-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: TEAM
+2021-02-25 20:34:00,434-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,434-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ADI
+2021-02-25 20:34:00,435-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,435-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: NXPI
+2021-02-25 20:34:00,436-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,436-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: KLAC
+2021-02-25 20:34:00,437-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,437-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CRWD
+2021-02-25 20:34:00,438-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,438-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: PLTR
+2021-02-25 20:34:00,439-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,439-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: DOCU
+2021-02-25 20:34:00,439-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,439-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ERIC
+2021-02-25 20:34:00,440-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,440-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: TEL
+2021-02-25 20:34:00,440-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,440-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: MCHP
+2021-02-25 20:34:00,441-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,441-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CTSH
+2021-02-25 20:34:00,441-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,441-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CDNS
+2021-02-25 20:34:00,442-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,442-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SNPS
+2021-02-25 20:34:00,442-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,442-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: APH
+2021-02-25 20:34:00,443-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,443-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: HPQ
+2021-02-25 20:34:00,443-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,443-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: STM
+2021-02-25 20:34:00,443-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,447-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: PANW
+2021-02-25 20:34:00,448-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,449-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: RNG
+2021-02-25 20:34:00,450-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,450-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: OKTA
+2021-02-25 20:34:00,451-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,451-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: MRVL
+2021-02-25 20:34:00,452-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,452-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: WIT
+2021-02-25 20:34:00,453-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,453-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: XLNX
+2021-02-25 20:34:00,454-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,454-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: MSI
+2021-02-25 20:34:00,455-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,456-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ANSS
+2021-02-25 20:34:00,457-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,457-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SWKS
+2021-02-25 20:34:00,458-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,458-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: DDOG
+2021-02-25 20:34:00,459-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,459-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: GLW
+2021-02-25 20:34:00,460-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,461-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: U
+2021-02-25 20:34:00,462-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,462-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: FTNT
+2021-02-25 20:34:00,463-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,464-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ZS
+2021-02-25 20:34:00,464-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,465-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ZBRA
+2021-02-25 20:34:00,465-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,465-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: KEYS
+2021-02-25 20:34:00,467-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,467-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: STNE
+2021-02-25 20:34:00,469-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,469-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: FTV-PA
+2021-02-25 20:34:00,469-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,469-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: MXIM
+2021-02-25 20:34:00,470-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,470-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: COUP
+2021-02-25 20:34:00,470-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,471-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: WORK
+2021-02-25 20:34:00,472-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,472-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: GRMN
+2021-02-25 20:34:00,473-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,473-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SPLK
+2021-02-25 20:34:00,474-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,474-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: FLT
+2021-02-25 20:34:00,475-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,475-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CAJ
+2021-02-25 20:34:00,476-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,476-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: HUBS
+2021-02-25 20:34:00,476-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,476-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: AFRM
+2021-02-25 20:34:00,477-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,477-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CDW
+2021-02-25 20:34:00,479-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,479-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: FTV
+2021-02-25 20:34:00,480-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,480-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: NET
+2021-02-25 20:34:00,481-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,481-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: VRSN
+2021-02-25 20:34:00,482-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,482-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: PAYC
+2021-02-25 20:34:00,482-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,483-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ZI
+2021-02-25 20:34:00,483-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,483-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: UMC
+2021-02-25 20:34:00,483-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,483-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: TER
+2021-02-25 20:34:00,484-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,484-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ANET
+2021-02-25 20:34:00,484-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,484-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: WDC
+2021-02-25 20:34:00,485-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,485-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: EPAM
+2021-02-25 20:34:00,485-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,485-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: UI
+2021-02-25 20:34:00,486-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,486-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: XM
+2021-02-25 20:34:00,487-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,487-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: QRVO
+2021-02-25 20:34:00,488-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,488-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: GIB
+2021-02-25 20:34:00,489-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,489-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: HPE
+2021-02-25 20:34:00,489-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,489-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: TYL
+2021-02-25 20:34:00,494-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,494-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: WIX
+2021-02-25 20:34:00,494-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,494-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: TRMB
+2021-02-25 20:34:00,495-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,495-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: LYFT
+2021-02-25 20:34:00,495-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,495-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: PAGS
+2021-02-25 20:34:00,496-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,496-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: LOGI
+2021-02-25 20:34:00,496-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:00,496-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SSNC
+2021-02-25 20:34:00,497-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:02,045-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:23-The code of the current request: 200
+2021-02-25 20:34:07,231-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:28-Return a BeautifulSoup object
+2021-02-25 20:34:07,236-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: STX
+2021-02-25 20:34:07,236-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,236-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ZEN
+2021-02-25 20:34:07,238-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,238-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CTXS
+2021-02-25 20:34:07,238-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,238-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: MPWR
+2021-02-25 20:34:07,238-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,239-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: BR
+2021-02-25 20:34:07,239-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,239-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: PTC
+2021-02-25 20:34:07,239-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,239-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: IT
+2021-02-25 20:34:07,240-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,240-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ON
+2021-02-25 20:34:07,240-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,240-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CHKP
+2021-02-25 20:34:07,241-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,241-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: AKAM
+2021-02-25 20:34:07,241-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,241-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SEDG
+2021-02-25 20:34:07,242-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,242-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CLVT
+2021-02-25 20:34:07,242-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,242-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: NICE
+2021-02-25 20:34:07,243-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,243-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CGNX
+2021-02-25 20:34:07,243-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,243-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ENTG
+2021-02-25 20:34:07,244-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,244-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: DT
+2021-02-25 20:34:07,244-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,244-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: NTAP
+2021-02-25 20:34:07,244-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,244-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ASX
+2021-02-25 20:34:07,253-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,253-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: TDY
+2021-02-25 20:34:07,253-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,253-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: GDDY
+2021-02-25 20:34:07,254-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,254-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: FICO
+2021-02-25 20:34:07,255-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,255-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: AVLR
+2021-02-25 20:34:07,256-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,256-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: BILL
+2021-02-25 20:34:07,257-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,257-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CDAY
+2021-02-25 20:34:07,257-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,257-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: BSY
+2021-02-25 20:34:07,258-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,258-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: LDOS
+2021-02-25 20:34:07,259-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,259-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: KC
+2021-02-25 20:34:07,260-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,260-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: NUAN
+2021-02-25 20:34:07,260-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,260-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: OTEX
+2021-02-25 20:34:07,261-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,261-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: BKI
+2021-02-25 20:34:07,261-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,261-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CREE
+2021-02-25 20:34:07,262-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,262-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: NLOK
+2021-02-25 20:34:07,263-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,263-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: IPGP
+2021-02-25 20:34:07,263-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,263-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: RUN
+2021-02-25 20:34:07,269-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,269-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: FFIV
+2021-02-25 20:34:07,269-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,269-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ESTC
+2021-02-25 20:34:07,270-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,270-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: JKHY
+2021-02-25 20:34:07,270-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,270-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: AI
+2021-02-25 20:34:07,271-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,271-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: PEGA
+2021-02-25 20:34:07,271-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,271-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: AZPN
+2021-02-25 20:34:07,272-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,272-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: PCTY
+2021-02-25 20:34:07,272-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,272-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: DOX
+2021-02-25 20:34:07,273-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,273-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: OLED
+2021-02-25 20:34:07,273-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,273-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: DLB
+2021-02-25 20:34:07,274-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,274-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: PLAN
+2021-02-25 20:34:07,274-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,274-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: DNB
+2021-02-25 20:34:07,275-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,275-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: GWRE
+2021-02-25 20:34:07,275-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,275-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: WEX
+2021-02-25 20:34:07,275-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,276-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: DBX
+2021-02-25 20:34:07,276-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,276-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: MKSI
+2021-02-25 20:34:07,284-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,284-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: LAZR
+2021-02-25 20:34:07,284-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,284-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: FLEX
+2021-02-25 20:34:07,285-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,285-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ST
+2021-02-25 20:34:07,285-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,285-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: IIVI
+2021-02-25 20:34:07,286-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,286-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: FSLR
+2021-02-25 20:34:07,286-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,286-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: RP
+2021-02-25 20:34:07,287-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,287-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: MCFE
+2021-02-25 20:34:07,287-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,288-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SMAR
+2021-02-25 20:34:07,289-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,289-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: GLOB
+2021-02-25 20:34:07,289-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,289-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: IPHI
+2021-02-25 20:34:07,290-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,290-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: LSPD
+2021-02-25 20:34:07,290-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,290-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: FSLY
+2021-02-25 20:34:07,291-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,291-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: EEFT
+2021-02-25 20:34:07,291-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,291-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: TIXT
+2021-02-25 20:34:07,292-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,292-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CIEN
+2021-02-25 20:34:07,292-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,292-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: JNPR
+2021-02-25 20:34:07,300-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,300-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: G
+2021-02-25 20:34:07,301-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,301-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: MANH
+2021-02-25 20:34:07,301-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,301-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ARW
+2021-02-25 20:34:07,302-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,302-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: LPL
+2021-02-25 20:34:07,302-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,302-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: MSTR
+2021-02-25 20:34:07,303-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,303-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CD
+2021-02-25 20:34:07,303-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,303-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: OCFT
+2021-02-25 20:34:07,304-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,304-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: PFPT
+2021-02-25 20:34:07,304-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,304-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: FLIR
+2021-02-25 20:34:07,305-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,305-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: BMBL
+2021-02-25 20:34:07,305-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,305-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: BL
+2021-02-25 20:34:07,306-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,306-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SLAB
+2021-02-25 20:34:07,306-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,306-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: DQ
+2021-02-25 20:34:07,307-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,307-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: LITE
+2021-02-25 20:34:07,308-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,308-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: QTWO
+2021-02-25 20:34:07,308-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,308-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: PSTG
+2021-02-25 20:34:07,316-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,316-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: NCNO
+2021-02-25 20:34:07,316-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,317-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: JBL
+2021-02-25 20:34:07,317-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,317-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: AYX
+2021-02-25 20:34:07,318-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,318-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: DXC
+2021-02-25 20:34:07,318-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,318-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: LSCC
+2021-02-25 20:34:07,319-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,319-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: LFUS
+2021-02-25 20:34:07,319-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,319-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: DCT
+2021-02-25 20:34:07,319-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,320-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: MDLA
+2021-02-25 20:34:07,320-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,320-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CDK
+2021-02-25 20:34:07,320-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,321-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: BRKS
+2021-02-25 20:34:07,321-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,321-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: BB
+2021-02-25 20:34:07,322-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,322-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: FOUR
+2021-02-25 20:34:07,323-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,323-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: API
+2021-02-25 20:34:07,323-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,324-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: NTNX
+2021-02-25 20:34:07,324-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,324-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CLGX
+2021-02-25 20:34:07,325-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,325-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SPWR
+2021-02-25 20:34:07,331-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,331-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: VRNS
+2021-02-25 20:34:07,332-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,332-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CNXC
+2021-02-25 20:34:07,332-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:07,332-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:147-Finished to scrape sectors pages
+2021-02-25 20:34:07,332-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:148-The length of the daily data dict that was created is: 200
+2021-02-25 20:34:08,668-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:23-The code of the current request: 200
+2021-02-25 20:34:13,841-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:28-Return a BeautifulSoup object
+2021-02-25 20:34:13,845-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: COHR
+2021-02-25 20:34:13,846-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,846-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: NATI
+2021-02-25 20:34:13,846-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,846-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CYBR
+2021-02-25 20:34:13,847-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,847-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CACI
+2021-02-25 20:34:13,847-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,847-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: AMKR
+2021-02-25 20:34:13,848-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,848-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ASAN
+2021-02-25 20:34:13,848-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,848-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: VNT
+2021-02-25 20:34:13,849-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,849-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: POWI
+2021-02-25 20:34:13,849-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,849-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: DAVA
+2021-02-25 20:34:13,850-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,850-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SAIL
+2021-02-25 20:34:13,850-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,850-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SAIC
+2021-02-25 20:34:13,851-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,851-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ALGM
+2021-02-25 20:34:13,851-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,851-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: XRX
+2021-02-25 20:34:13,852-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,852-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: FROG
+2021-02-25 20:34:13,852-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,852-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: JCOM
+2021-02-25 20:34:13,852-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,853-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CCMP
+2021-02-25 20:34:13,854-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,854-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: VNET
+2021-02-25 20:34:13,854-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,854-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: DSGX
+2021-02-25 20:34:13,855-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,855-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ACIA
+2021-02-25 20:34:13,855-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,855-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SWI
+2021-02-25 20:34:13,856-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,856-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: WK
+2021-02-25 20:34:13,856-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,856-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SMTC
+2021-02-25 20:34:13,857-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,857-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CRUS
+2021-02-25 20:34:13,857-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,858-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SONO
+2021-02-25 20:34:13,858-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,858-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: NOVT
+2021-02-25 20:34:13,859-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,859-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ITRI
+2021-02-25 20:34:13,860-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,860-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: PRSP
+2021-02-25 20:34:13,861-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,861-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CLDR
+2021-02-25 20:34:13,862-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,862-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: DDD
+2021-02-25 20:34:13,862-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,862-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SYNA
+2021-02-25 20:34:13,863-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,863-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: DM
+2021-02-25 20:34:13,869-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,870-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SNX
+2021-02-25 20:34:13,870-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,871-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: FEYE
+2021-02-25 20:34:13,872-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,872-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: NCR
+2021-02-25 20:34:13,872-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,873-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: TDC
+2021-02-25 20:34:13,873-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,873-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ACIW
+2021-02-25 20:34:13,873-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,873-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SABR
+2021-02-25 20:34:13,874-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,874-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ENV
+2021-02-25 20:34:13,874-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,874-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: MTSI
+2021-02-25 20:34:13,875-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,875-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ALTR
+2021-02-25 20:34:13,875-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,875-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: RAMP
+2021-02-25 20:34:13,876-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,876-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ALRM
+2021-02-25 20:34:13,876-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,876-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: JAMF
+2021-02-25 20:34:13,877-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,877-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: TENB
+2021-02-25 20:34:13,878-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,878-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: RXT
+2021-02-25 20:34:13,878-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,878-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SWCH
+2021-02-25 20:34:13,879-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,879-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: BAND
+2021-02-25 20:34:13,885-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,885-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: NOVA
+2021-02-25 20:34:13,885-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,885-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: AMBA
+2021-02-25 20:34:13,886-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,886-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CRNC
+2021-02-25 20:34:13,887-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,887-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: DIOD
+2021-02-25 20:34:13,889-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,889-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: VICR
+2021-02-25 20:34:13,889-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,890-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: LPSN
+2021-02-25 20:34:13,890-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,890-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: TTEC
+2021-02-25 20:34:13,891-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,891-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: QLYS
+2021-02-25 20:34:13,891-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,892-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: VIAV
+2021-02-25 20:34:13,892-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,892-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: NEWR
+2021-02-25 20:34:13,892-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,892-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: AVT
+2021-02-25 20:34:13,893-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,893-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: MSP
+2021-02-25 20:34:13,893-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,894-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ATC
+2021-02-25 20:34:13,894-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,894-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SPSC
+2021-02-25 20:34:13,894-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,894-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: PD
+2021-02-25 20:34:13,895-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,895-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: VSAT
+2021-02-25 20:34:13,901-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,901-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: EGHT
+2021-02-25 20:34:13,902-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,902-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: FORM
+2021-02-25 20:34:13,902-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,902-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: VSH
+2021-02-25 20:34:13,903-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,903-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: BLKB
+2021-02-25 20:34:13,903-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,903-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: IRBT
+2021-02-25 20:34:13,904-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,904-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: RAAS
+2021-02-25 20:34:13,904-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,904-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CSOD
+2021-02-25 20:34:13,905-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,905-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: VRNT
+2021-02-25 20:34:13,905-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,905-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: STMP
+2021-02-25 20:34:13,906-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,906-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: YALA
+2021-02-25 20:34:13,906-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,906-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CRSR
+2021-02-25 20:34:13,907-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,907-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ROG
+2021-02-25 20:34:13,907-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,907-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: FN
+2021-02-25 20:34:13,908-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,908-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: MANT
+2021-02-25 20:34:13,909-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,909-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: TSEM
+2021-02-25 20:34:13,909-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,909-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: DSP
+2021-02-25 20:34:13,917-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,917-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SUMO
+2021-02-25 20:34:13,918-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,918-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: PS
+2021-02-25 20:34:13,918-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,918-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ONTO
+2021-02-25 20:34:13,919-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,919-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CVLT
+2021-02-25 20:34:13,919-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,919-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: KLIC
+2021-02-25 20:34:13,920-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,920-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: MXL
+2021-02-25 20:34:13,920-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,920-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: BOX
+2021-02-25 20:34:13,921-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,921-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: NSIT
+2021-02-25 20:34:13,921-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,921-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: COMM
+2021-02-25 20:34:13,922-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,922-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: MAXR
+2021-02-25 20:34:13,922-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,922-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: MIME
+2021-02-25 20:34:13,923-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,923-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ESE
+2021-02-25 20:34:13,923-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,923-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: EXLS
+2021-02-25 20:34:13,923-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,924-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: SVMK
+2021-02-25 20:34:13,924-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,924-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: CSIQ
+2021-02-25 20:34:13,924-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,924-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: EVTC
+2021-02-25 20:34:13,933-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,933-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: VLDR
+2021-02-25 20:34:13,934-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,934-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: BTRS
+2021-02-25 20:34:13,934-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,934-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: ONTF
+2021-02-25 20:34:13,935-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,935-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: MTLS
+2021-02-25 20:34:13,936-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,936-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:167-Found the symbol: AVYA
+2021-02-25 20:34:13,936-INFO-FILE:get_daily_data.py-FUNC:build_sectors_and_daily_dict-LINE:181-The data was successfully added to the dictionary
+2021-02-25 20:34:13,936-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:147-Finished to scrape sectors pages
+2021-02-25 20:34:13,937-INFO-FILE:get_daily_data.py-FUNC:scrape_sector_pages-LINE:148-The length of the daily data dict that was created is: 300
+2021-02-25 20:34:15,186-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:23-The code of the current request: 200

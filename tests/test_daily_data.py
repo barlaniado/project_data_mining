@@ -1,9 +1,6 @@
 import json
 
-
-
 # load daily data
-
 with open('./DataForTests/daily_data_for_test.json') as data:
     daily_data = json.load(data)
 
