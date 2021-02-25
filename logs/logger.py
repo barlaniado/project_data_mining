@@ -4,9 +4,11 @@ import os
 import __main__
 
 
-def create_logger(path, debug_mode = False):
-    """ Creates a logger, when debug_mode = False the level of the logger is
-    INFO, when debug_mode = False the level of the logger is DEBUG """
+def create_logger(path, debug_mode=False):
+    """
+    Creates a logger, when debug_mode = False the level of the logger is
+    INFO, when debug_mode=True the level of the logger is DEBUG
+    """
     if not debug_mode:
         set_level_logging = logging.INFO
     elif debug_mode:

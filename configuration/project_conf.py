@@ -1,5 +1,4 @@
 # requests_webpages
-
 SECTORS = ["Technology", "Basic materials", "Healthcare", "Energy", "Communication Services",
             "Consumer Cyclical", "consumer Defensive", "Financial Services", "Industrials", "Real Estate",
             "utilities"]
@@ -10,6 +9,7 @@ HEADERS = {
         'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko)'
         ' Chrome/56.0.2924.87 Safari/537.36'
 }
+
 
 # utilities
 VALUE_SLEEP_NO_COUNTER = None
@@ -40,7 +40,6 @@ JSON_FILES_PATH = "json_files"
 CREATE_JSON_FOLDER_MESSAGE = "Json folder was created"
 FINANCIALS_DATA_FILE_NAME = "_financials.json"
 DAILY_DATA_FILE_NAME = "_daily_data.json"
-
 
 
 # get_daily_data
@@ -74,7 +73,6 @@ LEN_OF_DICT_DAILY_LOGGER_MESSAGE = "The length of the daily data dict that was c
 NOW_SYMBOLS_MESSAGE_LOGGER = "Found the symbol: "
 ALREADY_EXIST_SYMBOL = "already exists in the dictionary"
 SYMBOL_SECTOR_DATA_FILE_NAME = "_symbol_sector.json"
-
 DATA_LIST_EMPTY = "Can't find the wanted data."
 RESPONSE_EMPTY = "The response is empty of the required content."
 SYMBOL_EXISTS_LOGGER_MESSAGE = ": Data about the current symbol already exists in the daily dictionary"

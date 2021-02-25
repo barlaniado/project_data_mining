@@ -55,20 +55,26 @@ def build_url(sector, offset, count):
 
 
 def build_url_financials_symbol(symbol):
-    """ The function gets a symbol and returns the url of the financials reports of the company"""
+    """
+    The function gets a symbol and returns the url of the financials reports of the company
+    """
     current_url = f'{project_conf.START_URL_FINANCIALS}{symbol}{project_conf.REST_URL_FINANCIALS}{symbol}'
     return current_url
 
 
 def build_message_how_many_symbols_pages_for_logger(sector, how_many_symbols, how_many_pages):
-    """ The function gets: sector, how many symbols in this sector (how_many_symbols) and how many
+    """
+    The function gets: sector, how many symbols in this sector (how_many_symbols) and how many
     pages the program have to scrape and created from the data a message for the logger.
-    The function returns a string"""
+    The function returns a string.
+    """
     return f'The {sector} has {how_many_symbols} symbols and {how_many_pages} pages'
 
 
 def create_timestamp():
-    """ The function returns the time stamp of this moment """
+    """
+    The function returns the time stamp of this moment.
+    """
     now = datetime.now()
     timestamp = datetime.timestamp(now)
     return timestamp
@@ -110,7 +116,8 @@ def to_json_financials(financials_data):
 
 
 def to_json_all(daily_data, financials_data):
-    """ The function gets the data that obtained and
-     calls to the functions: to_json_financials and to_json_daily_data """
+    """
+    The function gets the data that obtained and calls to the functions: to_json_financials and to_json_daily_data.
+    """
     to_json_daily_data(daily_data)
     to_json_financials(financials_data)

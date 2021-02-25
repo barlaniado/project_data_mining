@@ -12,8 +12,9 @@ To reach the Net income at the web-site: press on the company symbol by your int
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the requests and beautifulsoup4 libraries.\
 we used versions:\
-2.24.0 for requests\
-and 4.9.1 for beautifulsoup4
+2.25.1 for requests\
+and 4.9.3 for beautifulsoup4, 0.0.1 for bs4
+
 
 ## Usage
 

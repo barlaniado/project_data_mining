@@ -35,7 +35,6 @@ def test_number_of_titles():
     assert len(financial_data['LMND']) == 3
 
 
-
 def main():
     test_get_data_financial_statements()
     test_number_of_titles()
