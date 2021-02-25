@@ -7,7 +7,6 @@ import requests
 import sys
 
 
-
 def get_price(tr):
     """
     The function retrieve the daily price of a stock of a company.
