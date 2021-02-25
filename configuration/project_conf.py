@@ -1,9 +1,10 @@
 # requests_webpages
-
+"""
 SECTORS = ["Technology", "Basic materials", "Healthcare", "Energy", "Communication Services",
            "Consumer Cyclical", "consumer Defensive", "Financial Services", "Industrials", "Real Estate",
            "utilities"]
-
+"""
+SECTORS = ["Technology"]
 COUNT = 100
 HTML_PARSER = 'html.parser'
 HEADERS = {
@@ -17,12 +18,12 @@ VALUE_SLEEP_NO_COUNTER = None
 MIN_TIME_SLEEP_NO_COUNTER = 5
 MAX_TIME_SLEEP_NO_COUNTER = 7
 WHEN_LONG_SLEEP = 1000
-TIME_LONG_SLEEP = 120
+TIME_LONG_SLEEP = 0 #120
 NO_REMAINDER = 0
 WHEN_MODERATE_SLEEP = 100
-TIME_MODERATE_SLEEP = 30
-MIN_SHORT_SLEEP = 5
-MAX_SHORT_SLEEP = 7
+TIME_MODERATE_SLEEP = 0 #30
+MIN_SHORT_SLEEP = 0 #5
+MAX_SHORT_SLEEP = 0 #7
 MAIN_TAG_HOW_MANY_SYMBOLS = 'div'
 MAIN_CLASS_HOW_MANY_SYMBOLS = 'Pos(r) Pos(r) Mih(265px)'
 SUB_TAG_HOW_MANY_SYMBOLS = 'span'
@@ -37,8 +38,11 @@ COUNT_IS = '&count='
 START_URL_FINANCIALS = 'https://finance.yahoo.com/quote/'
 REST_URL_FINANCIALS = '/financials?p='
 LONG_SLEEP_DEBUG_LOGGER = "The program is sleeping"
-JSON_FILES_PATH = "./json_files/"
+JSON_FILES_PATH = "json_files"
 CREATE_JSON_FOLDER_MESSAGE = "Json folder was created"
+FINANCIALS_DATA_FILE_NAME = "_financials.json"
+DAILY_DATA_FILE_NAME = "_daily_data.json"
+
 
 
 # get_daily_data
@@ -71,9 +75,8 @@ ASSUMPTION_TBODY_LEN = 1
 LEN_OF_DICT_DAILY_LOGGER_MESSAGE = "The length of the daily data dict that was created is: "
 NOW_SYMBOLS_MESSAGE_LOGGER = "Found the symbol: "
 ALREADY_EXIST_SYMBOL = "already exists in the dictionary"
-DAILY_DATA_FILE_NAME = "_daily_data.json"
 SYMBOL_SECTOR_DATA_FILE_NAME = "_symbol_sector.json"
-FINANCIALS_DATA_FILE_NAME = "_financials.json"
+
 DATA_LIST_EMPTY = "Can't find the wanted data."
 RESPONSE_EMPTY = "The response is empty of the required content."
 SYMBOL_EXISTS_LOGGER_MESSAGE = ": Data about the current symbol already exists in the daily dictionary"

@@ -6,6 +6,7 @@ from logs import logger
 import json
 from datetime import datetime
 import os
+import sys
 
 
 def program_sleep(counter=None):
@@ -78,7 +79,7 @@ def check_if_json_folder_exist_and_create():
     The function checks whether the folder containing the Json files
     with the obtained data exists or not. If not the function creates this folder.
     """
-    if not os.path.exists(project_conf.JSON_FILES_PATH):
+    if not os.path.exists(os.path.abspath(os.path.join(os.getcwd(),project_conf.JSON_FILES_PATH))):
         os.makedirs(project_conf.JSON_FILES_PATH)
         logger.logger.info(project_conf.CREATE_JSON_FOLDER_MESSAGE)
 
@@ -89,8 +90,9 @@ def to_json_daily_data(daily_data):
     The name of the file: "timestamp_daily_data.json"
     """
     check_if_json_folder_exist_and_create()
-    with open(project_conf.JSON_FILES_PATH +
-              str(create_timestamp()).replace(".", "-") + project_conf.DAILY_DATA_FILE_NAME, 'w') as outfile:
+    path_file = os.path.abspath(os.path.join(os.getcwd(),project_conf.JSON_FILES_PATH , str(create_timestamp()).replace(".", "-") + project_conf.DAILY_DATA_FILE_NAME))
+    print(path_file)
+    with open(path_file, 'w') as outfile:
         json.dump(daily_data, outfile, indent=4)
     logger.logger.info("A json file with the daily data was created")
 
@@ -100,8 +102,9 @@ def to_json_financials(financials_data):
     The function gets the obtained data from the financials reports and write it to a json file.
     The name of the file: "timestamp_financials.json
     """
-    with open(project_conf.JSON_FILES_PATH +
-              str(create_timestamp()).replace(".", "-") + project_conf.FINANCIALS_DATA_FILE_NAME, 'w') as outfile:
+    path_file = os.path.abspath(os.path.join(os.getcwd(),project_conf.JSON_FILES_PATH , str(create_timestamp()).replace(".", "-") + project_conf.FINANCIALS_DATA_FILE_NAME))
+    print(path_file)
+    with open(path_file, 'w') as outfile:
         json.dump(financials_data, outfile, indent=4)
     logger.logger.info("A json file with the financials data was created")
 
