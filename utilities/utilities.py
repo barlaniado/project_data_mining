@@ -6,8 +6,6 @@ from logs import logger
 import json
 from datetime import datetime
 import os
-import sys
-
 
 def program_sleep(counter=None):
     """
