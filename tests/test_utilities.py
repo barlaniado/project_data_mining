@@ -1,6 +1,9 @@
-from utilities import utilities
 from bs4 import BeautifulSoup
+import sys
+import os
+sys.path.append(os.path.join(os.path.abspath(os.path.join(os.getcwd(), os.pardir))))
 from configuration import project_conf
+from utilities import utilities
 
 
 def test_calculate_how_many_pages():
