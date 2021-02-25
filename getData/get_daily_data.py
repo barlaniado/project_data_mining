@@ -7,6 +7,7 @@ import requests
 import sys
 
 
+
 def get_price(tr):
     """
     The function retrieve the daily price of a stock of a company.
@@ -14,7 +15,14 @@ def get_price(tr):
     data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_=project_conf.CLASS_GET_DAILY_DATA)
     if not data_list:
         logger.logger.warning(project_conf.DATA_LIST_EMPTY)
-    price = data_list[project_conf.PRICE_INDEX].text
+    try:
+        price = data_list[project_conf.PRICE_INDEX].text
+        price = float(price)
+        if price < 0:
+            raise ValueError # price can not be less than 0
+    except ValueError:
+        logger.logger.error(project_conf.INVALID_PRICE_LOG_MESSAGE)
+        return None
     return price
 
 
@@ -38,6 +46,11 @@ def get_price_change(tr):
     if not data_list:
         logger.logger.warning(project_conf.DATA_LIST_EMPTY)
     price_change = data_list[project_conf.PRICE_CHANGE_INDEX].text
+    try:
+        price_change = float(price_change)
+    except ValueError:
+        logger.logger.error(project_conf.INVALID_PRICE_CHANGE_LOG_MESSAGE)
+        return None
     return price_change
 
 
@@ -50,6 +63,13 @@ def get_price_change_percentage(tr):
     if not data_list:
         logger.logger.warning(project_conf.DATA_LIST_EMPTY)
     price_change_percentage = data_list[project_conf.PRICE_CHANGE_PERCENTAGE].text
+    try:
+        if price_change_percentage[project_conf.INDEX_PERCENTAGE_IN_TEXT] != project_conf.PERCENTAGE_SIGN:
+            raise ValueError
+        price_change_percentage = float(price_change_percentage.replace(project_conf.PERCENTAGE_SIGN,"", project_conf.HOW_MANY_REPLACE_PERCENTAGE_ALLOWED))
+    except ValueError:
+        logger.logger.error(project_conf.INVALID_PRICE_CHANGE_PERCETAGE_LOG_MESSAGE)
+        return None
     return price_change_percentage
 
 
@@ -105,6 +125,8 @@ def scrape_sector_pages():
         tbody = page.find_all(project_conf.TAG_TABLE_IN_PAGE)
         if len(tbody) > 1:
             logger.logger.warning(project_conf.LOGGER_WARNING_MESSAGE)
+        if len(tbody) == 0:
+            logger.logger.warning()
         tbody = tbody[project_conf.TABLE_CONTENT_INDEX]
         build_sectors_and_daily_dict(tbody, sector, symbol_list, daily_data)
         for offset in range(project_conf.HOW_MANY_SYMBOLS_EACH_PAGE, how_many_pages * project_conf.COUNT,
@@ -146,7 +168,7 @@ def build_sectors_and_daily_dict(tbody, sector, symbol_list, daily_dict):
         date_time_obj = str(datetime.now())
         if current_symbol not in daily_dict:
             symbol_list.append(current_symbol)
-            daily_dict[current_symbol] = {project_conf.KEY_TIME: date_time_obj,
+            current_daily_dict = {project_conf.KEY_TIME: date_time_obj,
                                           project_conf.KEY_SECTOR: sector,
                                           project_conf.KEY_PRICE: get_price(tr),
                                           project_conf.KEY_PRICE_CHANGE: get_price_change(tr),
@@ -154,6 +176,10 @@ def build_sectors_and_daily_dict(tbody, sector, symbol_list, daily_dict):
                                               get_price_change_percentage(tr),
                                           project_conf.KEY_VOLUME:  get_volume(tr),
                                           project_conf.KEY_AVG_VOLUME: get_avg_vol(tr)}
-    logger.logger.info(project_conf.LOGGER_MESSAGE_BUILD_DAILY_SECTOR_DICT)
+            daily_dict[current_symbol] = current_daily_dict
+            logger.logger.debug(current_daily_dict)
+            logger.logger.info(project_conf.LOGGER_MESSAGE_BUILD_DAILY_SECTOR_DICT)
+        else:
+            logger.logger.info(current_symbol + project_conf.SYMBOL_EXISTS_LOGGER_MESSAGE)
     return
 

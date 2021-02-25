@@ -51,8 +51,12 @@ def get_data_financial_statements(symbol, counter_symbols):
             now_net_income = 1
             counter = 0
     if data_indicator == 1:
-        return {symbol: data_dict}
+        dict_to_return = {symbol: data_dict}
+        logger.logger.info(project_conf.DATA_FINANICIALS_ADDED + symbol)
+        logger.logger.debug(dict_to_return)
+        return dict_to_return
     else:
+        logger.logger.warning(project_conf.NO_DATA_MESSAGE_LOGGER + symbol)
         return {symbol: None}
 
 

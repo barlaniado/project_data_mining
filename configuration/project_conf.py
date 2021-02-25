@@ -1,9 +1,10 @@
 # requests_webpages
-
+"""
 SECTORS = ["Technology", "Basic materials", "Healthcare", "Energy", "Communication Services",
            "Consumer Cyclical", "consumer Defensive", "Financial Services", "Industrials", "Real Estate",
            "utilities"]
-
+"""
+SECTORS = ["Basic materials"]
 COUNT = 100
 HTML_PARSER = 'html.parser'
 HEADERS = {
@@ -17,12 +18,12 @@ VALUE_SLEEP_NO_COUNTER = None
 MIN_TIME_SLEEP_NO_COUNTER = 5
 MAX_TIME_SLEEP_NO_COUNTER = 7
 WHEN_LONG_SLEEP = 1000
-TIME_LONG_SLEEP = 120
+TIME_LONG_SLEEP = 0 #120
 NO_REMAINDER = 0
 WHEN_MODERATE_SLEEP = 100
-TIME_MODERATE_SLEEP = 30
-MIN_SHORT_SLEEP = 5
-MAX_SHORT_SLEEP = 7
+TIME_MODERATE_SLEEP = 0 #30
+MIN_SHORT_SLEEP = 0 #5
+MAX_SHORT_SLEEP = 0 #7
 MAIN_TAG_HOW_MANY_SYMBOLS = 'div'
 MAIN_CLASS_HOW_MANY_SYMBOLS = 'Pos(r) Pos(r) Mih(265px)'
 SUB_TAG_HOW_MANY_SYMBOLS = 'span'
@@ -75,6 +76,15 @@ DAILY_DATA_FILE_NAME = "_daily_data.json"
 SYMBOL_SECTOR_DATA_FILE_NAME = "_symbol_sector.json"
 FINANCIALS_DATA_FILE_NAME = "_financials.json"
 DATA_LIST_EMPTY = "Can't find the wanted data."
+RESPONSE_EMPTY = "The response is empty of the required content."
+SYMBOL_EXISTS_LOGGER_MESSAGE = ": Data about the current symbol already exists in the daily dictionary"
+INVALID_PRICE_LOG_MESSAGE = "Invalid price"
+INVALID_PRICE_CHANGE_LOG_MESSAGE = "Invalid price change"
+INVALID_PRICE_CHANGE_PERCETAGE_LOG_MESSAGE = "The percentage change is invalid"
+INDEX_PERCENTAGE_IN_TEXT = -1
+PERCENTAGE_SIGN = "%"
+HOW_MANY_REPLACE_PERCENTAGE_ALLOWED = 1
+
 
 # get_data_of_financial_statements
 TAG_DATA_FINANCIAL_STATEMENTS = 'span'
@@ -85,7 +95,8 @@ KEY_NET_INCOME = 'Net Income'
 VALUE_IF_CANT_CAST_TO_INT = None
 NEXT_TO_COME_TITLES = 'Breakdown'
 NEXT_TO_COME_DATA_NET_INCOME = 'Net Income Common Stockholders'
-
+NO_DATA_MESSAGE_LOGGER = "Report data was not obtained - "
+DATA_FINANICIALS_ADDED = "The data on the financial statements have been added to the dictionary - "
 
 
 

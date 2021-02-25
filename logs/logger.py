@@ -2,7 +2,6 @@ import logging
 import sys
 import os
 
-
 logger = logging.getLogger('data_mining')
 logger.setLevel(logging.DEBUG)
 # Create Formatter
@@ -17,9 +16,3 @@ stream_handler = logging.StreamHandler(sys.stdout)
 stream_handler.setLevel(logging.DEBUG)
 stream_handler.setFormatter(formatter)
 logger.addHandler(stream_handler)
-
-
-
-
-
-

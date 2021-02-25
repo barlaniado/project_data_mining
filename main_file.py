@@ -11,6 +11,7 @@ def main():
     """
 
     tuple_list_dict = get_daily_data.scrape_sector_pages()
+
     list_symbols = list(tuple_list_dict[0])
     financial_statements = get_data_of_financial_statements.get_all_data_financial_statements(list_symbols)
     logger.logger.info(f"The dictionary of the financial reports was created. the dictionary size is:"
