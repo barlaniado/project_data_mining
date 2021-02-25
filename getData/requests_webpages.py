@@ -19,10 +19,7 @@ def get_content_sector_page(page_url):
         logger.logger.error(" HTTPError - sector page scraping")
         raise requests.exceptions.HTTPError
     response_code = page.status_code
-    if response_code == 200:
-        logger.logger.info("The code of the current request: " + str(page.status_code))
-    elif response_code == 404:
-        logger.logger.warning("The code of the current request: " + str(page.status_code) + ":" + "Page not found")
+    logger.logger.info("The code of the current request: " + str(response_code ))
     utilities.program_sleep()
     page_soup = BeautifulSoup(page.text, project_conf.HTML_PARSER)
     logger.logger.info("Return a BeautifulSoup object")
@@ -42,7 +39,10 @@ def get_content_financial_statements(symbol):
         page.raise_for_status() # raise an exception if status is not 200
     except requests.exceptions.ConnectionError:
         logger.logger.error(" ConnectionError - sector page scraping")
-        raise requests.exceptions.ConnectionError 
+        raise requests.exceptions.ConnectionError
+    except requests.exceptions.HTTPError:
+        logger.logger.error(" HTTPError - sector page scraping")
+        raise requests.exceptions.HTTPError
     logger.logger.info("The code of the current request: " + str(page.status_code))
     soup = BeautifulSoup(page.text,  project_conf.HTML_PARSER)
     logger.logger.info("Return a BeautifulSoup object")

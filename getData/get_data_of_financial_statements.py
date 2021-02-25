@@ -20,7 +20,10 @@ def get_data_financial_statements(symbol, counter_symbols):
     try:
         soup = requests_webpages.get_content_financial_statements(symbol)
     except requests.exceptions.ConnectionError:
-        logger.logger.warning(f"Could not get {symbol}'s financial statements")
+        logger.logger.warning(f"Could not get {symbol}'s financial statements - ConnectionError")
+        return {symbol: None}
+    except requests.exceptions.HTTPError:
+        logger.logger.warning(f"Could not get {symbol}'s financial statements - HTTPError")
         return {symbol: None}
     all_span = soup.find_all(project_conf.TAG_DATA_FINANCIAL_STATEMENTS)
     for i in all_span:
