@@ -1,9 +1,8 @@
 # requests_webpages
 
 SECTORS = ["Technology", "Basic materials", "Healthcare", "Energy", "Communication Services",
-            "Consumer Cyclical", "consumer Defensive", "Financial Services", "Industrials", "Real Estate",
-            "utilities"]
-
+           "Consumer Cyclical", "consumer Defensive", "Financial Services", "Industrials", "Real Estate",
+           "utilities"]
 
 COUNT = 100
 HTML_PARSER = 'html.parser'
@@ -12,7 +11,6 @@ HEADERS = {
         'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko)'
         ' Chrome/56.0.2924.87 Safari/537.36'
 }
-
 
 # utilities
 VALUE_SLEEP_NO_COUNTER = None
@@ -43,7 +41,6 @@ JSON_FILES_PATH = "json_files"
 CREATE_JSON_FOLDER_MESSAGE = "Json folder was created"
 FINANCIALS_DATA_FILE_NAME = "_financials.json"
 DAILY_DATA_FILE_NAME = "_daily_data.json"
-
 
 # get_daily_data
 TAG_TO_RETRIEVE_DAILY_DATA = 'span'
@@ -86,7 +83,6 @@ INDEX_PERCENTAGE_IN_TEXT = -1
 PERCENTAGE_SIGN = "%"
 HOW_MANY_REPLACE_PERCENTAGE_ALLOWED = 1
 
-
 # get_data_of_financial_statements
 TAG_DATA_FINANCIAL_STATEMENTS = 'span'
 TOTAL_REVENUE_TITLE = 'Total Revenue'
@@ -98,6 +94,3 @@ NEXT_TO_COME_TITLES = 'Breakdown'
 NEXT_TO_COME_DATA_NET_INCOME = 'Net Income Common Stockholders'
 NO_DATA_MESSAGE_LOGGER = "Report data was not obtained - "
 DATA_FINANICIALS_ADDED = "The data on the financial statements have been added to the dictionary - "
-
-
-
