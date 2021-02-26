@@ -16,6 +16,10 @@ def get_price(tr):
         logger.logger.warning(project_conf.DATA_LIST_EMPTY)
     try:
         price = data_list[project_conf.PRICE_INDEX].text
+    except IndexError:
+        return None
+    try:
+
         price = float(price)
         if price < 0:
             raise ValueError # price can not be less than 0
@@ -32,7 +36,10 @@ def get_symbol(tr):
     data_list = tr.find_all("a")
     if not data_list:
         logger.logger.warning(project_conf.DATA_LIST_EMPTY)
-    symbol = data_list[0].text
+    try:
+        symbol = data_list[0].text
+    except IndexError:
+        return None
     return symbol
 
 
@@ -44,7 +51,10 @@ def get_price_change(tr):
     data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_= project_conf.CLASS_GET_DAILY_DATA)
     if not data_list:
         logger.logger.warning(project_conf.DATA_LIST_EMPTY)
-    price_change = data_list[project_conf.PRICE_CHANGE_INDEX].text
+    try:
+        price_change = data_list[project_conf.PRICE_CHANGE_INDEX].text
+    except IndexError:
+        return None
     try:
         price_change = float(price_change)
     except ValueError:
@@ -61,7 +71,10 @@ def get_price_change_percentage(tr):
     data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_=project_conf.CLASS_GET_DAILY_DATA)
     if not data_list:
         logger.logger.warning(project_conf.DATA_LIST_EMPTY)
-    price_change_percentage = data_list[project_conf.PRICE_CHANGE_PERCENTAGE].text
+    try:
+        price_change_percentage = data_list[project_conf.PRICE_CHANGE_PERCENTAGE].text
+    except IndexError:
+        return None
     try:
         if price_change_percentage[project_conf.INDEX_PERCENTAGE_IN_TEXT] != project_conf.PERCENTAGE_SIGN:
             raise ValueError
@@ -79,7 +92,10 @@ def get_volume(tr):
     data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_=project_conf.CLASS_GET_DAILY_DATA)
     if not data_list:
         logger.logger.warning(project_conf.DATA_LIST_EMPTY)
-    volume = data_list[project_conf.VOLUME_CURRENT_DAY].text
+    try:
+        volume = data_list[project_conf.VOLUME_CURRENT_DAY].text
+    except IndexError:
+        return None
     return volume
 
 

@@ -1,7 +1,10 @@
 # requests_webpages
+
 SECTORS = ["Technology", "Basic materials", "Healthcare", "Energy", "Communication Services",
             "Consumer Cyclical", "consumer Defensive", "Financial Services", "Industrials", "Real Estate",
             "utilities"]
+
+
 COUNT = 100
 HTML_PARSER = 'html.parser'
 HEADERS = {
