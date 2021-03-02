@@ -6,8 +6,7 @@ from logs import logger
 
 def main():
     """
-    This is the main function that receive the web site url and parse the data to two dictionaries:
-    a daily and annual financial data of each company in each sector at that wbe site.
+    This is the function that manages the whole process.
     """
     tuple_list_dict = get_daily_data.scrape_sector_pages()
 
