@@ -6,7 +6,7 @@ from logs import logger
 
 def main():
     """
-    This is the function that manages the whole process.
+    This is the function that manages the whole scraping process.
     """
     tuple_list_dict = get_daily_data.scrape_sector_pages()
 
