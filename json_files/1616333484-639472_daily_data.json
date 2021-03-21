@@ -1,0 +1,1514 @@
+{
+    "BHP": {
+        "Time": "2021-03-21 13:02:27.387437",
+        "Sector": "Basic Materials",
+        "Price": 68.83,
+        "Price change": -1.06,
+        "Percentage": -1.52,
+        "Volume": "2.035M",
+        "Avg Vol (3 month)": "2.677M"
+    },
+    "BBL": {
+        "Time": "2021-03-21 13:02:27.388053",
+        "Sector": "Basic Materials",
+        "Price": 57.1,
+        "Price change": -0.69,
+        "Percentage": -1.19,
+        "Volume": "1.694M",
+        "Avg Vol (3 month)": "1.714M"
+    },
+    "LIN": {
+        "Time": "2021-03-21 13:02:27.388712",
+        "Sector": "Basic Materials",
+        "Price": 269.12,
+        "Price change": 1.22,
+        "Percentage": 0.46,
+        "Volume": "3.693M",
+        "Avg Vol (3 month)": "1.837M"
+    },
+    "RIO": {
+        "Time": "2021-03-21 13:02:27.389459",
+        "Sector": "Basic Materials",
+        "Price": 76.55,
+        "Price change": -1.01,
+        "Percentage": -1.3,
+        "Volume": "2.753M",
+        "Avg Vol (3 month)": "2.237M"
+    },
+    "CTA-PB": {
+        "Time": "2021-03-21 13:02:27.390137",
+        "Sector": "Basic Materials",
+        "Price": 106.21,
+        "Price change": 0.04,
+        "Percentage": 0.04,
+        "Volume": "836",
+        "Avg Vol (3 month)": "1,084"
+    },
+    "VALE": {
+        "Time": "2021-03-21 13:02:27.390734",
+        "Sector": "Basic Materials",
+        "Price": 17.25,
+        "Price change": -0.03,
+        "Percentage": -0.17,
+        "Volume": "29.861M",
+        "Avg Vol (3 month)": "28.913M"
+    },
+    "CTA-PA": {
+        "Time": "2021-03-21 13:02:27.391301",
+        "Sector": "Basic Materials",
+        "Price": 89.95,
+        "Price change": 0.2,
+        "Percentage": 0.22,
+        "Volume": "1,743",
+        "Avg Vol (3 month)": "736"
+    },
+    "SHW": {
+        "Time": "2021-03-21 13:02:27.391853",
+        "Sector": "Basic Materials",
+        "Price": 706.25,
+        "Price change": -3.88,
+        "Percentage": -0.55,
+        "Volume": "943,266",
+        "Avg Vol (3 month)": "486,557"
+    },
+    "APD": {
+        "Time": "2021-03-21 13:02:27.392467",
+        "Sector": "Basic Materials",
+        "Price": 275.4,
+        "Price change": 6.37,
+        "Percentage": 2.37,
+        "Volume": "2.432M",
+        "Avg Vol (3 month)": "1.215M"
+    },
+    "ECL": {
+        "Time": "2021-03-21 13:02:27.393036",
+        "Sector": "Basic Materials",
+        "Price": 207.58,
+        "Price change": -1.97,
+        "Percentage": -0.94,
+        "Volume": "1.954M",
+        "Avg Vol (3 month)": "933,680"
+    },
+    "SCCO": {
+        "Time": "2021-03-21 13:02:27.393618",
+        "Sector": "Basic Materials",
+        "Price": 72.14,
+        "Price change": -0.8,
+        "Percentage": -1.1,
+        "Volume": "1.422M",
+        "Avg Vol (3 month)": "1.048M"
+    },
+    "FCX": {
+        "Time": "2021-03-21 13:02:27.394177",
+        "Sector": "Basic Materials",
+        "Price": 34.99,
+        "Price change": -0.43,
+        "Percentage": -1.21,
+        "Volume": "32.818M",
+        "Avg Vol (3 month)": "23.671M"
+    },
+    "NEM": {
+        "Time": "2021-03-21 13:02:27.394706",
+        "Sector": "Basic Materials",
+        "Price": 61.93,
+        "Price change": -0.33,
+        "Percentage": -0.53,
+        "Volume": "27.075M",
+        "Avg Vol (3 month)": "7.013M"
+    },
+    "DOW": {
+        "Time": "2021-03-21 13:02:27.395236",
+        "Sector": "Basic Materials",
+        "Price": 63.91,
+        "Price change": -0.81,
+        "Percentage": -1.25,
+        "Volume": "6.446M",
+        "Avg Vol (3 month)": "4.267M"
+    },
+    "DD": {
+        "Time": "2021-03-21 13:02:27.396049",
+        "Sector": "Basic Materials",
+        "Price": 77.1,
+        "Price change": -1.27,
+        "Percentage": -1.62,
+        "Volume": "5.11M",
+        "Avg Vol (3 month)": "12.97M"
+    },
+    "GOLD": {
+        "Time": "2021-03-21 13:02:27.396721",
+        "Sector": "Basic Materials",
+        "Price": 20.96,
+        "Price change": 0.1,
+        "Percentage": 0.48,
+        "Volume": "21.172M",
+        "Avg Vol (3 month)": "19.906M"
+    },
+    "LYB": {
+        "Time": "2021-03-21 13:02:27.397312",
+        "Sector": "Basic Materials",
+        "Price": 106.77,
+        "Price change": -1.33,
+        "Percentage": -1.23,
+        "Volume": "4.997M",
+        "Avg Vol (3 month)": "1.697M"
+    },
+    "CRH": {
+        "Time": "2021-03-21 13:02:27.397925",
+        "Sector": "Basic Materials",
+        "Price": 45.16,
+        "Price change": -0.75,
+        "Percentage": -1.63,
+        "Volume": "815,450",
+        "Avg Vol (3 month)": "482,159"
+    },
+    "CTVA": {
+        "Time": "2021-03-21 13:02:27.398508",
+        "Sector": "Basic Materials",
+        "Price": 47.07,
+        "Price change": 0.11,
+        "Percentage": 0.23,
+        "Volume": "9.102M",
+        "Avg Vol (3 month)": "3.414M"
+    },
+    "PPG": {
+        "Time": "2021-03-21 13:02:27.399062",
+        "Sector": "Basic Materials",
+        "Price": 147.42,
+        "Price change": -2.38,
+        "Percentage": -1.59,
+        "Volume": "1.841M",
+        "Avg Vol (3 month)": "1.418M"
+    },
+    "IFF": {
+        "Time": "2021-03-21 13:02:27.399668",
+        "Sector": "Basic Materials",
+        "Price": 137.31,
+        "Price change": -0.37,
+        "Percentage": -0.27,
+        "Volume": "5.036M",
+        "Avg Vol (3 month)": "5.898M"
+    },
+    "NTR": {
+        "Time": "2021-03-21 13:02:27.400360",
+        "Sector": "Basic Materials",
+        "Price": 56.99,
+        "Price change": -0.6,
+        "Percentage": -1.04,
+        "Volume": "1.862M",
+        "Avg Vol (3 month)": "1.954M"
+    },
+    "MT": {
+        "Time": "2021-03-21 13:02:27.400932",
+        "Sector": "Basic Materials",
+        "Price": 27.47,
+        "Price change": 0.56,
+        "Percentage": 2.08,
+        "Volume": "7.952M",
+        "Avg Vol (3 month)": "5.158M"
+    },
+    "FNV": {
+        "Time": "2021-03-21 13:02:27.401523",
+        "Sector": "Basic Materials",
+        "Price": 124.33,
+        "Price change": 1.01,
+        "Percentage": 0.82,
+        "Volume": "1.562M",
+        "Avg Vol (3 month)": "777,254"
+    },
+    "VMC": {
+        "Time": "2021-03-21 13:02:27.402080",
+        "Sector": "Basic Materials",
+        "Price": 165.27,
+        "Price change": -2.78,
+        "Percentage": -1.65,
+        "Volume": "1.177M",
+        "Avg Vol (3 month)": "769,945"
+    },
+    "NUE": {
+        "Time": "2021-03-21 13:02:27.402661",
+        "Sector": "Basic Materials",
+        "Price": 71.32,
+        "Price change": 0.92,
+        "Percentage": 1.31,
+        "Volume": "6.491M",
+        "Avg Vol (3 month)": "2.485M"
+    },
+    "MLM": {
+        "Time": "2021-03-21 13:02:27.403232",
+        "Sector": "Basic Materials",
+        "Price": 332.06,
+        "Price change": -7.73,
+        "Percentage": -2.27,
+        "Volume": "618,882",
+        "Avg Vol (3 month)": "531,757"
+    },
+    "PKX": {
+        "Time": "2021-03-21 13:02:27.403746",
+        "Sector": "Basic Materials",
+        "Price": 64.8,
+        "Price change": -0.19,
+        "Percentage": -0.29,
+        "Volume": "230,807",
+        "Avg Vol (3 month)": "175,444"
+    },
+    "SUZ": {
+        "Time": "2021-03-21 13:02:27.404363",
+        "Sector": "Basic Materials",
+        "Price": 13.46,
+        "Price change": -0.03,
+        "Percentage": -0.22,
+        "Volume": "519,988",
+        "Avg Vol (3 month)": "650,149"
+    },
+    "ALB": {
+        "Time": "2021-03-21 13:02:27.404939",
+        "Sector": "Basic Materials",
+        "Price": 151.5,
+        "Price change": -1.02,
+        "Percentage": -0.67,
+        "Volume": "1.671M",
+        "Avg Vol (3 month)": "1.931M"
+    },
+    "WPM": {
+        "Time": "2021-03-21 13:02:27.405513",
+        "Sector": "Basic Materials",
+        "Price": 39.23,
+        "Price change": -0.18,
+        "Percentage": -0.46,
+        "Volume": "3.403M",
+        "Avg Vol (3 month)": "2.746M"
+    },
+    "CE": {
+        "Time": "2021-03-21 13:02:27.406083",
+        "Sector": "Basic Materials",
+        "Price": 147.64,
+        "Price change": -1.03,
+        "Percentage": -0.69,
+        "Volume": "1.842M",
+        "Avg Vol (3 month)": "849,872"
+    },
+    "AVTR": {
+        "Time": "2021-03-21 13:02:27.406653",
+        "Sector": "Basic Materials",
+        "Price": 28.7,
+        "Price change": 0.55,
+        "Percentage": 1.95,
+        "Volume": "7.598M",
+        "Avg Vol (3 month)": "4.663M"
+    },
+    "EMN": {
+        "Time": "2021-03-21 13:02:27.407226",
+        "Sector": "Basic Materials",
+        "Price": 111.8,
+        "Price change": -0.9,
+        "Percentage": -0.8,
+        "Volume": "3.904M",
+        "Avg Vol (3 month)": "886,600"
+    },
+    "AVTR-PA": {
+        "Time": "2021-03-21 13:02:27.407879",
+        "Sector": "Basic Materials",
+        "Price": 90.58,
+        "Price change": 2.12,
+        "Percentage": 2.4,
+        "Volume": "6,768",
+        "Avg Vol (3 month)": "188,463"
+    },
+    "AEM": {
+        "Time": "2021-03-21 13:02:27.408689",
+        "Sector": "Basic Materials",
+        "Price": 60.64,
+        "Price change": 0.52,
+        "Percentage": 0.86,
+        "Volume": "1.002M",
+        "Avg Vol (3 month)": "1.334M"
+    },
+    "SQM": {
+        "Time": "2021-03-21 13:02:27.409241",
+        "Sector": "Basic Materials",
+        "Price": 54.54,
+        "Price change": 0.75,
+        "Percentage": 1.39,
+        "Volume": "991,436",
+        "Avg Vol (3 month)": "1.341M"
+    },
+    "FMC": {
+        "Time": "2021-03-21 13:02:27.410037",
+        "Sector": "Basic Materials",
+        "Price": 109.89,
+        "Price change": -0.21,
+        "Percentage": -0.19,
+        "Volume": "1.159M",
+        "Avg Vol (3 month)": "921,549"
+    },
+    "SMG": {
+        "Time": "2021-03-21 13:02:27.410767",
+        "Sector": "Basic Materials",
+        "Price": 234.89,
+        "Price change": 6.07,
+        "Percentage": 2.65,
+        "Volume": "621,777",
+        "Avg Vol (3 month)": "390,327"
+    },
+    "SBSW": {
+        "Time": "2021-03-21 13:02:27.411517",
+        "Sector": "Basic Materials",
+        "Price": 18.21,
+        "Price change": -0.85,
+        "Percentage": -4.46,
+        "Volume": "6.545M",
+        "Avg Vol (3 month)": "2.826M"
+    },
+    "JHX": {
+        "Time": "2021-03-21 13:02:27.421089",
+        "Sector": "Basic Materials",
+        "Price": 28.99,
+        "Price change": -0.65,
+        "Percentage": -2.19,
+        "Volume": "17,290",
+        "Avg Vol (3 month)": "24,767"
+    },
+    "MOS": {
+        "Time": "2021-03-21 13:02:27.421928",
+        "Sector": "Basic Materials",
+        "Price": 33.31,
+        "Price change": -0.17,
+        "Percentage": -0.51,
+        "Volume": "7.85M",
+        "Avg Vol (3 month)": "5.708M"
+    },
+    "WLK": {
+        "Time": "2021-03-21 13:02:27.422642",
+        "Sector": "Basic Materials",
+        "Price": 91.84,
+        "Price change": -1.03,
+        "Percentage": -1.11,
+        "Volume": "748,361",
+        "Avg Vol (3 month)": "526,840"
+    },
+    "ACH": {
+        "Time": "2021-03-21 13:02:27.423528",
+        "Sector": "Basic Materials",
+        "Price": 11.7,
+        "Price change": -0.38,
+        "Percentage": -3.15,
+        "Volume": "300,230",
+        "Avg Vol (3 month)": "165,521"
+    },
+    "RPM": {
+        "Time": "2021-03-21 13:02:27.424308",
+        "Sector": "Basic Materials",
+        "Price": 87.95,
+        "Price change": -1.01,
+        "Percentage": -1.14,
+        "Volume": "1.129M",
+        "Avg Vol (3 month)": "600,280"
+    },
+    "VEDL": {
+        "Time": "2021-03-21 13:02:27.425045",
+        "Sector": "Basic Materials",
+        "Price": 12.14,
+        "Price change": 0.12,
+        "Percentage": 1.0,
+        "Volume": "1.5M",
+        "Avg Vol (3 month)": "945,952"
+    },
+    "TECK": {
+        "Time": "2021-03-21 13:02:27.425739",
+        "Sector": "Basic Materials",
+        "Price": 20.28,
+        "Price change": -1.34,
+        "Percentage": -6.2,
+        "Volume": "6.774M",
+        "Avg Vol (3 month)": "4.609M"
+    },
+    "CF": {
+        "Time": "2021-03-21 13:02:27.426466",
+        "Sector": "Basic Materials",
+        "Price": 48.17,
+        "Price change": -0.18,
+        "Percentage": -0.37,
+        "Volume": "3.905M",
+        "Avg Vol (3 month)": "2.312M"
+    },
+    "CX": {
+        "Time": "2021-03-21 13:02:27.427168",
+        "Sector": "Basic Materials",
+        "Price": 6.7,
+        "Price change": -0.19,
+        "Percentage": -2.76,
+        "Volume": "6.326M",
+        "Avg Vol (3 month)": "11.167M"
+    },
+    "STLD": {
+        "Time": "2021-03-21 13:02:27.427884",
+        "Sector": "Basic Materials",
+        "Price": 47.19,
+        "Price change": -0.16,
+        "Percentage": -0.34,
+        "Volume": "6.261M",
+        "Avg Vol (3 month)": "2.092M"
+    },
+    "RS": {
+        "Time": "2021-03-21 13:02:27.428635",
+        "Sector": "Basic Materials",
+        "Price": 148.78,
+        "Price change": -0.57,
+        "Percentage": -0.38,
+        "Volume": "1.25M",
+        "Avg Vol (3 month)": "378,016"
+    },
+    "KL": {
+        "Time": "2021-03-21 13:02:27.429326",
+        "Sector": "Basic Materials",
+        "Price": 35.0,
+        "Price change": 0.72,
+        "Percentage": 2.1,
+        "Volume": "2.185M",
+        "Avg Vol (3 month)": "1.906M"
+    },
+    "AU": {
+        "Time": "2021-03-21 13:02:27.430041",
+        "Sector": "Basic Materials",
+        "Price": 21.96,
+        "Price change": 0.11,
+        "Percentage": 0.5,
+        "Volume": "5.038M",
+        "Avg Vol (3 month)": "3.135M"
+    },
+    "SID": {
+        "Time": "2021-03-21 13:02:27.430776",
+        "Sector": "Basic Materials",
+        "Price": 6.42,
+        "Price change": -0.15,
+        "Percentage": -2.28,
+        "Volume": "4.98M",
+        "Avg Vol (3 month)": "3.749M"
+    },
+    "KGC": {
+        "Time": "2021-03-21 13:02:27.431588",
+        "Sector": "Basic Materials",
+        "Price": 6.92,
+        "Price change": 0.08,
+        "Percentage": 1.17,
+        "Volume": "17.746M",
+        "Avg Vol (3 month)": "17.456M"
+    },
+    "GFI": {
+        "Time": "2021-03-21 13:02:27.432382",
+        "Sector": "Basic Materials",
+        "Price": 10.04,
+        "Price change": 0.29,
+        "Percentage": 2.97,
+        "Volume": "15.395M",
+        "Avg Vol (3 month)": "6.586M"
+    },
+    "GGB": {
+        "Time": "2021-03-21 13:02:27.433100",
+        "Sector": "Basic Materials",
+        "Price": 5.17,
+        "Price change": 0.1,
+        "Percentage": 1.97,
+        "Volume": "14.727M",
+        "Avg Vol (3 month)": "7.211M"
+    },
+    "CLF": {
+        "Time": "2021-03-21 13:02:27.433810",
+        "Sector": "Basic Materials",
+        "Price": 16.63,
+        "Price change": -0.06,
+        "Percentage": -0.36,
+        "Volume": "16.753M",
+        "Avg Vol (3 month)": "17.852M"
+    },
+    "WFG": {
+        "Time": "2021-03-21 13:02:27.434520",
+        "Sector": "Basic Materials",
+        "Price": 65.57,
+        "Price change": 0.4,
+        "Percentage": 0.61,
+        "Volume": "146,334",
+        "Avg Vol (3 month)": "75,509"
+    },
+    "MP": {
+        "Time": "2021-03-21 13:02:27.435238",
+        "Sector": "Basic Materials",
+        "Price": 45.99,
+        "Price change": 5.49,
+        "Percentage": 13.56,
+        "Volume": "10.747M",
+        "Avg Vol (3 month)": "5.16M"
+    },
+    "ICL": {
+        "Time": "2021-03-21 13:02:27.436094",
+        "Sector": "Basic Materials",
+        "Price": 5.92,
+        "Price change": 0.0,
+        "Percentage": 0.0,
+        "Volume": "330,344",
+        "Avg Vol (3 month)": "167,249"
+    },
+    "TX": {
+        "Time": "2021-03-21 13:02:27.436798",
+        "Sector": "Basic Materials",
+        "Price": 37.12,
+        "Price change": 0.85,
+        "Percentage": 2.34,
+        "Volume": "1.185M",
+        "Avg Vol (3 month)": "543,962"
+    },
+    "PAAS": {
+        "Time": "2021-03-21 13:02:27.437518",
+        "Sector": "Basic Materials",
+        "Price": 33.32,
+        "Price change": -0.14,
+        "Percentage": -0.42,
+        "Volume": "3.13M",
+        "Avg Vol (3 month)": "3.495M"
+    },
+    "RGLD": {
+        "Time": "2021-03-21 13:02:27.438224",
+        "Sector": "Basic Materials",
+        "Price": 105.81,
+        "Price change": 0.05,
+        "Percentage": 0.05,
+        "Volume": "1.421M",
+        "Avg Vol (3 month)": "490,044"
+    },
+    "AXTA": {
+        "Time": "2021-03-21 13:02:27.438908",
+        "Sector": "Basic Materials",
+        "Price": 29.33,
+        "Price change": -0.21,
+        "Percentage": -0.71,
+        "Volume": "3.105M",
+        "Avg Vol (3 month)": "2.673M"
+    },
+    "HUN": {
+        "Time": "2021-03-21 13:02:27.439609",
+        "Sector": "Basic Materials",
+        "Price": 29.15,
+        "Price change": 0.42,
+        "Percentage": 1.46,
+        "Volume": "9.475M",
+        "Avg Vol (3 month)": "1.854M"
+    },
+    "OLN": {
+        "Time": "2021-03-21 13:02:27.440322",
+        "Sector": "Basic Materials",
+        "Price": 39.81,
+        "Price change": 0.85,
+        "Percentage": 2.18,
+        "Volume": "2.904M",
+        "Avg Vol (3 month)": "1.435M"
+    },
+    "MDU": {
+        "Time": "2021-03-21 13:02:27.441048",
+        "Sector": "Basic Materials",
+        "Price": 30.72,
+        "Price change": -0.2,
+        "Percentage": -0.65,
+        "Volume": "3.619M",
+        "Avg Vol (3 month)": "988,936"
+    },
+    "X": {
+        "Time": "2021-03-21 13:02:27.441757",
+        "Sector": "Basic Materials",
+        "Price": 22.41,
+        "Price change": -0.24,
+        "Percentage": -1.06,
+        "Volume": "19.944M",
+        "Avg Vol (3 month)": "19.163M"
+    },
+    "AA": {
+        "Time": "2021-03-21 13:02:27.442480",
+        "Sector": "Basic Materials",
+        "Price": 31.14,
+        "Price change": -0.05,
+        "Percentage": -0.16,
+        "Volume": "6.828M",
+        "Avg Vol (3 month)": "6.314M"
+    },
+    "EXP": {
+        "Time": "2021-03-21 13:02:27.443191",
+        "Sector": "Basic Materials",
+        "Price": 130.28,
+        "Price change": -1.07,
+        "Percentage": -0.81,
+        "Volume": "532,548",
+        "Avg Vol (3 month)": "347,219"
+    },
+    "ASH": {
+        "Time": "2021-03-21 13:02:27.443884",
+        "Sector": "Basic Materials",
+        "Price": 88.35,
+        "Price change": -0.78,
+        "Percentage": -0.88,
+        "Volume": "815,838",
+        "Avg Vol (3 month)": "551,004"
+    },
+    "BAK": {
+        "Time": "2021-03-21 13:02:27.444618",
+        "Sector": "Basic Materials",
+        "Price": 13.53,
+        "Price change": -0.01,
+        "Percentage": -0.07,
+        "Volume": "184,219",
+        "Avg Vol (3 month)": "236,437"
+    },
+    "AMRS": {
+        "Time": "2021-03-21 13:02:27.445328",
+        "Sector": "Basic Materials",
+        "Price": 20.82,
+        "Price change": 1.13,
+        "Percentage": 5.74,
+        "Volume": "4.982M",
+        "Avg Vol (3 month)": "5.373M"
+    },
+    "ESI": {
+        "Time": "2021-03-21 13:02:27.446039",
+        "Sector": "Basic Materials",
+        "Price": 19.75,
+        "Price change": -0.2,
+        "Percentage": -1.0,
+        "Volume": "2.325M",
+        "Avg Vol (3 month)": "1.901M"
+    },
+    "AVNT": {
+        "Time": "2021-03-21 13:02:27.446743",
+        "Sector": "Basic Materials",
+        "Price": 50.85,
+        "Price change": -0.36,
+        "Percentage": -0.7,
+        "Volume": "1.619M",
+        "Avg Vol (3 month)": "550,440"
+    },
+    "KWR": {
+        "Time": "2021-03-21 13:02:27.447458",
+        "Sector": "Basic Materials",
+        "Price": 248.23,
+        "Price change": 3.32,
+        "Percentage": 1.36,
+        "Volume": "239,342",
+        "Avg Vol (3 month)": "80,316"
+    },
+    "CC": {
+        "Time": "2021-03-21 13:02:27.448201",
+        "Sector": "Basic Materials",
+        "Price": 26.57,
+        "Price change": -0.26,
+        "Percentage": -0.97,
+        "Volume": "1.917M",
+        "Avg Vol (3 month)": "1.477M"
+    },
+    "UFPI": {
+        "Time": "2021-03-21 13:02:27.448895",
+        "Sector": "Basic Materials",
+        "Price": 70.39,
+        "Price change": -0.89,
+        "Percentage": -1.25,
+        "Volume": "1.011M",
+        "Avg Vol (3 month)": "335,014"
+    },
+    "DNMR": {
+        "Time": "2021-03-21 13:02:27.449596",
+        "Sector": "Basic Materials",
+        "Price": 49.98,
+        "Price change": 2.14,
+        "Percentage": 4.47,
+        "Volume": "6.064M",
+        "Avg Vol (3 month)": "2.481M"
+    },
+    "NEU": {
+        "Time": "2021-03-21 13:02:27.450308",
+        "Sector": "Basic Materials",
+        "Price": 388.93,
+        "Price change": -8.07,
+        "Percentage": -2.03,
+        "Volume": "65,141",
+        "Avg Vol (3 month)": "28,352"
+    },
+    "BCPC": {
+        "Time": "2021-03-21 13:02:27.451001",
+        "Sector": "Basic Materials",
+        "Price": 127.65,
+        "Price change": -0.53,
+        "Percentage": -0.41,
+        "Volume": "395,387",
+        "Avg Vol (3 month)": "125,867"
+    },
+    "WDFC": {
+        "Time": "2021-03-21 13:02:27.451699",
+        "Sector": "Basic Materials",
+        "Price": 296.87,
+        "Price change": 2.02,
+        "Percentage": 0.69,
+        "Volume": "225,793",
+        "Avg Vol (3 month)": "99,514"
+    },
+    "GRA": {
+        "Time": "2021-03-21 13:02:27.452457",
+        "Sector": "Basic Materials",
+        "Price": 58.79,
+        "Price change": -0.74,
+        "Percentage": -1.24,
+        "Volume": "609,807",
+        "Avg Vol (3 month)": "411,462"
+    },
+    "AG": {
+        "Time": "2021-03-21 13:02:27.453197",
+        "Sector": "Basic Materials",
+        "Price": 16.86,
+        "Price change": -0.14,
+        "Percentage": -0.82,
+        "Volume": "5.882M",
+        "Avg Vol (3 month)": "10.347M"
+    },
+    "UNVR": {
+        "Time": "2021-03-21 13:02:27.453897",
+        "Sector": "Basic Materials",
+        "Price": 21.33,
+        "Price change": 0.07,
+        "Percentage": 0.33,
+        "Volume": "1.692M",
+        "Avg Vol (3 month)": "982,357"
+    },
+    "CMC": {
+        "Time": "2021-03-21 13:02:27.454597",
+        "Sector": "Basic Materials",
+        "Price": 28.77,
+        "Price change": -0.06,
+        "Percentage": -0.21,
+        "Volume": "3.025M",
+        "Avg Vol (3 month)": "1.525M"
+    },
+    "HL": {
+        "Time": "2021-03-21 13:02:27.455299",
+        "Sector": "Basic Materials",
+        "Price": 6.5,
+        "Price change": -0.14,
+        "Percentage": -2.11,
+        "Volume": "20.676M",
+        "Avg Vol (3 month)": "11.702M"
+    },
+    "TRQ": {
+        "Time": "2021-03-21 13:02:27.456008",
+        "Sector": "Basic Materials",
+        "Price": 16.94,
+        "Price change": -0.21,
+        "Percentage": -1.22,
+        "Volume": "973,345",
+        "Avg Vol (3 month)": "1.096M"
+    },
+    "SSRM": {
+        "Time": "2021-03-21 13:02:27.456716",
+        "Sector": "Basic Materials",
+        "Price": 15.44,
+        "Price change": 0.01,
+        "Percentage": 0.06,
+        "Volume": "2.792M",
+        "Avg Vol (3 month)": "1.892M"
+    },
+    "SXT": {
+        "Time": "2021-03-21 13:02:27.457434",
+        "Sector": "Basic Materials",
+        "Price": 78.0,
+        "Price change": -1.71,
+        "Percentage": -2.15,
+        "Volume": "819,851",
+        "Avg Vol (3 month)": "270,242"
+    },
+    "AGI": {
+        "Time": "2021-03-21 13:02:27.458138",
+        "Sector": "Basic Materials",
+        "Price": 8.26,
+        "Price change": 0.15,
+        "Percentage": 1.85,
+        "Volume": "5.286M",
+        "Avg Vol (3 month)": "3.214M"
+    },
+    "SUM": {
+        "Time": "2021-03-21 13:02:27.458819",
+        "Sector": "Basic Materials",
+        "Price": 27.98,
+        "Price change": 0.46,
+        "Percentage": 1.67,
+        "Volume": "1.966M",
+        "Avg Vol (3 month)": "1.331M"
+    },
+    "FUL": {
+        "Time": "2021-03-21 13:02:27.459519",
+        "Sector": "Basic Materials",
+        "Price": 60.42,
+        "Price change": -0.25,
+        "Percentage": -0.41,
+        "Volume": "731,504",
+        "Avg Vol (3 month)": "441,372"
+    },
+    "NGVT": {
+        "Time": "2021-03-21 13:02:27.460235",
+        "Sector": "Basic Materials",
+        "Price": 75.31,
+        "Price change": -1.69,
+        "Percentage": -2.19,
+        "Volume": "834,836",
+        "Avg Vol (3 month)": "259,586"
+    },
+    "CBT": {
+        "Time": "2021-03-21 13:02:27.460925",
+        "Sector": "Basic Materials",
+        "Price": 52.7,
+        "Price change": -0.56,
+        "Percentage": -1.05,
+        "Volume": "630,648",
+        "Avg Vol (3 month)": "287,386"
+    },
+    "MEOH": {
+        "Time": "2021-03-21 13:02:27.461629",
+        "Sector": "Basic Materials",
+        "Price": 38.38,
+        "Price change": -0.21,
+        "Percentage": -0.54,
+        "Volume": "430,049",
+        "Avg Vol (3 month)": "408,170"
+    },
+    "SCL": {
+        "Time": "2021-03-21 13:02:27.462500",
+        "Sector": "Basic Materials",
+        "Price": 129.51,
+        "Price change": -0.93,
+        "Percentage": -0.71,
+        "Volume": "323,832",
+        "Avg Vol (3 month)": "82,747"
+    },
+    "BVN": {
+        "Time": "2021-03-21 13:02:27.463230",
+        "Sector": "Basic Materials",
+        "Price": 11.0,
+        "Price change": -0.04,
+        "Percentage": -0.36,
+        "Volume": "2.232M",
+        "Avg Vol (3 month)": "1.141M"
+    },
+    "TSE": {
+        "Time": "2021-03-21 13:02:27.463906",
+        "Sector": "Basic Materials",
+        "Price": 69.5,
+        "Price change": -2.61,
+        "Percentage": -3.62,
+        "Volume": "1.199M",
+        "Avg Vol (3 month)": "443,301"
+    },
+    "LTHM": {
+        "Time": "2021-03-21 13:02:33.306170",
+        "Sector": "Basic Materials",
+        "Price": 18.05,
+        "Price change": 0.55,
+        "Percentage": 3.14,
+        "Volume": "3.526M",
+        "Avg Vol (3 month)": "3.797M"
+    },
+    "MTX": {
+        "Time": "2021-03-21 13:02:33.307164",
+        "Sector": "Basic Materials",
+        "Price": 77.65,
+        "Price change": -0.7,
+        "Percentage": -0.89,
+        "Volume": "481,349",
+        "Avg Vol (3 month)": "139,198"
+    },
+    "TROX": {
+        "Time": "2021-03-21 13:02:33.308043",
+        "Sector": "Basic Materials",
+        "Price": 18.03,
+        "Price change": -0.45,
+        "Percentage": -2.44,
+        "Volume": "1.589M",
+        "Avg Vol (3 month)": "1.598M"
+    },
+    "IOSP": {
+        "Time": "2021-03-21 13:02:33.308790",
+        "Sector": "Basic Materials",
+        "Price": 104.36,
+        "Price change": -0.56,
+        "Percentage": -0.53,
+        "Volume": "259,902",
+        "Avg Vol (3 month)": "93,490"
+    },
+    "CDE": {
+        "Time": "2021-03-21 13:02:33.309489",
+        "Sector": "Basic Materials",
+        "Price": 9.96,
+        "Price change": -0.01,
+        "Percentage": -0.1,
+        "Volume": "7.644M",
+        "Avg Vol (3 month)": "5.208M"
+    },
+    "PQG": {
+        "Time": "2021-03-21 13:02:33.310218",
+        "Sector": "Basic Materials",
+        "Price": 17.06,
+        "Price change": 0.04,
+        "Percentage": 0.24,
+        "Volume": "384,800",
+        "Avg Vol (3 month)": "176,290"
+    },
+    "BCC": {
+        "Time": "2021-03-21 13:02:33.310887",
+        "Sector": "Basic Materials",
+        "Price": 59.14,
+        "Price change": -0.85,
+        "Percentage": -1.42,
+        "Volume": "587,947",
+        "Avg Vol (3 month)": "368,347"
+    },
+    "CMP": {
+        "Time": "2021-03-21 13:02:33.311547",
+        "Sector": "Basic Materials",
+        "Price": 66.18,
+        "Price change": -0.73,
+        "Percentage": -1.09,
+        "Volume": "691,581",
+        "Avg Vol (3 month)": "236,568"
+    },
+    "CSTM": {
+        "Time": "2021-03-21 13:02:33.312251",
+        "Sector": "Basic Materials",
+        "Price": 15.82,
+        "Price change": 0.36,
+        "Percentage": 2.33,
+        "Volume": "1.372M",
+        "Avg Vol (3 month)": "931,213"
+    },
+    "EGO": {
+        "Time": "2021-03-21 13:02:33.312889",
+        "Sector": "Basic Materials",
+        "Price": 12.0,
+        "Price change": 0.13,
+        "Percentage": 1.1,
+        "Volume": "2.754M",
+        "Avg Vol (3 month)": "2.471M"
+    },
+    "PVG": {
+        "Time": "2021-03-21 13:02:33.313341",
+        "Sector": "Basic Materials",
+        "Price": 11.09,
+        "Price change": 0.17,
+        "Percentage": 1.56,
+        "Volume": "3.202M",
+        "Avg Vol (3 month)": "1.457M"
+    },
+    "UFS": {
+        "Time": "2021-03-21 13:02:33.313802",
+        "Sector": "Basic Materials",
+        "Price": 36.66,
+        "Price change": -0.39,
+        "Percentage": -1.05,
+        "Volume": "1.103M",
+        "Avg Vol (3 month)": "740,981"
+    },
+    "EVA": {
+        "Time": "2021-03-21 13:02:33.314250",
+        "Sector": "Basic Materials",
+        "Price": 49.15,
+        "Price change": -0.27,
+        "Percentage": -0.55,
+        "Volume": "125,164",
+        "Avg Vol (3 month)": "114,357"
+    },
+    "OR": {
+        "Time": "2021-03-21 13:02:33.314676",
+        "Sector": "Basic Materials",
+        "Price": 11.53,
+        "Price change": 0.15,
+        "Percentage": 1.32,
+        "Volume": "1.697M",
+        "Avg Vol (3 month)": "1.014M"
+    },
+    "LAC": {
+        "Time": "2021-03-21 13:02:33.315097",
+        "Sector": "Basic Materials",
+        "Price": 15.97,
+        "Price change": 0.05,
+        "Percentage": 0.31,
+        "Volume": "4.446M",
+        "Avg Vol (3 month)": "7.256M"
+    },
+    "GCP": {
+        "Time": "2021-03-21 13:02:33.315532",
+        "Sector": "Basic Materials",
+        "Price": 24.98,
+        "Price change": 0.14,
+        "Percentage": 0.56,
+        "Volume": "689,417",
+        "Avg Vol (3 month)": "226,619"
+    },
+    "HBM": {
+        "Time": "2021-03-21 13:02:33.315980",
+        "Sector": "Basic Materials",
+        "Price": 6.92,
+        "Price change": -0.19,
+        "Percentage": -2.67,
+        "Volume": "1.09M",
+        "Avg Vol (3 month)": "1.288M"
+    },
+    "KALU": {
+        "Time": "2021-03-21 13:02:33.316418",
+        "Sector": "Basic Materials",
+        "Price": 113.72,
+        "Price change": 0.41,
+        "Percentage": 0.36,
+        "Volume": "530,949",
+        "Avg Vol (3 month)": "123,180"
+    },
+    "KRO": {
+        "Time": "2021-03-21 13:02:33.316844",
+        "Sector": "Basic Materials",
+        "Price": 15.53,
+        "Price change": 0.1,
+        "Percentage": 0.65,
+        "Volume": "300,675",
+        "Avg Vol (3 month)": "166,216"
+    },
+    "SWM": {
+        "Time": "2021-03-21 13:02:33.317333",
+        "Sector": "Basic Materials",
+        "Price": 47.35,
+        "Price change": 0.35,
+        "Percentage": 0.74,
+        "Volume": "647,070",
+        "Avg Vol (3 month)": "209,145"
+    },
+    "CENX": {
+        "Time": "2021-03-21 13:02:33.317761",
+        "Sector": "Basic Materials",
+        "Price": 16.56,
+        "Price change": 0.27,
+        "Percentage": 1.66,
+        "Volume": "4.374M",
+        "Avg Vol (3 month)": "1.22M"
+    },
+    "MTRN": {
+        "Time": "2021-03-21 13:02:33.318199",
+        "Sector": "Basic Materials",
+        "Price": 69.41,
+        "Price change": -1.45,
+        "Percentage": -2.05,
+        "Volume": "714,886",
+        "Avg Vol (3 month)": "115,672"
+    },
+    "FOE": {
+        "Time": "2021-03-21 13:02:33.318625",
+        "Sector": "Basic Materials",
+        "Price": 17.09,
+        "Price change": -0.16,
+        "Percentage": -0.93,
+        "Volume": "1.173M",
+        "Avg Vol (3 month)": "378,206"
+    },
+    "SAND": {
+        "Time": "2021-03-21 13:02:33.319036",
+        "Sector": "Basic Materials",
+        "Price": 7.17,
+        "Price change": 0.01,
+        "Percentage": 0.14,
+        "Volume": "2.409M",
+        "Avg Vol (3 month)": "2.106M"
+    },
+    "SA": {
+        "Time": "2021-03-21 13:02:33.319473",
+        "Sector": "Basic Materials",
+        "Price": 18.07,
+        "Price change": 0.21,
+        "Percentage": 1.18,
+        "Volume": "606,967",
+        "Avg Vol (3 month)": "417,180"
+    },
+    "NEXA": {
+        "Time": "2021-03-21 13:02:33.319941",
+        "Sector": "Basic Materials",
+        "Price": 10.12,
+        "Price change": -0.35,
+        "Percentage": -3.34,
+        "Volume": "387,534",
+        "Avg Vol (3 month)": "84,880"
+    },
+    "FSM": {
+        "Time": "2021-03-21 13:02:33.321532",
+        "Sector": "Basic Materials",
+        "Price": 7.26,
+        "Price change": -0.03,
+        "Percentage": -0.41,
+        "Volume": "2.835M",
+        "Avg Vol (3 month)": "4.092M"
+    },
+    "OEC": {
+        "Time": "2021-03-21 13:02:33.322200",
+        "Sector": "Basic Materials",
+        "Price": 20.16,
+        "Price change": 0.14,
+        "Percentage": 0.7,
+        "Volume": "805,929",
+        "Avg Vol (3 month)": "380,211"
+    },
+    "LOMA": {
+        "Time": "2021-03-21 13:02:33.322860",
+        "Sector": "Basic Materials",
+        "Price": 5.9,
+        "Price change": -0.04,
+        "Percentage": -0.67,
+        "Volume": "101,725",
+        "Avg Vol (3 month)": "320,629"
+    },
+    "KRA": {
+        "Time": "2021-03-21 13:02:33.323552",
+        "Sector": "Basic Materials",
+        "Price": 37.2,
+        "Price change": 0.55,
+        "Percentage": 1.5,
+        "Volume": "685,237",
+        "Avg Vol (3 month)": "291,009"
+    },
+    "SCHN": {
+        "Time": "2021-03-21 13:02:33.324260",
+        "Sector": "Basic Materials",
+        "Price": 41.09,
+        "Price change": -1.44,
+        "Percentage": -3.39,
+        "Volume": "923,894",
+        "Avg Vol (3 month)": "300,752"
+    },
+    "USCR": {
+        "Time": "2021-03-21 13:02:33.324921",
+        "Sector": "Basic Materials",
+        "Price": 61.2,
+        "Price change": -1.19,
+        "Percentage": -1.91,
+        "Volume": "334,810",
+        "Avg Vol (3 month)": "300,683"
+    },
+    "HL-PB": {
+        "Time": "2021-03-21 13:02:33.325585",
+        "Sector": "Basic Materials",
+        "Price": 55.5,
+        "Price change": 0.0,
+        "Percentage": 0.0,
+        "Volume": "400",
+        "Avg Vol (3 month)": "186"
+    },
+    "HCC": {
+        "Time": "2021-03-21 13:02:33.326248",
+        "Sector": "Basic Materials",
+        "Price": 18.68,
+        "Price change": -0.02,
+        "Percentage": -0.11,
+        "Volume": "1.609M",
+        "Avg Vol (3 month)": "714,437"
+    },
+    "MERC": {
+        "Time": "2021-03-21 13:02:33.326921",
+        "Sector": "Basic Materials",
+        "Price": 14.38,
+        "Price change": -0.15,
+        "Percentage": -1.03,
+        "Volume": "594,397",
+        "Avg Vol (3 month)": "298,400"
+    },
+    "NP": {
+        "Time": "2021-03-21 13:02:33.327709",
+        "Sector": "Basic Materials",
+        "Price": 55.01,
+        "Price change": -0.8,
+        "Percentage": -1.43,
+        "Volume": "297,374",
+        "Avg Vol (3 month)": "91,165"
+    },
+    "GPRE": {
+        "Time": "2021-03-21 13:02:33.328246",
+        "Sector": "Basic Materials",
+        "Price": 25.63,
+        "Price change": 0.55,
+        "Percentage": 2.19,
+        "Volume": "1.11M",
+        "Avg Vol (3 month)": "1.074M"
+    },
+    "EXK": {
+        "Time": "2021-03-21 13:02:33.328751",
+        "Sector": "Basic Materials",
+        "Price": 5.73,
+        "Price change": -0.22,
+        "Percentage": -3.7,
+        "Volume": "13.136M",
+        "Avg Vol (3 month)": "5.322M"
+    },
+    "GATO": {
+        "Time": "2021-03-21 13:02:33.329225",
+        "Sector": "Basic Materials",
+        "Price": 14.56,
+        "Price change": -0.35,
+        "Percentage": -2.35,
+        "Volume": "754,942",
+        "Avg Vol (3 month)": "747,334"
+    },
+    "WLKP": {
+        "Time": "2021-03-21 13:02:33.329779",
+        "Sector": "Basic Materials",
+        "Price": 24.4,
+        "Price change": -0.11,
+        "Percentage": -0.45,
+        "Volume": "40,723",
+        "Avg Vol (3 month)": "133,181"
+    },
+    "DRD": {
+        "Time": "2021-03-21 13:02:33.330332",
+        "Sector": "Basic Materials",
+        "Price": 9.86,
+        "Price change": -0.03,
+        "Percentage": -0.3,
+        "Volume": "554,217",
+        "Avg Vol (3 month)": "307,972"
+    },
+    "USLM": {
+        "Time": "2021-03-21 13:02:33.330827",
+        "Sector": "Basic Materials",
+        "Price": 147.0,
+        "Price change": 3.0,
+        "Percentage": 2.08,
+        "Volume": "29,089",
+        "Avg Vol (3 month)": "8,413"
+    },
+    "KOP": {
+        "Time": "2021-03-21 13:02:33.331346",
+        "Sector": "Basic Materials",
+        "Price": 37.26,
+        "Price change": 0.34,
+        "Percentage": 0.92,
+        "Volume": "338,982",
+        "Avg Vol (3 month)": "159,932"
+    },
+    "GLT": {
+        "Time": "2021-03-21 13:02:33.332081",
+        "Sector": "Basic Materials",
+        "Price": 17.57,
+        "Price change": -0.25,
+        "Percentage": -1.4,
+        "Volume": "825,085",
+        "Avg Vol (3 month)": "182,745"
+    },
+    "ASIX": {
+        "Time": "2021-03-21 13:02:33.332644",
+        "Sector": "Basic Materials",
+        "Price": 27.34,
+        "Price change": -0.77,
+        "Percentage": -2.74,
+        "Volume": "534,116",
+        "Avg Vol (3 month)": "215,967"
+    },
+    "RFP": {
+        "Time": "2021-03-21 13:02:33.333078",
+        "Sector": "Basic Materials",
+        "Price": 9.27,
+        "Price change": -0.14,
+        "Percentage": -1.49,
+        "Volume": "759,145",
+        "Avg Vol (3 month)": "454,539"
+    },
+    "CPAC": {
+        "Time": "2021-03-21 13:02:33.333506",
+        "Sector": "Basic Materials",
+        "Price": 8.07,
+        "Price change": -0.01,
+        "Percentage": -0.1,
+        "Volume": "366",
+        "Avg Vol (3 month)": "4,242"
+    },
+    "AVD": {
+        "Time": "2021-03-21 13:02:33.333939",
+        "Sector": "Basic Materials",
+        "Price": 21.05,
+        "Price change": -0.23,
+        "Percentage": -1.08,
+        "Volume": "261,234",
+        "Avg Vol (3 month)": "103,373"
+    },
+    "CLW": {
+        "Time": "2021-03-21 13:02:33.334374",
+        "Sector": "Basic Materials",
+        "Price": 38.46,
+        "Price change": 0.28,
+        "Percentage": 0.73,
+        "Volume": "275,645",
+        "Avg Vol (3 month)": "152,877"
+    },
+    "FF": {
+        "Time": "2021-03-21 13:02:33.334858",
+        "Sector": "Basic Materials",
+        "Price": 14.46,
+        "Price change": -0.22,
+        "Percentage": -1.5,
+        "Volume": "483,853",
+        "Avg Vol (3 month)": "184,632"
+    },
+    "VHI": {
+        "Time": "2021-03-21 13:02:33.335275",
+        "Sector": "Basic Materials",
+        "Price": 21.92,
+        "Price change": -0.09,
+        "Percentage": -0.41,
+        "Volume": "33,315",
+        "Avg Vol (3 month)": "15,922"
+    },
+    "RYAM": {
+        "Time": "2021-03-21 13:02:33.335700",
+        "Sector": "Basic Materials",
+        "Price": 9.64,
+        "Price change": -0.61,
+        "Percentage": -5.95,
+        "Volume": "2.311M",
+        "Avg Vol (3 month)": "629,121"
+    },
+    "SXC": {
+        "Time": "2021-03-21 13:02:33.336137",
+        "Sector": "Basic Materials",
+        "Price": 6.99,
+        "Price change": -0.01,
+        "Percentage": -0.14,
+        "Volume": "6.326M",
+        "Avg Vol (3 month)": "1.119M"
+    },
+    "TG": {
+        "Time": "2021-03-21 13:02:33.336563",
+        "Sector": "Basic Materials",
+        "Price": 16.37,
+        "Price change": -0.24,
+        "Percentage": -1.44,
+        "Volume": "586,504",
+        "Avg Vol (3 month)": "209,642"
+    },
+    "VRS": {
+        "Time": "2021-03-21 13:02:33.336989",
+        "Sector": "Basic Materials",
+        "Price": 15.22,
+        "Price change": -0.18,
+        "Percentage": -1.17,
+        "Volume": "470,984",
+        "Avg Vol (3 month)": "231,626"
+    },
+    "IPI": {
+        "Time": "2021-03-21 13:02:33.337503",
+        "Sector": "Basic Materials",
+        "Price": 36.04,
+        "Price change": -0.14,
+        "Percentage": -0.39,
+        "Volume": "238,970",
+        "Avg Vol (3 month)": "255,465"
+    },
+    "TMST": {
+        "Time": "2021-03-21 13:02:33.337943",
+        "Sector": "Basic Materials",
+        "Price": 10.19,
+        "Price change": -0.38,
+        "Percentage": -3.6,
+        "Volume": "2.035M",
+        "Avg Vol (3 month)": "1.537M"
+    },
+    "UAN": {
+        "Time": "2021-03-21 13:02:33.338392",
+        "Sector": "Basic Materials",
+        "Price": 36.48,
+        "Price change": 1.5,
+        "Percentage": 4.29,
+        "Volume": "34,224",
+        "Avg Vol (3 month)": "45,008"
+    },
+    "MSB": {
+        "Time": "2021-03-21 13:02:33.338818",
+        "Sector": "Basic Materials",
+        "Price": 29.72,
+        "Price change": 0.7,
+        "Percentage": 2.41,
+        "Volume": "114,688",
+        "Avg Vol (3 month)": "42,821"
+    },
+    "HWKN": {
+        "Time": "2021-03-21 13:02:33.339240",
+        "Sector": "Basic Materials",
+        "Price": 35.21,
+        "Price change": -1.36,
+        "Percentage": -3.72,
+        "Volume": "390,417",
+        "Avg Vol (3 month)": "75,775"
+    },
+    "ZEUS": {
+        "Time": "2021-03-21 13:02:33.339669",
+        "Sector": "Basic Materials",
+        "Price": 26.69,
+        "Price change": -1.61,
+        "Percentage": -5.69,
+        "Volume": "226,310",
+        "Avg Vol (3 month)": "78,290"
+    },
+    "CINR": {
+        "Time": "2021-03-21 13:02:33.340213",
+        "Sector": "Basic Materials",
+        "Price": 13.93,
+        "Price change": -0.12,
+        "Percentage": -0.85,
+        "Volume": "2,702",
+        "Avg Vol (3 month)": "12,859"
+    },
+    "ODC": {
+        "Time": "2021-03-21 13:02:33.340658",
+        "Sector": "Basic Materials",
+        "Price": 35.81,
+        "Price change": -1.08,
+        "Percentage": -2.93,
+        "Volume": "86,603",
+        "Avg Vol (3 month)": "15,919"
+    },
+    "TREC": {
+        "Time": "2021-03-21 13:02:33.341081",
+        "Sector": "Basic Materials",
+        "Price": 7.47,
+        "Price change": -0.32,
+        "Percentage": -4.11,
+        "Volume": "288,330",
+        "Avg Vol (3 month)": "89,852"
+    },
+    "SPPP": {
+        "Time": "2021-03-21 13:02:33.341509",
+        "Sector": "Basic Materials",
+        "Price": 18.99,
+        "Price change": -0.17,
+        "Percentage": -0.89,
+        "Volume": "56,774",
+        "Avg Vol (3 month)": "62,047"
+    },
+    "USAP": {
+        "Time": "2021-03-21 13:02:33.341945",
+        "Sector": "Basic Materials",
+        "Price": 10.29,
+        "Price change": 0.09,
+        "Percentage": 0.88,
+        "Volume": "33,906",
+        "Avg Vol (3 month)": "52,663"
+    },
+    "CGA": {
+        "Time": "2021-03-21 13:02:33.342380",
+        "Sector": "Basic Materials",
+        "Price": 5.1,
+        "Price change": -0.12,
+        "Percentage": -2.39,
+        "Volume": "22,469",
+        "Avg Vol (3 month)": "163,467"
+    },
+    "IFFT": {
+        "Time": "2021-03-21 13:02:33.342809",
+        "Sector": "Basic Materials",
+        "Price": 48.48,
+        "Price change": -0.17,
+        "Percentage": -0.35,
+        "Volume": "11,846",
+        "Avg Vol (3 month)": "156,304"
+    }
+}

@@ -1,6 +1,6 @@
 # requests_webpages
 
-SECTORS = ["Technology", "Basic materials", "Healthcare", "Energy", "Communication Services",
+SECTORS = ["Technology", "Basic Materials", "Healthcare", "Energy", "Communication Services",
            "Consumer Cyclical", "consumer Defensive", "Financial Services", "Industrials", "Real Estate",
            "utilities"]
 
@@ -17,12 +17,12 @@ VALUE_SLEEP_NO_COUNTER = None
 MIN_TIME_SLEEP_NO_COUNTER = 5
 MAX_TIME_SLEEP_NO_COUNTER = 7
 WHEN_LONG_SLEEP = 1000
-TIME_LONG_SLEEP = 120
+TIME_LONG_SLEEP = 180
 NO_REMAINDER = 0
 WHEN_MODERATE_SLEEP = 100
-TIME_MODERATE_SLEEP = 30
-MIN_SHORT_SLEEP = 5
-MAX_SHORT_SLEEP = 7
+TIME_MODERATE_SLEEP = 45
+MIN_SHORT_SLEEP = 7
+MAX_SHORT_SLEEP = 10
 MAIN_TAG_HOW_MANY_SYMBOLS = 'div'
 MAIN_CLASS_HOW_MANY_SYMBOLS = 'Pos(r) Pos(r) Mih(265px)'
 SUB_TAG_HOW_MANY_SYMBOLS = 'span'
@@ -69,6 +69,8 @@ TABLE_CONTENT_INDEX = 0
 START_SCRAPE_SECTOR_MESSAGE = "Started to scrape sectors pages"
 FINISH_SECTOR_SCRAPING_MESSAGE = "Finished to scrape sectors pages"
 ASSUMPTION_TBODY_LEN = 1
+LOGGER_WARNING_MESSAGE_TBODY_MORE_THAN = "Length of the current tbody is more than expected"
+LOGGER_WARNING_MESSAGE_TBODY_LESS_THAN = "Length of the current tbody is less than expected"
 LEN_OF_DICT_DAILY_LOGGER_MESSAGE = "The length of the daily data dict that was created is: "
 NOW_SYMBOLS_MESSAGE_LOGGER = "Found the symbol: "
 ALREADY_EXIST_SYMBOL = "already exists in the dictionary"
@@ -94,3 +96,6 @@ NEXT_TO_COME_TITLES = 'Breakdown'
 NEXT_TO_COME_DATA_NET_INCOME = 'Net Income Common Stockholders'
 NO_DATA_MESSAGE_LOGGER = "Report data was not obtained - "
 DATA_FINANICIALS_ADDED = "The data on the financial statements have been added to the dictionary - "
+
+# logger
+logger = None

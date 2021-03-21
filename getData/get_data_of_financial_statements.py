@@ -1,7 +1,6 @@
 from utilities import utilities
 from getData import requests_webpages
 from configuration import project_conf
-from logs import logger
 import requests
 
 
@@ -20,10 +19,10 @@ def get_data_financial_statements(symbol, counter_symbols):
     try:
         soup = requests_webpages.get_content_financial_statements(symbol)
     except requests.exceptions.ConnectionError:
-        logger.logger.warning(f"Could not get {symbol}'s financial statements - ConnectionError")
+        project_conf.logger.logger.warning(f"Could not get {symbol}'s financial statements - ConnectionError")
         return {symbol: None}
     except requests.exceptions.HTTPError:
-        logger.logger.warning(f"Could not get {symbol}'s financial statements - HTTPError")
+        project_conf.logger.logger.warning(f"Could not get {symbol}'s financial statements - HTTPError")
         return {symbol: None}
     all_span = soup.find_all(project_conf.TAG_DATA_FINANCIAL_STATEMENTS)
     for i in all_span:
@@ -52,11 +51,11 @@ def get_data_financial_statements(symbol, counter_symbols):
             counter = 0
     if data_indicator == 1:
         dict_to_return = {symbol: data_dict}
-        logger.logger.info(project_conf.DATA_FINANICIALS_ADDED + symbol)
-        logger.logger.debug(dict_to_return)
+        project_conf.logger.logger.info(project_conf.DATA_FINANICIALS_ADDED + symbol)
+        project_conf.logger.logger.debug(dict_to_return)
         return dict_to_return
     else:
-        logger.logger.warning(project_conf.NO_DATA_MESSAGE_LOGGER + symbol)
+        project_conf.logger.logger.warning(project_conf.NO_DATA_MESSAGE_LOGGER + symbol)
         return {symbol: None}
 
 

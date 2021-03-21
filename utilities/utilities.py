@@ -2,7 +2,6 @@ import time
 import random
 import math
 from configuration import project_conf
-from logs import logger
 import json
 from datetime import datetime
 import os
@@ -16,7 +15,7 @@ def program_sleep(counter=None):
                                   project_conf.MAX_TIME_SLEEP_NO_COUNTER))
     else:
         if counter % project_conf.WHEN_LONG_SLEEP == project_conf.NO_REMAINDER:
-            logger.logger.debug(project_conf.LONG_SLEEP_DEBUG_LOGGER)
+            project_conf.logger.logger.debug(project_conf.LONG_SLEEP_DEBUG_LOGGER)
             time.sleep(project_conf.TIME_LONG_SLEEP)
         elif counter % project_conf.WHEN_MODERATE_SLEEP == project_conf.NO_REMAINDER:
             time.sleep(project_conf.TIME_MODERATE_SLEEP)
@@ -85,7 +84,7 @@ def check_if_json_folder_exist_and_create():
     """
     if not os.path.exists(os.path.abspath(os.path.join(os.getcwd(),project_conf.JSON_FILES_PATH))):
         os.makedirs(project_conf.JSON_FILES_PATH)
-        logger.logger.info(project_conf.CREATE_JSON_FOLDER_MESSAGE)
+        project_conf.logger.logger.info(project_conf.CREATE_JSON_FOLDER_MESSAGE)
 
 
 def to_json_daily_data(daily_data):
@@ -98,7 +97,7 @@ def to_json_daily_data(daily_data):
     print(path_file)
     with open(path_file, 'w') as outfile:
         json.dump(daily_data, outfile, indent=4)
-    logger.logger.info("A json file with the daily data was created")
+    project_conf.logger.logger.info("A json file with the daily data was created")
 
 
 def to_json_financials(financials_data):
@@ -110,7 +109,7 @@ def to_json_financials(financials_data):
     print(path_file)
     with open(path_file, 'w') as outfile:
         json.dump(financials_data, outfile, indent=4)
-    logger.logger.info("A json file with the financials data was created")
+    project_conf.logger.logger.info("A json file with the financials data was created")
 
 
 def to_json_all(daily_data, financials_data):
