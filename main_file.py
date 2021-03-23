@@ -11,7 +11,8 @@ def main():
     """
     parser = argparse.ArgumentParser()
     parser.add_argument('-s', '--sector_to_scrape', nargs='+', type=str.title)
-    parser.add_argument('-d', '--debug', nargs='+', type=bool, default=False)
+
+    parser.add_argument('-d', '--debug', action='store_true')
     args = parser.parse_args()
     if not args.sector_to_scrape:
         sector_to_scrape = project_conf.SECTORS
@@ -22,8 +23,6 @@ def main():
             quit()
     project_conf.logger = logs.Logger(args.debug)
     main_scraper.MainScraperSymbols(sector_to_scrape)
-
-    
 
 
 if __name__ == "__main__":

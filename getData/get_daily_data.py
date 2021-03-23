@@ -8,7 +8,7 @@ import requests
 class SecurityDailyLevel:
     def __init__(self, symbol, time_scraped, sector, price, price_change, change_percentage, volume, average_volume):
         self.symbol = symbol
-        self.time = time_scraped
+        self.time_scraped = time_scraped
         self.sector = sector
         self.price = price
         self.price_change = price_change
@@ -17,14 +17,18 @@ class SecurityDailyLevel:
         self.average_volume = average_volume
 
     def __str__(self):
-        str_representation = f'Daily data for {self.symbol} on {self.time}:\n'\
-        f'Price: {self.price}\nPrice change: {self.price_change}\nChange in percentages: {self.change_percentage}\nVolume: {self.volume}\nAverage volume: {self.average_volume}'
+        str_representation = f'Daily data for {self.symbol} on {self.time_scraped}:' \
+                             f'\nPrice: {self.price}\n' \
+                             f'Price change: {self.price_change}\n' \
+                             f'' \
+                             f'Change in percentages: {self.change_percentage}\n' \
+                             f'Volume: {self.volume}\nAverage volume: {self.average_volume}'
         return str_representation
 
 
 class DailyDataScraper:
     def __init__(self, sector_to_scrape):
-        self.date = str(datetime.now())
+        self.date = datetime.now()
         self.how_many_symbols = 0
         self.daily_data = []
         self._scrape_sector_pages(sector_to_scrape)
@@ -47,11 +51,13 @@ class DailyDataScraper:
                     (utilities.build_url(sector, project_conf.OFFSET_OF_FIRST_PAGE_SECTOR, project_conf.COUNT))
             except requests.exceptions.ConnectionError:
                 project_conf.logger.logger.warning(
-                    f" ConnectionError occured while trying to scrape the first page of {sector}, therefore all companies in the {sector} sector will not be scraped.")
+                    f" ConnectionError occured while trying to scrape the first page of {sector},"
+                    f" therefore all companies in the {sector} sector will not be scraped.")
                 continue
             except requests.exceptions.HTTPError:
                 project_conf.logger.logger.warning(
-                    f" HTTPError occured while trying to scrape the first page of {sector}, therefore all companies in the {sector} sector will not be scraped.")
+                    f" HTTPError occured while trying to scrape the first page of {sector},"
+                    f" therefore all companies in the {sector} sector will not be scraped.")
                 continue
             how_many_symbols = utilities.get_how_many_symbols_in_sector(page)
             how_many_pages = utilities.calculate_how_many_pages(how_many_symbols)
@@ -103,7 +109,7 @@ class DailyDataScraper:
         for tr in all_tr:
             current_symbol = DailyDataScraper._get_symbol(tr)
             project_conf.logger.logger.info(project_conf.NOW_SYMBOLS_MESSAGE_LOGGER + current_symbol)
-            date_time_obj = str(datetime.now())
+            date_time_obj = datetime.now()
             if current_symbol not in self.daily_data:
                 current_object = SecurityDailyLevel(current_symbol, date_time_obj, sector,  DailyDataScraper._get_price(tr),
                                                     DailyDataScraper._get_price_change(tr), DailyDataScraper._get_symbol_percentage(tr), DailyDataScraper._get_volume(tr),  DailyDataScraper._get_avg_vol(tr))
@@ -116,7 +122,7 @@ class DailyDataScraper:
     def _update_how_many_symbols(self):
         self.how_many_symbols = len(self.daily_data)
 
-    def  __str__(self):
+    def __str__(self):
         return f'The object contains data about {self.how_many_symbols} symbols'
 
     @staticmethod

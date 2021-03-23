@@ -1,3 +1,26 @@
+# main scraper
+HOST = 'localhost'
+USER = 'root'
+PASSWORD = 'Bar9506903'
+DB = 'stock_data'
+CHARSET = 'utf8mb4'
+SECTORS_TABLE = 'sectors'
+SYMBOLS_SECTORS_TABLE = 'symbol_sector'
+DAILY_DATA_TABLE = 'daily_data'
+COLUMNS_INSERT_NEW_SYMBOL_SECTOR = 'symbol, id_sector'
+COLUMNS_INSERT_DAILY_DATA = 'symbol, time_scraped, price, price_change, percentage_change, volume, avg_3_months_volume'
+
+# Queries
+GET_SECTORS = f'SELECT DISTINCT(sector) FROM {SECTORS_TABLE}'
+SELECT_SYMBOL_SECTOR = 'SELECT id_sector FROM {0} WHERE symbol = "{1}";'
+SELECT_SECTOR = 'SELECT sector FROM {0} WHERE sector = "{1}";'
+INSERT_SECTOR = 'INSERT INTO {0} (sector) VALUES ("{1}");'
+CHANGE_SECTOR_TO_EXIST_SYMBOL = 'UPDATE {0} SET id_sector = {1} WHERE symbol = "{2}"'
+ID_OF_SECTOR_QUERY = 'SELECT id_sector FROM {0} WHERE sector = "{1}"'
+INSERT_NEW_SYMBOL_SECTOR = "INSERT INTO {0} ({1}) VALUES ('{2}', {3});"
+INSERT_DAILY_DATA = 'INSERT IGNORE INTO {0} ({1}) VALUES ("{2}", "{3}", {4}, {5}, {6}, "{7}", "{8}");'
+DAILY_DATA_SYMBOL_TIME = 'SELECT symbol FROM {0} WHERE symbol = "{1}" AND DAY(time_scraped) = "{2}";'
+
 # requests_webpages
 
 SECTORS = ["Technology", "Basic Materials", "Healthcare", "Energy", "Communication Services",
@@ -17,12 +40,12 @@ VALUE_SLEEP_NO_COUNTER = None
 MIN_TIME_SLEEP_NO_COUNTER = 5
 MAX_TIME_SLEEP_NO_COUNTER = 7
 WHEN_LONG_SLEEP = 1000
-TIME_LONG_SLEEP = 180
+TIME_LONG_SLEEP = 1#180
 NO_REMAINDER = 0
 WHEN_MODERATE_SLEEP = 100
 TIME_MODERATE_SLEEP = 45
-MIN_SHORT_SLEEP = 7
-MAX_SHORT_SLEEP = 10
+MIN_SHORT_SLEEP = 1#7
+MAX_SHORT_SLEEP = 2#10
 MAIN_TAG_HOW_MANY_SYMBOLS = 'div'
 MAIN_CLASS_HOW_MANY_SYMBOLS = 'Pos(r) Pos(r) Mih(265px)'
 SUB_TAG_HOW_MANY_SYMBOLS = 'span'
@@ -99,3 +122,5 @@ DATA_FINANICIALS_ADDED = "The data on the financial statements have been added t
 
 # logger
 logger = None
+
+

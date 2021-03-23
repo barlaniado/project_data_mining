@@ -1,28 +1,37 @@
-CREATE TABLE `companies` (
-  `company_no` int NOT NULL auto_increment,
-  `symbol` varchar(10) NOT NULL,
-  `sector` varchar(20) NOT NULL,
-  PRIMARY KEY (`company_no`),
-  UNIQUE KEY `symbol` (`symbol`)
+CREATE DATABASE IF NOT EXISTS stock_data;
+USE stock_data;
+
+CREATE TABLE sectors (
+  id_sector SMALLINT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+  sector VARCHAR(10) NOT NULL, 
+  UNIQUE(sector)
   );
   
-CREATE TABLE `daily_data` (
-  `company_no` int NOT NULL auto_increment,
-  `time` datetime NOT NULL,
-  `price` float NOT NULL,
-  `price_change` float NOT NULL,
-  `percentage` float NOT NULL,
-  `volume` float NOT NULL,
-  `avg_vol`	float NOT NULL,
-  PRIMARY KEY (`company_no`),
-  CONSTRAINT FOREIGN KEY (`company_no`) REFERENCES `companies` (`company_no`) ON DELETE CASCADE
-);
-
-CREATE TABLE `financials_data` (
-  `company_no` int NOT NULL auto_increment,
-  `time` date NOT NULL,
-  `price` float NOT NULL,
-  `net_income` float NOT NULL,	
-  PRIMARY KEY (`company_no`),
-  CONSTRAINT FOREIGN KEY (`company_no`) REFERENCES `companies` (`company_no`) ON DELETE CASCADE
-);
+  CREATE TABLE symbol_sector (
+  symbol varchar(10) NOT NULL PRIMARY KEY,
+  id_sector SMALLINT,
+  UNIQUE(symbol),
+  FOREIGN KEY (id_sector) REFERENCES sectors(id_sector)
+  );
+  
+  CREATE TABLE daily_data (
+  row_id BIGINT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+  symbol VARCHAR(10),
+  time_scraped DATETIME,
+  price FLOAT(2),
+  price_change FLOAT(2),
+  percentage_change FLOAT(2),
+  volume VARCHAR(10),
+  avg_3_months_volume VARCHAR(10),
+  UNIQUE(symbol, time_scraped),
+  FOREIGN KEY (symbol) REFERENCES  symbol_sector(symbol)
+  );
+  
+  CREATE TABLE financial_data (
+  row_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+  symbol VARCHAR(10),
+  date_report DATETIME,
+  net_income BIGINT,
+  UNIQUE(symbol, date_report),
+  FOREIGN KEY (symbol) REFERENCES  symbol_sector(symbol)
+  );

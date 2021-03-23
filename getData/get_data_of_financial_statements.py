@@ -3,6 +3,7 @@ from getData import requests_webpages
 from configuration import project_conf
 import requests
 
+
 class SymbolFinancialReportData:
     def __init__(self, symbol, net_income_data):
         self.symbol = symbol
@@ -10,6 +11,7 @@ class SymbolFinancialReportData:
 
     def __str__(self):
         str_obj = f'Financial Reports - {self.symbol}:\n{self.net_income}'
+
 
 class FinancialReportsDataScraper:
     def __init__(self, symbol_to_scrape):
@@ -19,6 +21,7 @@ class FinancialReportsDataScraper:
 
     def __len__(self):
         return len(self.data_list)
+
     def __str__(self):
         return self.data_list
 
@@ -77,12 +80,12 @@ class FinancialReportsDataScraper:
             project_conf.logger.logger.warning(project_conf.NO_DATA_MESSAGE_LOGGER + symbol)
             self.data_list.append(SymbolFinancialReportData(symbol, None))
 
-
     def _get_all_data_financial_statements(self, list_symbols):
         """
-        The function gets a list of all the companies symbols and creates one dictionary that includes all the companies.
+        The function gets a list of all the companies symbols
+         and creates one dictionary that includes all the companies.
         """
-        for symbol in list_symbols:
+        for symbol in list_symbols[0:2]:
             self.data_list.append(self._get_data_financial_statements(symbol))
             self._update_counter_symbols()
     

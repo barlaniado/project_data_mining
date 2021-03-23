@@ -10,7 +10,6 @@ class Logger:
     INFO, when debug_mode=True the level of the logger is DEBUG
     """
     def __init__(self, debug_mode):
-        print('**** logger')
         self.mode = debug_mode
         if not debug_mode:
             set_level_logging = logging.INFO
