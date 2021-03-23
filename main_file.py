@@ -1,5 +1,4 @@
-from getData import get_daily_data
-from getData import get_data_of_financial_statements
+from getData import main_scraper
 from utilities import utilities
 from logs import logger as logs
 from configuration import project_conf
@@ -22,11 +21,9 @@ def main():
             print("Non-existent sectors were inserted")
             quit()
     project_conf.logger = logs.Logger(args.debug)
-    daily_data = get_daily_data.DailyDataScraper(sector_to_scrape)
-    financial_statements = get_data_of_financial_statements.get_all_data_financial_statements(daily_data.symbol_list)
-    project_conf.logger.logger.info(f"The dictionary of the financial reports was created. the dictionary size is:"
-                       f"{len(financial_statements)}")
-    utilities.to_json_all(daily_data.daily_data, financial_statements)
+    main_scraper.MainScraperSymbols(sector_to_scrape)
+
+    
 
 
 if __name__ == "__main__":

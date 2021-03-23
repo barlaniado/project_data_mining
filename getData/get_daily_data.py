@@ -5,12 +5,33 @@ from utilities import utilities
 import requests
 
 
+class SecurityDailyLevel:
+    def __init__(self, symbol, time_scraped, sector, price, price_change, change_percentage, volume, average_volume):
+        self.symbol = symbol
+        self.time = time_scraped
+        self.sector = sector
+        self.price = price
+        self.price_change = price_change
+        self.change_percentage = change_percentage
+        self.volume = volume
+        self.average_volume = average_volume
+
+    def __str__(self):
+        str_representation = f'Daily data for {self.symbol} on {self.time}:\n'\
+        f'Price: {self.price}\nPrice change: {self.price_change}\nChange in percentages: {self.change_percentage}\nVolume: {self.volume}\nAverage volume: {self.average_volume}'
+        return str_representation
+
+
 class DailyDataScraper:
     def __init__(self, sector_to_scrape):
         self.date = str(datetime.now())
-        self.symbol_list = []
-        self.daily_data = {}
+        self.how_many_symbols = 0
+        self.daily_data = []
         self._scrape_sector_pages(sector_to_scrape)
+        self._update_how_many_symbols()
+
+    def get_list_of_symbols(self):
+        return [sym.symbol for sym in self.daily_data]
 
     def _scrape_sector_pages(self, sector_to_scrape):
         """
@@ -42,7 +63,7 @@ class DailyDataScraper:
             if len(tbody) < project_conf.ASSUMPTION_TBODY_LEN:
                 project_conf.logger.logger.warning(project_conf.LOGGER_WARNING_MESSAGE_TBODY_LESS_THAN)
             tbody = tbody[project_conf.TABLE_CONTENT_INDEX]
-            self._build_sectors_and_daily_dict(tbody, sector)
+            self._add_securities(tbody, sector)
             for offset in range(project_conf.HOW_MANY_SYMBOLS_EACH_PAGE, how_many_pages * project_conf.COUNT,
                                 project_conf.HOW_MANY_SYMBOLS_EACH_PAGE):
                 try:
@@ -62,11 +83,11 @@ class DailyDataScraper:
                 if len(tbody) < project_conf.ASSUMPTION_TBODY_LEN:
                     project_conf.logger.logger.warning(project_conf.LOGGER_WARNING_MESSAGE_TBODY_LESS_THGE)
                 tbody = tbody[project_conf.TABLE_CONTENT_INDEX]
-                self._build_sectors_and_daily_dict(tbody, sector)
+                self._add_securities(tbody, sector)
                 project_conf.logger.logger.info(project_conf.FINISH_SECTOR_SCRAPING_MESSAGE)
                 project_conf.logger.logger.info(project_conf.LEN_OF_DICT_DAILY_LOGGER_MESSAGE + str(len(self.daily_data)))
 
-    def _build_sectors_and_daily_dict(self, tbody, sector):
+    def _add_securities(self, tbody, sector):
         """
         The function gets content of a table in specific sector page (tbody), and the sector itself (sector)
         and adding more data from the current sector page to the two dictionaries (symbol_sector_dict, daily_dict).
@@ -84,20 +105,19 @@ class DailyDataScraper:
             project_conf.logger.logger.info(project_conf.NOW_SYMBOLS_MESSAGE_LOGGER + current_symbol)
             date_time_obj = str(datetime.now())
             if current_symbol not in self.daily_data:
-                self.symbol_list.append(current_symbol)
-                current_daily_dict = {project_conf.KEY_TIME: date_time_obj,
-                                      project_conf.KEY_SECTOR: sector,
-                                      project_conf.KEY_PRICE: DailyDataScraper._get_price(tr),
-                                      project_conf.KEY_PRICE_CHANGE: DailyDataScraper._get_price_change(tr),
-                                      project_conf.KEY_PRICE_CHANGE_PERCENTAGE:
-                                          DailyDataScraper._get_symbol_percentage(tr),
-                                      project_conf.KEY_VOLUME: DailyDataScraper._get_volume(tr),
-                                      project_conf.KEY_AVG_VOLUME: DailyDataScraper._get_avg_vol(tr)}
-                self.daily_data[current_symbol] = current_daily_dict
-                project_conf.logger.logger.debug(current_daily_dict)
+                current_object = SecurityDailyLevel(current_symbol, date_time_obj, sector,  DailyDataScraper._get_price(tr),
+                                                    DailyDataScraper._get_price_change(tr), DailyDataScraper._get_symbol_percentage(tr), DailyDataScraper._get_volume(tr),  DailyDataScraper._get_avg_vol(tr))
+                self.daily_data.append(current_object)
+                project_conf.logger.logger.debug(str(current_object))
                 project_conf.logger.logger.info(project_conf.LOGGER_MESSAGE_BUILD_DAILY_SECTOR_DICT)
             else:
                 project_conf.logger.logger.info(current_symbol + project_conf.SYMBOL_EXISTS_LOGGER_MESSAGE)
+
+    def _update_how_many_symbols(self):
+        self.how_many_symbols = len(self.daily_data)
+
+    def  __str__(self):
+        return f'The object contains data about {self.how_many_symbols} symbols'
 
     @staticmethod
     def _get_price(tr):
