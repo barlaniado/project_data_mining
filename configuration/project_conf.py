@@ -1,7 +1,7 @@
 # main scraper
 HOST = 'localhost'
 USER = 'root'
-PASSWORD = 'Bar9506903'
+PASSWORD = 'Put_Your_Password'
 DB = 'stock_data'
 CHARSET = 'utf8mb4'
 SECTORS_TABLE = 'sectors'
