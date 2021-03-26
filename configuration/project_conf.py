@@ -1,14 +1,35 @@
 # main scraper
 HOST = 'localhost'
 USER = 'root'
-PASSWORD = 'Put_Your_Password'
+PASSWORD = 'Bar9506903'
 DB = 'stock_data'
 CHARSET = 'utf8mb4'
 SECTORS_TABLE = 'sectors'
 SYMBOLS_SECTORS_TABLE = 'symbol_sector'
 DAILY_DATA_TABLE = 'daily_data'
+FINANCIAL_DATA_TABLE = 'financial_data'
 COLUMNS_INSERT_NEW_SYMBOL_SECTOR = 'symbol, id_sector'
-COLUMNS_INSERT_DAILY_DATA = 'symbol, time_scraped, price, price_change, percentage_change, volume, avg_3_months_volume'
+COLUMNS_INSERT_DAILY_DATA = 'symbol, time_scraped, price, price_change,' \
+                            ' percentage_change, volume, avg_3_months_volume'
+COLUMNS_INSERT_FINANCIAL_DATA = 'symbol, date_report, net_income'
+
+# main file
+NON_EXISTING_SECTOR_ERROR_MESSAGE = " Non-existent sectors were inserted"
+
+# main_scraper
+CONNECTION_DB_ERROR = "There is a problem connecting to the DB."
+INSERT_DATA_TO_DB_MESSAGE = "Insert the data into the DB"
+INSERT_FINANCIAL_DATA_TO_DB_MESSAGE = "Insert the financials data into the DB"
+INSERT_NEW_SECTOR = "New sector found: {0}"
+ADD_NEW_SECTOR = "Add {0} to {1} table"
+INSERT_SYMBOL_DAILY_DATA = "Insert the daily data of {0}"
+INSERT_SYMBOL_FINANCIAL_DATA = "Insert the financial data of {0}"
+
+UPDATE_SECTOR = "The sector of {0} needs to be updated"
+NEW_SYMBOL_MESSAGE = "A new symbol has been found: {0}"
+DUPLICATE_SECTOR = "The sector ({0}) appears more than once in the sectors table"
+CHECK_ID_SECTOR_NOT_EXISTS = "The ID of the sector ({0}) not found in the sectors table"
+FORMAT_DATE_FINANCIAL = '%m/%d/%Y'
 
 # Queries
 GET_SECTORS = f'SELECT DISTINCT(sector) FROM {SECTORS_TABLE}'
@@ -20,6 +41,17 @@ ID_OF_SECTOR_QUERY = 'SELECT id_sector FROM {0} WHERE sector = "{1}"'
 INSERT_NEW_SYMBOL_SECTOR = "INSERT INTO {0} ({1}) VALUES ('{2}', {3});"
 INSERT_DAILY_DATA = 'INSERT IGNORE INTO {0} ({1}) VALUES ("{2}", "{3}", {4}, {5}, {6}, "{7}", "{8}");'
 DAILY_DATA_SYMBOL_TIME = 'SELECT symbol FROM {0} WHERE symbol = "{1}" AND DAY(time_scraped) = "{2}";'
+INSERT_FINANCIAL_DATA = 'INSERT IGNORE INTO {0} ({1}) VALUES ("{2}", "{3}", {4});'
+CHECK_IF_SECTOR_EXISTS_LOG = "Checking if the sector ({0}) of the current symbol ({1}) exists"
+
+# argparse
+S_MESSAGE = "Specify which sectors to scrape," \
+            " if not explicitly specified, the default is to do a scraping" \
+            " for all the sectors in the SECTORS list which located in the configurations file." \
+            "For example: in order to scrape only 'Technology' and 'Basic Materials' sectors use:" \
+            "-s \"Technology\" \"Basic Materials\""
+D_MESSAGE = "If the flag is specified the software will work in debug mode"
+F_MESSAGE = "If the flag is specified the software will scrape the financial data also"
 
 # requests_webpages
 

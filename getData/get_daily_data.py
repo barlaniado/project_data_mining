@@ -29,20 +29,17 @@ class SecurityDailyLevel:
 class DailyDataScraper:
     def __init__(self, sector_to_scrape):
         self.date = datetime.now()
-        self.how_many_symbols = 0
         self.daily_data = []
         self._scrape_sector_pages(sector_to_scrape)
-        self._update_how_many_symbols()
 
     def get_list_of_symbols(self):
+        """ get a list of symbols that were scrapped """
         return [sym.symbol for sym in self.daily_data]
 
     def _scrape_sector_pages(self, sector_to_scrape):
         """
-        The function iterates over a list of sector and create a list of symbols and a dictionary:
-        1) "symbol_list" contain the stock symbols
-        2) "daily_dict" contain the daily data of the stocks.
-        The function returns tuple of these two (symbol_list, daily_data)
+        The method iterates over a list of sectors, and call _add_securities(tbody, sector) method for each symbol
+        in each sector.
         """
         project_conf.logger.logger.info(project_conf.START_SCRAPE_SECTOR_MESSAGE)
         for sector in sector_to_scrape:
@@ -60,6 +57,7 @@ class DailyDataScraper:
                     f" therefore all companies in the {sector} sector will not be scraped.")
                 continue
             how_many_symbols = utilities.get_how_many_symbols_in_sector(page)
+            # For each sector the program needs to know how many page to scrape
             how_many_pages = utilities.calculate_how_many_pages(how_many_symbols)
             project_conf.logger.logger.info(utilities.build_message_how_many_symbols_pages_for_logger
                                             (sector, how_many_symbols, how_many_pages))
@@ -69,7 +67,11 @@ class DailyDataScraper:
             if len(tbody) < project_conf.ASSUMPTION_TBODY_LEN:
                 project_conf.logger.logger.warning(project_conf.LOGGER_WARNING_MESSAGE_TBODY_LESS_THAN)
             tbody = tbody[project_conf.TABLE_CONTENT_INDEX]
+            # The first call to the _add_securities(tbody, sector) function
+            # for each sector (the first page for each sector) is performed outside the loop,
+            # all others calls are performed in a loop.
             self._add_securities(tbody, sector)
+            # Iterate over the pages of the current sector
             for offset in range(project_conf.HOW_MANY_SYMBOLS_EACH_PAGE, how_many_pages * project_conf.COUNT,
                                 project_conf.HOW_MANY_SYMBOLS_EACH_PAGE):
                 try:
@@ -77,11 +79,14 @@ class DailyDataScraper:
                         utilities.build_url(sector, offset, project_conf.COUNT))
                 except requests.exceptions.ConnectionError:
                     project_conf.logger.logger.warning(
-                        f" ConnectionError occured while trying to scrape the a page of {sector} (which is not the first page of that sector), therefore the companies in this page will not be scraped.")
+                        f" ConnectionError occured while trying to scrape the a page of {sector}"
+                        f" (which is not the first page of that sector),"
+                        f" therefore the companies in this page will not be scraped.")
                     continue
                 except requests.exceptions.HTTPError:
                     project_conf.logger.logger.warning(
-                        f" HTTPError occured while trying to scrape the first page of {sector}, therefore all companies in the {sector} sector will not be scraped.")
+                        f" HTTPError occured while trying to scrape the first page of {sector},"
+                        f" therefore all companies in the {sector} sector will not be scraped.")
                     continue
                 tbody = page.find_all(project_conf.TAG_TABLE_IN_PAGE)
                 if len(tbody) > project_conf.ASSUMPTION_TBODY_LEN:
@@ -95,14 +100,11 @@ class DailyDataScraper:
 
     def _add_securities(self, tbody, sector):
         """
-        The function gets content of a table in specific sector page (tbody), and the sector itself (sector)
-        and adding more data from the current sector page to the two dictionaries (symbol_sector_dict, daily_dict).
-        tbody is the data retrieved from page which was created from beautiful-soap in the function _scrape_sector_pages,
-        it is an object of the class 'bs4.element.Tag'.
-        In addition, the function gets two dictionaries
-        1) Contain the stock symbols and their sectors (symbol_sector_dict)
-        2) Contain the daily data of the stocks (daily_dict)
+        The method gets content of a table in specific sector page (tbody), and the sector itself (sector)
+        and creates a SecurityDailyLevel objects for each symbol in the current page.
+        The method append each new object to the daily_data attribute inplace.
         """
+
         all_tr = tbody.find_all(project_conf.FIND_LINE_TAG)
         if not all_tr:
             project_conf.logger.logger.warning(project_conf.DATA_LIST_EMPTY)
@@ -111,24 +113,26 @@ class DailyDataScraper:
             project_conf.logger.logger.info(project_conf.NOW_SYMBOLS_MESSAGE_LOGGER + current_symbol)
             date_time_obj = datetime.now()
             if current_symbol not in self.daily_data:
-                current_object = SecurityDailyLevel(current_symbol, date_time_obj, sector,  DailyDataScraper._get_price(tr),
-                                                    DailyDataScraper._get_price_change(tr), DailyDataScraper._get_symbol_percentage(tr), DailyDataScraper._get_volume(tr),  DailyDataScraper._get_avg_vol(tr))
+                current_object = SecurityDailyLevel(current_symbol, date_time_obj, sector,
+                                                    DailyDataScraper._get_price(tr),
+                                                    DailyDataScraper._get_price_change(tr),
+                                                    DailyDataScraper._get_symbol_percentage(tr),
+                                                    DailyDataScraper._get_volume(tr),
+                                                    DailyDataScraper._get_avg_vol(tr))
                 self.daily_data.append(current_object)
                 project_conf.logger.logger.debug(str(current_object))
                 project_conf.logger.logger.info(project_conf.LOGGER_MESSAGE_BUILD_DAILY_SECTOR_DICT)
             else:
                 project_conf.logger.logger.info(current_symbol + project_conf.SYMBOL_EXISTS_LOGGER_MESSAGE)
 
-    def _update_how_many_symbols(self):
-        self.how_many_symbols = len(self.daily_data)
-
     def __str__(self):
+        """ The method defines the print of the object """
         return f'The object contains data about {self.how_many_symbols} symbols'
 
     @staticmethod
     def _get_price(tr):
         """
-        The function retrieve the daily price of a stock of a company.
+        The method retrieve the daily price of a specific symbol.
         """
         data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_=project_conf.CLASS_GET_DAILY_DATA)
         if not data_list:
@@ -150,7 +154,7 @@ class DailyDataScraper:
     @staticmethod
     def _get_symbol(tr):
         """
-        The function retrieve the symbol of a company.
+        The method retrieve the symbol of a company.
         """
         data_list = tr.find_all("a")
         if not data_list:
@@ -164,7 +168,7 @@ class DailyDataScraper:
     @staticmethod
     def _get_price_change(tr):
         """
-        The function retrieve the difference between the last price of a stock from yesterday
+        The method retrieve the difference between the last price of a stock from yesterday
         and the current price of that stock.
         """
         data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_=project_conf.CLASS_GET_DAILY_DATA)
@@ -185,7 +189,7 @@ class DailyDataScraper:
     @staticmethod
     def _get_symbol_percentage(tr):
         """
-        The function retrieve the difference in percentage, between the last price of a stock from yesterday
+        The method retrieve the difference in percentage, between the last price of a stock from yesterday
         and the current price of that stock.
         """
         data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_=project_conf.CLASS_GET_DAILY_DATA)
@@ -209,7 +213,7 @@ class DailyDataScraper:
     @staticmethod
     def _get_volume(tr):
         """
-        The function retrieve the volume of a company.
+        The method retrieve the volume of a company.
         """
         data_list = tr.find_all(project_conf.TAG_TO_RETRIEVE_DAILY_DATA, class_=project_conf.CLASS_GET_DAILY_DATA)
         if not data_list:
@@ -223,7 +227,7 @@ class DailyDataScraper:
     @staticmethod
     def _get_avg_vol(tr):
         """
-        The function retrieve the average volume of a company.
+        The method retrieve the average volume of a company.
         """
         data_list = tr.find_all(project_conf.FIND_AVG_VOL)
         if not data_list:
@@ -231,6 +235,6 @@ class DailyDataScraper:
         for data in data_list:
             if data.attrs[project_conf.ATTRS_AVG_VOL] == project_conf.TITLE_AVG_VOL:
                 avg_vol = data.text
-                break  # I put break because I need the first one.
+                break
         return avg_vol
 

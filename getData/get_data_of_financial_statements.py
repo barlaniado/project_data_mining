@@ -11,6 +11,7 @@ class SymbolFinancialReportData:
 
     def __str__(self):
         str_obj = f'Financial Reports - {self.symbol}:\n{self.net_income}'
+        return str_obj
 
 
 class FinancialReportsDataScraper:
@@ -54,8 +55,9 @@ class FinancialReportsDataScraper:
                 now_titles = 0
             if now_titles == 1:
                 current_title = current_text
-                title_list.append(current_title)
-                data_dict[current_title] = {}
+                if current_title != 'ttm':
+                    title_list.append(current_title)
+                    data_dict[current_title] = {}
             elif now_net_income == 1:
                 try:
                     data_dict[title_list[counter]][project_conf.KEY_NET_INCOME] = \
@@ -86,7 +88,7 @@ class FinancialReportsDataScraper:
          and creates one dictionary that includes all the companies.
         """
         for symbol in list_symbols[0:2]:
-            self.data_list.append(self._get_data_financial_statements(symbol))
+            self._get_data_financial_statements(symbol)
             self._update_counter_symbols()
     
     def _update_counter_symbols(self):
