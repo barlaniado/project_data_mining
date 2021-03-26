@@ -8,7 +8,7 @@ import datetime
 class MainScraperSymbols:
     """ This class creates objects of the main scraper.
     Each object that is created holds: DailyDataScraper object and FinancialReportsDataScraper object.
-    The data is entered directly into the DB.
+    The data is added directly into the DB.
     Please update the configurations file to allow proper connection to DB."""
 
     def __init__(self, sector_to_scrape, financials):
