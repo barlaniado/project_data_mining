@@ -10,13 +10,11 @@ class MainScraperSymbols:
         self.financial_report = None
         self.connection = None
         self.cur = None
-
         self._connect_db(project_conf.HOST,
                          project_conf.USER, project_conf.PASSWORD, project_conf.DB, project_conf.CHARSET)
         self._get_daily_data(sector_to_scrape)
         self._get_financial(self.daily_data.get_list_of_symbols())
-        self._prepare_daily_data_and_add_new_sectors()
-        self.connection.commit()
+        self._add_new_sectors_and_daily()
 
     def _get_daily_data(self, sector_to_scrape):
         self.daily_data = get_d.DailyDataScraper(sector_to_scrape)
@@ -34,7 +32,7 @@ class MainScraperSymbols:
                                           cursorclass=pymysql.cursors.DictCursor)
         self.cur = self.connection.cursor()
 
-    def _prepare_daily_data_and_add_new_sectors(self):
+    def _add_new_sectors_and_daily(self):
         list_to_iterate = self.daily_data.daily_data
         for daily_stock in list_to_iterate:
             self._check_if_sector_exist_and_add(daily_stock)

@@ -7692,3 +7692,355 @@
 2021-03-23 22:51:44,719-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:46-The code of the current request: 200
 2021-03-23 22:51:44,765-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:48-Return a BeautifulSoup object
 2021-03-23 22:51:44,767-INFO-FILE:get_data_of_financial_statements.py-FUNC:_get_data_financial_statements-LINE:76-The data on the financial statements have been added to the dictionary - LIN
+2021-03-26 09:08:55,213-INFO-FILE:get_daily_data.py-FUNC:_scrape_sector_pages-LINE:47-Started to scrape sectors pages
+2021-03-26 09:08:56,532-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:23-The code of the current request: 200
+2021-03-26 09:09:02,671-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:28-Return a BeautifulSoup object
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_scrape_sector_pages-LINE:64-The Basic Materials has 167 symbols and 2 pages
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: BHP
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: LIN
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: BBL
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: RIO
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: CTA-PB
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: VALE
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: CTA-PA
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: SHW
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: APD
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: ECL
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: SCCO
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: NEM
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: DOW
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: FCX
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: DD
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: PPG
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: CRH
+2021-03-26 09:09:02,686-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: GOLD
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: LYB
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: CTVA
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: IFF
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: NTR
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: MT
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: FNV
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: NUE
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: VMC
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: PKX
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: MLM
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: SUZ
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: ALB
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: CE
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: WPM
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: AVTR
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: EMN
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,702-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: AVTR-PA
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: FMC
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: AEM
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: SQM
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: SMG
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: JHX
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: SBSW
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: RPM
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: MOS
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: WLK
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: VEDL
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: ACH
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: STLD
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: CX
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: CF
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: TECK
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: RS
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: KL
+2021-03-26 09:09:02,718-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: AU
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: KGC
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: SID
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: GFI
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: WFG
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: CLF
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: ICL
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: TX
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: AXTA
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: RGLD
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: PAAS
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: MDU
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: MP
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: HUN
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: OLN
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: AA
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: EXP
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,734-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: ASH
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: X
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: BAK
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: AMRS
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: ESI
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: AVNT
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: CC
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: UFPI
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: KWR
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: NEU
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: WDFC
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: BCPC
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: GRA
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: UNVR
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: CMC
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: AG
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: TRQ
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: SXT
+2021-03-26 09:09:02,749-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: DNMR
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: FUL
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: SSRM
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: HL
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: SUM
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: NGVT
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: AGI
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: CBT
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: SCL
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: MEOH
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: BVN
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: MTX
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: IOSP
+2021-03-26 09:09:02,765-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:04,162-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:23-The code of the current request: 200
+2021-03-26 09:09:11,273-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:28-Return a BeautifulSoup object
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: TSE
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: LTHM
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: TROX
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: PQG
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: BCC
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: CDE
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: CMP
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: CSTM
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: UFS
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: PVG
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: EVA
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: EGO
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: OR
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: GCP
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: LAC
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: KRO
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: KALU
+2021-03-26 09:09:11,273-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: HBM
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: SWM
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: CENX
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: FOE
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: NEXA
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: MTRN
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: SAND
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: LOMA
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: SA
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: FSM
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: OEC
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: KRA
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,288-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: HL-PB
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: SCHN
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: USCR
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: MERC
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: GPRE
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: NP
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: WLKP
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: HCC
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: EXK
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: RFP
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: DRD
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: GLT
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: ASIX
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,304-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: USLM
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: KOP
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: CPAC
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: GATO
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: FF
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: CLW
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: AVD
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: VHI
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: RYAM
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: SXC
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: TG
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: VRS
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,320-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: TMST
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: IPI
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: UAN
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: MSB
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: HWKN
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: ZEUS
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: CINR
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: ODC
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: TREC
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: SPPP
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: USAP
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: CGA
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:111-Found the symbol: IFFT
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:118-The data was successfully added to the dictionary
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_scrape_sector_pages-LINE:93-Finished to scrape sectors pages
+2021-03-26 09:09:11,335-INFO-FILE:get_daily_data.py-FUNC:_scrape_sector_pages-LINE:94-The length of the daily data dict that was created is: 167
+2021-03-26 09:09:12,345-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:37- Extract data from the financial statements of: BHP
+2021-03-26 09:09:12,345-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:39-Sending a request to: https://finance.yahoo.com/quote/BHP/financials?p=BHP
+2021-03-26 09:09:13,241-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:46-The code of the current request: 200
+2021-03-26 09:09:13,298-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:48-Return a BeautifulSoup object
+2021-03-26 09:09:13,298-INFO-FILE:get_data_of_financial_statements.py-FUNC:_get_data_financial_statements-LINE:76-The data on the financial statements have been added to the dictionary - BHP
+2021-03-26 09:09:15,312-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:37- Extract data from the financial statements of: LIN
+2021-03-26 09:09:15,312-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:39-Sending a request to: https://finance.yahoo.com/quote/LIN/financials?p=LIN
+2021-03-26 09:09:16,195-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:46-The code of the current request: 200
+2021-03-26 09:09:16,241-INFO-FILE:requests_webpages.py-FUNC:get_content_financial_statements-LINE:48-Return a BeautifulSoup object
+2021-03-26 09:09:16,241-INFO-FILE:get_data_of_financial_statements.py-FUNC:_get_data_financial_statements-LINE:76-The data on the financial statements have been added to the dictionary - LIN
