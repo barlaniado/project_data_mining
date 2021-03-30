@@ -106,13 +106,14 @@ The database designed for the project is made up of 4 tables:
 The project is implemented by hierarchy classes:\
 The most basic classes are: SymbolFinancialReportData and SecurityDailyLevel.\
 **SecurityDailyLevel:** creates object that contains daily data of specific symbol\
-**SymbolFinancialReportData:** creates object that contains financial data of specific symbol\\
+**SymbolFinancialReportData:** creates object that contains financial data of specific symbol\
+\
 In the next level there are: FinancialReportsDataScraper and DailyDataScraper.\
 **DailyDataScraper:**  creates object that contains a list of SecurityDailyLevel objects\
-**FinancialReportsDataScraper:**  creates object that contains a list of SymbolFinancialReportData objects\\
+**FinancialReportsDataScraper:**  creates object that contains a list of SymbolFinancialReportData objects\
+\
 In the next level there is: MainScraperSymbols.\
 **MainScraperSymbols:** creates object that contains: DailyDataScraper object, FinancialReportsDataScraper object, and more.\
-\
 \
 In fact the main_file creates an object of MainScraperSymbols, this object creates objects of: DailyDataScraper and FinancialReportsDataScraper.\
 Each of these objects creates objects of: SecurityDailyLevel and SymbolFinancialReportData respectively.
