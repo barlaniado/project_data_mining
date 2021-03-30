@@ -5,11 +5,12 @@
 In this project we are pulling data from yahoo finance web-site: https://finance.yahoo.com/ and store the data in out local DB.
 At the site, by pressing the Industries tub you can find a list with different sectors, like Energy, Healthcare, Technology and more...\
 In each sector, we can find all the companies with their daily data: price, volume...\
-This project focuses on obtaining the following information for each symbol:\
+This project focuses on obtaining the following information for each symbol:
 1) Stock price
 2) Change price from yesterday
-3) Daily volume
-4) Avg volume of 3 months\
+3) Change price in percentage
+4) Daily volume
+5) Avg volume of 3 months\
 <a/>
 Each target page looks:\
 ![](appendix/daily_data.PNG)\
