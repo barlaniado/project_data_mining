@@ -2,13 +2,20 @@
 
 ## Created by Bar Laniado and Anat Kira
 
-In this project we are pulling data from yahoo finance web-site: https://finance.yahoo.com/\
+In this project we are pulling data from yahoo finance web-site: https://finance.yahoo.com/ and store the data in out local DB.
 At the site, by pressing the Industries tub you can find a list with different sectors, like Energy, Healthcare, Technology and more...\
-In each sector, all the different companies with their daily update stock information.\
-We focused at the stock price, the change in the stock price from yesterday and the stock volume of each company, and arrange the data in a dictionary when the key is the company symbol.\
+In each sector, we can find all the companies with their daily data: price, volume...\
+This project focuses on obtaining the following information for each symbol:\
+1) Stock price\
+2) Change price from yesterday\
+3) Daily volume\
+4) Avg volume of 3 months\
+Each page looks:
 ![](appendix/daily_data.PNG)
-While our first dictionary holds the daily information about each company, we created a second dictionary for the annual Net income of each company.\
-To reach the Net Income at the web-site: press on the company symbol by your interest, a new page will pop-up, choose the Financials tube, scroll down in the table till you reach the row: Net Income Common Stockholders
+Each row in the table is a different symbol and each column contains different information.\
+In addition to the daily data, our scraper also able to scrape financial data for each symbol (This project focuses only on net income).
+To reach the Net Income at the web-site: press on the company symbol by your interest, a new page will pop-up,\
+choose the Financials tube, scroll down in the table till you reach the row: Net Income Common Stockholders\
 ![](appendix/net_income.PNG)
 
 ## Installation
@@ -79,19 +86,10 @@ In order to so I have to run the command:\
 python main_file.py -s  "Technology" "consumer Defensive" -f\
 
 
-You will get all the data about all the companies from all the different sectors from the web-site.\
 
+## Hope you will enjoy and start to invest in the stock market (;
 
-When running the script it will also create a new file contain the logs output, the file name is data_mining.log and you could find it in the logs directory.\
-You can choose one of two options:\
-At the first option the logger is set to INFO level, this option is our default option.\
-The second option will output exactly the same the only different is that the logger is set to DEBUG.\
-For the second option you need to run the file: **run_project_debug_level.py** from the debug_level directory.\
-Running that file will create new file: debug_logs.log in the logs directory and a json_files directory inside the debug_level directory containing the two json files with our two dictionaries.
-
-##Hope you will enjoy and start to invest in the stock market (;
-
-#Good Luck!
+# Good Luck!
 
 
 
