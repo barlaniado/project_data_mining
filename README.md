@@ -98,7 +98,7 @@ The database designed for the project is made up of 4 tables:
 2. symbol_sector - The table contains all the symbols
  that exist in the database and shows each sector to which sector it belongs
 3. daily_data - the table contains daily stock data
-4. financial_data  - the table contains financial stock data
+4. financial_data  - the table contains financial stock data\
 **ERD**
 \
 ![](appendix/ERD.JPG)
