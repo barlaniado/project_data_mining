@@ -66,7 +66,7 @@ If for any reason you don't want to scrape all the sectors, all you need is to s
 Let's say I want to scrape only "Technology" and "consumer Defensive" this time.\
 In order to so I have to run the command:\
 python main_file.py -s  "Technology" "consumer Defensive"\
-**Do you want to change the default sectors?**
+**Do you want to change the default sectors?**\
 Go to the configuration file and change the SECTORS according to your needs.
 **Note:** If you will specify sector that does not exist in the SECTORS list, the program will not run.\
 So if new sectors wil be created, please go to the configurations file and add to the SECTORS list the new sectors.
