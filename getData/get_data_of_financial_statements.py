@@ -5,9 +5,13 @@ import requests
 
 
 class SymbolFinancialReportData:
-    def __init__(self, symbol, net_income_data):
+    """ This class creates objects of the financial data of a specific symbol.
+    Each object holds the financial data about specific symbol. """
+
+    def __init__(self, symbol, fin_data):
+        """ The constructor of this class gets a symbol and the financial data of the specific symbol """
         self.symbol = symbol
-        self.net_income = net_income_data
+        self.net_income = fin_data
 
     def __str__(self):
         str_obj = f'Financial Reports - {self.symbol}:\n{self.net_income}'
@@ -15,12 +19,17 @@ class SymbolFinancialReportData:
 
 
 class FinancialReportsDataScraper:
+    """ This class creates objects of the financial data scraper.
+        Each object that is created holds list of SymbolFinancialReportData objects."""
+
     def __init__(self, symbol_to_scrape):
+        """ The constructor of this class gets symbols to scrape """
         self.counter_symbols = 0
         self.data_list = []
         self._get_all_data_financial_statements(symbol_to_scrape)
 
     def __len__(self):
+        """ Define the length of the object """
         return len(self.data_list)
 
     def __str__(self):
@@ -28,9 +37,8 @@ class FinancialReportsDataScraper:
 
     def _get_data_financial_statements(self, symbol):
         """
-        The function gets the symbol of the company, retrieve the data about the company financial report
-        and creates a dictionary for each company.
-        the counter_symbols parameter is for the sleep function usage.
+        The method gets the symbol of a company, retrieve the financial data about that company,
+        creates a SymbolFinancialReportData object and append this object to self.data_list.
         """
         now_titles = 0
         now_net_income = 0
@@ -84,12 +92,14 @@ class FinancialReportsDataScraper:
 
     def _get_all_data_financial_statements(self, list_symbols):
         """
-        The function gets a list of all the companies symbols
-         and creates one dictionary that includes all the companies.
+        The method gets a list of all the companies symbols
+         abd iterates over the list while calling _get_data_financial_statements(symbol) for each symbol.
         """
         for symbol in list_symbols[0:2]:
             self._get_data_financial_statements(symbol)
-            self._update_counter_symbols()
+            self._update_counter_symbols() # The programs should sleep sometimes
     
     def _update_counter_symbols(self):
+        """ This method updates the symbol counter in order to tell the sleeping function how much time
+        the program should sleep now"""
         self.counter_symbols += 1

@@ -6,7 +6,11 @@ import requests
 
 
 class SecurityDailyLevel:
+    """ This class creates objects of daily data of a specific symbol.
+    Each object holds daily data about specific symbol. """
+
     def __init__(self, symbol, time_scraped, sector, price, price_change, change_percentage, volume, average_volume):
+        """ The constructor of this class gets all the daily data of the specific symbol """
         self.symbol = symbol
         self.time_scraped = time_scraped
         self.sector = sector
@@ -27,7 +31,11 @@ class SecurityDailyLevel:
 
 
 class DailyDataScraper:
+    """ This class creates objects of the daily data scraper.
+        Each object that is created holds list of SecurityDailyLevel objects."""
+
     def __init__(self, sector_to_scrape):
+        """ The constructor of this class gets sector to scrape """
         self.date = datetime.now()
         self.daily_data = []
         self._scrape_sector_pages(sector_to_scrape)

@@ -12,7 +12,7 @@ class MainScraperSymbols:
     Please update the configurations file to allow proper connection to DB."""
 
     def __init__(self, sector_to_scrape, financials):
-        """ The constructor of the class gets sector to scrape and
+        """ The constructor of this class gets sector to scrape and
          a boolean parameter (financial) that indicate whether to scrape the financials data also """
 
         # Initialize class attributes
