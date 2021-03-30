@@ -13,11 +13,11 @@ To reach the Net Income at the web-site: press on the company symbol by your int
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the requests and beautifulsoup4 libraries.\
+Use the package manager [pip] 21.0.1 (https://pip.pypa.io/en/stable/) to install the requests and beautifulsoup4 libraries.\
 we used the versions:\
 2.25.1 for requests\
 4.9.3 for beautifulsoup4, 0.0.1 for bs4\
-**Python 3**
+**Python 3.9.0 **
 
 ## Usage
 
