@@ -26,8 +26,9 @@ choose the Financials tube, scroll down in the table till you reach the row: Net
 Use the package manager [pip](https://pip.pypa.io/en/stable/) (version 21.0.1) to install the requests and beautifulsoup4 libraries.\
 we used the versions:\
 2.25.1 for requests\
-4.9.3 for beautifulsoup4, 0.0.1 for bs4\
-1.0.2 for PyMySQL
+4.9.3 for beautifulsoup4\
+0.0.1 for bs4\
+1.0.2 for PyMySQL\
 **Python 3.9.0**
 
 ## Before Running
