@@ -21,7 +21,7 @@ choose the Financials tube, scroll down in the table till you reach the row: Net
 ![](appendix/net_income.PNG)
 
 ### The Final Result
-The result of the project is a relational DB that contains all the collected data./
+The result of the project is a relational DB that contains all the collected data.\
 By storing the data in DB we can run the process whenever we want, create a huge database with historical data.
 
 ## Installation
