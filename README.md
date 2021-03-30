@@ -21,9 +21,25 @@ we used the versions:\
 **Python 3.9.0**
 
 ## Before Running
+**Building The Database**\
 Please take care to build the DB infrastructure properly.\
 To do so: go to the db directory and run data_mining_db.sql in your MySql,\
-this file will create the data base and the tables that are needed to run this program.
+this file will create the data base and the tables that are needed to run this program.\
+**Database configutations**\
+Please go to the configurations file and change the DB connection details:\
+HOST = Put here the host, the default is 'localhost'\
+USER: Put here your username\
+PASSWORD = Put here your password\
+DB = Put here the DB name, the defual is'stock_data'\
+CHARSET = The defualt is'utf8mb4'\
+SECTORS_TABLE = Put here the table name that will contain all the unique sectors, the default is'sectors'\
+SYMBOLS_SECTORS_TABLE = Put here the table name that will contain all the unique symbols and sectors, the default is 'symbol_sector'\
+DAILY_DATA_TABLE = Put here the table name that will contain all the daily data, the default is 'daily_data'\
+FINANCIAL_DATA_TABLE = Put here the table name that will contain all the financial data, the default is 'financial_data'\
+**Note:**
+If you built the database with the file provided with this project and did not change anything,\
+all you need to change in the DB configurations: USER & PASSWORD
+
 ## Usage
 **Command line interface**
 You can execute the program directly from the command line.\
@@ -35,9 +51,10 @@ The default is to scrape all the sectors that exist in Yhaoo-Finance:
 **"Technology", "Basic Materials", "Healthcare", "Energy", "Communication Services",
 "Consumer Cyclical", "consumer Defensive", "Financial Services", "Industrials", "Real Estate","utilities"**.\
 If for any reason you don't want to scrape all the sectors, all you need is to specify -s and immediately after all the sectors that you want to be scrapped.\
-For example:
+**For example:**
 Let's say I want to scrape only "Technology" and "consumer Defensive" this time.\
-In order to so I would run the command: python main_file.py -s  "Technology" "consumer Defensive"\
+In order to so I would run the command:\
+python main_file.py -s  "Technology" "consumer Defensive"\
 **Do you want to change the default sectors?**
 Go to the configuration file and change the SECTORS according to your needs.
 
