@@ -1,6 +1,6 @@
-#Data Mining Project - pulling data from Yahoo! finance
+# Data Mining Project - pulling data from Yahoo! finance
 
-##Created by Bar Laniado and Anat Kira
+## Created by Bar Laniado and Anat Kira
 
 In this project we are pulling data from yahoo finance web-site: https://finance.yahoo.com/\
 At the site, by pressing the Industries tub you can find a list with different sectors, like Energy, Healthcare, Technology and more...\
