@@ -20,12 +20,10 @@ we used the versions:\
 1.0.2 for PyMySQL
 **Python 3.9.0**
 
+## Before Running
+
 ## Usage
-**Before Running**
-
 **Command line interface**
-
-
 All you need is to run our: **main_file.py**\
 You will get all the data about all the companies from all the different sectors from the web-site.\
 
