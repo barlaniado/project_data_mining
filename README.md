@@ -10,7 +10,7 @@ This project focuses on obtaining the following information for each symbol:\
 2) Change price from yesterday
 3) Daily volume
 4) Avg volume of 3 months\
-Each page looks:\
+Each target page looks:\
 ![](appendix/daily_data.PNG)\
 Each row in the table is a different symbol and each column contains different information.\
 In addition to the daily data, our scraper also able to scrape financial data for each symbol (This project focuses only on net income).\
