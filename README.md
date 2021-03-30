@@ -17,15 +17,19 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) (version 21.0.1) t
 we used the versions:\
 2.25.1 for requests\
 4.9.3 for beautifulsoup4, 0.0.1 for bs4\
+1.0.2 for PyMySQL
 **Python 3.9.0**
 
 ## Usage
+**Before Running**
+
+**Command line interface**
+
 
 All you need is to run our: **main_file.py**\
 You will get all the data about all the companies from all the different sectors from the web-site.\
-It will be available in two new files that will created by running the script, in the directory: json_files.\
-The first one will contain the dictionary with the annual information, the name of the file will be: <datetime.timestamp>_financials.json\
-The second one will contain the dictionary with the daily information, the name of the file will be: <datetime.timestamp>_daily_data.json\
+
+
 When running the script it will also create a new file contain the logs output, the file name is data_mining.log and you could find it in the logs directory.\
 You can choose one of two options:\
 At the first option the logger is set to INFO level, this option is our default option.\
