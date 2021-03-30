@@ -38,7 +38,7 @@ we used the versions:\
 **Building The Database**\
 Please take care to build the DB infrastructure properly.\
 To do so: go to the db directory and run data_mining_db.sql in your MySql,\
-this file will create the data base and the tables that are needed to run this program.\
+this file will create the database and the tables that are needed to run this program.\
 **Database configutations**\
 Please go to the configurations file and change the DB connection details:\
 HOST = Put here the host, the default is 'localhost'\
