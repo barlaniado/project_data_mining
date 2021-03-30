@@ -1,9 +1,10 @@
-# main scraper
+# DB Configurations
 HOST = 'localhost'
 USER = 'root'
 PASSWORD = 'put_your_password'
 DB = 'stock_data'
 CHARSET = 'utf8mb4'
+# main scraper
 SECTORS_TABLE = 'sectors'
 SYMBOLS_SECTORS_TABLE = 'symbol_sector'
 DAILY_DATA_TABLE = 'daily_data'
