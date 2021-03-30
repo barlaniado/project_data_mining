@@ -39,26 +39,44 @@ FINANCIAL_DATA_TABLE = Put here the table name that will contain all the financi
 **Note:**
 If you built the database with the file provided with this project and did not change anything,\
 all you need to change in the DB configurations: USER & PASSWORD
-
 ## Usage
 **Command line interface**
 You can execute the program directly from the command line.\
 All you need is to run our: **main_file.py**\
 You can also run the program with different arguments.
 **Arguments:**
-**-s** When you specify this argument you ignore the default sectors to scrape and to actually determine which sectors you want to be scrapped.\
-The default is to scrape all the sectors that exist in Yhaoo-Finance:
+**1) -s**/
+When you specify this argument you ignore the default sectors to scrape and to actually determine which sectors you want to be scrapped.\
+The default is to scrape all the sectors that exist in Yhaoo-Finance:\
 **"Technology", "Basic Materials", "Healthcare", "Energy", "Communication Services",
 "Consumer Cyclical", "consumer Defensive", "Financial Services", "Industrials", "Real Estate","utilities"**.\
 If for any reason you don't want to scrape all the sectors, all you need is to specify -s and immediately after all the sectors that you want to be scrapped.\
 **For example:**
 Let's say I want to scrape only "Technology" and "consumer Defensive" this time.\
-In order to so I would run the command:\
+In order to so I have to run the command:\
 python main_file.py -s  "Technology" "consumer Defensive"\
 **Do you want to change the default sectors?**
 Go to the configuration file and change the SECTORS according to your needs.
-
-
+**Note:** If you will specify sector that does not exist in the SECTORS list, the program will not run.\
+So if new sectors wil be created, please go to the configurations file and add to the SECTORS list the new sectors.
+**2) -d**/
+Each running adds logs to the logs files./
+You have the option to choose the level of the logs, you do so by adding -d flag.\
+If -d specify as argument the logs will be in debug level, this will makes the logs a lot more detailed\
+and all the logs will be added to 'data_mining_debug_level' file.\
+If -d not specify the program logs will be in info level and all the logs will be added to 'data_mining_info_level' file.\
+**For example:**\
+Let's say I want to scrape only "Technology" and "consumer Defensive" in debug mode.\
+In order to so I have to run the command:\
+python main_file.py -s  "Technology" "consumer Defensive" -d
+**3) -f**/
+The financials data are annual so there is no reason to do them scraping every day,\
+too bad for running time. Therefore only if the flag -f is indicated the financial data will be obtained,\
+otherwise only daily data will be obtained.\
+**For example:**\
+Let's say I want to scrape only "Technology" and "consumer Defensive" in info mode and I want to get the financials data also.\
+In order to so I have to run the command:\
+python main_file.py -s  "Technology" "consumer Defensive" -f\
 
 
 You will get all the data about all the companies from all the different sectors from the web-site.\
