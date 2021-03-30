@@ -10,6 +10,7 @@ This project focuses on obtaining the following information for each symbol:\
 2) Change price from yesterday
 3) Daily volume
 4) Avg volume of 3 months\
+<a/>
 Each target page looks:\
 ![](appendix/daily_data.PNG)\
 Each row in the table is a different symbol and each column contains different information.\
