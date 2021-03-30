@@ -1,7 +1,7 @@
 # DB Configurations
 HOST = 'localhost'
 USER = 'root'
-PASSWORD = 'put_your_password'
+PASSWORD = 'Bar9506903'
 DB = 'stock_data'
 CHARSET = 'utf8mb4'
 # main scraper

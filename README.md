@@ -1,5 +1,4 @@
 # Data Mining Project - Pulling Data From Yahoo Finance!
-
 *Created by Bar Laniado and Anat Kira*
 ## What is all about
 In this project we are pulling data from yahoo finance web-site: https://finance.yahoo.com/ and store the data in out local DB.
@@ -20,6 +19,10 @@ In addition to the daily data, our scraper also able to scrape financial data fo
 To reach the Net Income at the web-site: press on the company symbol by your interest, a new page will pop-up,\
 choose the Financials tube, scroll down in the table till you reach the row: Net Income Common Stockholders\
 ![](appendix/net_income.PNG)
+
+### The Final Result
+The result of the project is a relational DB that contains all the collected data./
+By storing the data in DB we can run the process whenever we want, create a huge database with historical data.
 
 ## Installation
 
@@ -56,7 +59,7 @@ You can execute the program directly from the command line.\
 All you need is to run our: **main_file.py**\
 You can also run the program with different arguments.
 **Arguments:**
-**1) -s**/
+**1) -s** \
 When you specify this argument you ignore the default sectors to scrape and to actually determine which sectors you want to be scrapped.\
 The default is to scrape all the sectors that exist in Yhaoo-Finance:\
 **"Technology", "Basic Materials", "Healthcare", "Energy", "Communication Services",
@@ -69,8 +72,8 @@ python main_file.py -s  "Technology" "consumer Defensive"\
 **Do you want to change the default sectors?**\
 Go to the configuration file and change the SECTORS according to your needs.
 **Note:** If you will specify sector that does not exist in the SECTORS list, the program will not run.\
-So if new sectors wil be created, please go to the configurations file and add to the SECTORS list the new sectors.
-**2) -d**/
+So if new sectors wil be created, please go to the configurations file and add to the SECTORS list the new sectors
+**2) -d** \
 Each running adds logs to the logs files./
 You have the option to choose the level of the logs, you do so by adding -d flag.\
 If -d specify as argument the logs will be in debug level, this will makes the logs a lot more detailed\
@@ -79,8 +82,8 @@ If -d not specify the program logs will be in info level and all the logs will b
 **For example:**\
 Let's say I want to scrape only "Technology" and "consumer Defensive" in debug mode.\
 In order to so I have to run the command:\
-python main_file.py -s  "Technology" "consumer Defensive" -d
-**3) -f**/
+python main_file.py -s  "Technology" "consumer Defensive" -d \
+**3) -f** \
 The financials data are annual so there is no reason to do them scraping every day,\
 too bad for running time. Therefore only if the flag -f is indicated the financial data will be obtained,\
 otherwise only daily data will be obtained.\
@@ -88,7 +91,17 @@ otherwise only daily data will be obtained.\
 Let's say I want to scrape only "Technology" and "consumer Defensive" in info mode and I want to get the financials data also.\
 In order to so I have to run the command:\
 python main_file.py -s  "Technology" "consumer Defensive" -f\
-
+## Storing The Collected Data
+All data collected during the process is stored in a relational database.\
+The database designed for the project is made up of 4 tables:
+1. sectors - this table contains all the unique sectors that exists in the DB
+2. symbol_sector - The table contains all the symbols
+ that exist in the database and shows each sector to which sector it belongs
+3. daily_data - the table contains daily stock data
+4. financial_data  - the table contains financial stock data
+**ERD**
+\
+![](appendix/ERD.JPG)
 
 
 ## Hope you will enjoy and start to invest in the stock market (;
