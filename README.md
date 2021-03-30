@@ -9,11 +9,11 @@ This project focuses on obtaining the following information for each symbol:\
 1) Stock price
 2) Change price from yesterday
 3) Daily volume
-4) Avg volume of 3 months
-Each page looks:
-![](appendix/daily_data.PNG)
+4) Avg volume of 3 months\
+Each page looks:\
+![](appendix/daily_data.PNG)\
 Each row in the table is a different symbol and each column contains different information.\
-In addition to the daily data, our scraper also able to scrape financial data for each symbol (This project focuses only on net income).
+In addition to the daily data, our scraper also able to scrape financial data for each symbol (This project focuses only on net income).\
 To reach the Net Income at the web-site: press on the company symbol by your interest, a new page will pop-up,\
 choose the Financials tube, scroll down in the table till you reach the row: Net Income Common Stockholders\
 ![](appendix/net_income.PNG)
