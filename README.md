@@ -6,10 +6,10 @@ In this project we are pulling data from yahoo finance web-site: https://finance
 At the site, by pressing the Industries tub you can find a list with different sectors, like Energy, Healthcare, Technology and more...\
 In each sector, all the different companies with their daily update stock information.\
 We focused at the stock price, the change in the stock price from yesterday and the stock volume of each company, and arrange the data in a dictionary when the key is the company symbol.\
-![](appendix/daily_data.png)
+![](appendix/daily_data.PNG)
 While our first dictionary holds the daily information about each company, we created a second dictionary for the annual Net income of each company.\
 To reach the Net Income at the web-site: press on the company symbol by your interest, a new page will pop-up, choose the Financials tube, scroll down in the table till you reach the row: Net Income Common Stockholders
-![](appendix/net_income.png)
+![](appendix/net_income.PNG)
 
 ## Installation
 
