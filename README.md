@@ -104,6 +104,7 @@ The database designed for the project is made up of 4 tables:
 ![](appendix/ERD.JPG)
 ## The Scraper Implementation
 The project is implemented by hierarchy classes:\
+\
 The most basic classes are: SymbolFinancialReportData and SecurityDailyLevel.\
 **SecurityDailyLevel:** creates object that contains daily data of specific symbol\
 **SymbolFinancialReportData:** creates object that contains financial data of specific symbol\
