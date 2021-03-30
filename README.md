@@ -1,4 +1,4 @@
-# Data Mining Project - pulling data from Yahoo! finance
+# Data Mining Project - Pulling Data From Yahoo Finance!
 
 ## Created by Bar Laniado and Anat Kira
 
