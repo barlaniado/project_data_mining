@@ -21,10 +21,29 @@ we used the versions:\
 **Python 3.9.0**
 
 ## Before Running
-
+Please take care to build the DB infrastructure properly.\
+To do so: go to the db directory and run data_mining_db.sql in your MySql,\
+this file will create the data base and the tables that are needed to run this program.
 ## Usage
 **Command line interface**
+You can execute the program directly from the command line.\
 All you need is to run our: **main_file.py**\
+You can also run the program with different arguments.
+**Arguments:**
+**-s** When you specify this argument you ignore the default sectors to scrape and to actually determine which sectors you want to be scrapped.\
+The default is to scrape all the sectors that exist in Yhaoo-Finance:
+**"Technology", "Basic Materials", "Healthcare", "Energy", "Communication Services",
+"Consumer Cyclical", "consumer Defensive", "Financial Services", "Industrials", "Real Estate","utilities"**.\
+If for any reason you don't want to scrape all the sectors, all you need is to specify -s and immediately after all the sectors that you want to be scrapped.\
+For example:
+Let's say I want to scrape only "Technology" and "consumer Defensive" this time.\
+In order to so I would run the command: python main_file.py -s  "Technology" "consumer Defensive"\
+**Do you want to change the default sectors?**
+Go to the configuration file and change the SECTORS according to your needs.
+
+
+
+
 You will get all the data about all the companies from all the different sectors from the web-site.\
 
 
