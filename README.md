@@ -10,7 +10,7 @@ This project focuses on obtaining the following information for each symbol:
 2) Change price from yesterday
 3) Change price in percentage
 4) Daily volume
-5) Avg volume of 3 months\
+5) Avg volume of 3 months
 <a/>
 Each target page looks:
 <br>
