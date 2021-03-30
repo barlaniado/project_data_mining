@@ -6,10 +6,10 @@ In this project we are pulling data from yahoo finance web-site: https://finance
 At the site, by pressing the Industries tub you can find a list with different sectors, like Energy, Healthcare, Technology and more...\
 In each sector, we can find all the companies with their daily data: price, volume...\
 This project focuses on obtaining the following information for each symbol:\
-1) Stock price\
-2) Change price from yesterday\
-3) Daily volume\
-4) Avg volume of 3 months\
+1) Stock price
+2) Change price from yesterday
+3) Daily volume
+4) Avg volume of 3 months
 Each page looks:
 ![](appendix/daily_data.PNG)
 Each row in the table is a different symbol and each column contains different information.\
