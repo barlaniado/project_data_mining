@@ -11,7 +11,7 @@ This project focuses on obtaining the following information for each symbol:
 3) Change price in percentage
 4) Daily volume
 5) Avg volume of 3 months\
-</ul>
+
 Each target page looks:
 ![](appendix/daily_data.PNG)
 Each row in the table is a different symbol and each column contains different information.\
