@@ -54,18 +54,18 @@ FINANCIAL_DATA_TABLE = Put here the table name that will contain all the financi
 If you built the database with the file provided with this project and did not change anything,\
 all you need to change in the DB configurations: USER & PASSWORD
 ## Usage
-**Command line interface**
+**Command line interface**\
 You can execute the program directly from the command line.\
 All you need is to run our: **main_file.py**\
-You can also run the program with different arguments.
-**Arguments:**
+You can also run the program with different arguments.\
+**Arguments:**\
 **1) -s** \
 When you specify this argument you ignore the default sectors to scrape and to actually determine which sectors you want to be scrapped.\
 The default is to scrape all the sectors that exist in Yhaoo-Finance:\
 **"Technology", "Basic Materials", "Healthcare", "Energy", "Communication Services",
 "Consumer Cyclical", "consumer Defensive", "Financial Services", "Industrials", "Real Estate","utilities"**.\
 If for any reason you don't want to scrape all the sectors, all you need is to specify -s and immediately after all the sectors that you want to be scrapped.\
-**For example:**
+**For example:**\
 Let's say I want to scrape only "Technology" and "consumer Defensive" this time.\
 In order to so I have to run the command:\
 python main_file.py -s  "Technology" "consumer Defensive"\
@@ -102,10 +102,7 @@ The database designed for the project is made up of 4 tables:
 **ERD**
 \
 ![](appendix/ERD.JPG)
-
-
 ## Hope you will enjoy and start to invest in the stock market (;
-
 # Good Luck!
 
 
