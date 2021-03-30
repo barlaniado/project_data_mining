@@ -11,7 +11,7 @@ This project focuses on obtaining the following information for each symbol:
 4) Daily volume
 5) Avg volume of 3 months
 
-Each target page looks:
+Each target page looks like this:
 ![](appendix/daily_data.PNG)
 Each row in the table is a different symbol and each column contains different information.\
 \
