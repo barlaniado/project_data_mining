@@ -74,6 +74,7 @@ class DailyDataScraper:
                 project_conf.logger.logger.warning(project_conf.LOGGER_WARNING_MESSAGE_TBODY_MORE_THAN)
             if len(tbody) < project_conf.ASSUMPTION_TBODY_LEN:
                 project_conf.logger.logger.warning(project_conf.LOGGER_WARNING_MESSAGE_TBODY_LESS_THAN)
+                return
             tbody = tbody[project_conf.TABLE_CONTENT_INDEX]
             # The first call to the _add_securities(tbody, sector) function
             # for each sector (the first page for each sector) is performed outside the loop,

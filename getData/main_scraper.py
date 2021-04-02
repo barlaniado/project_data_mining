@@ -149,13 +149,14 @@ class MainScraperSymbols:
     def _insert_financial_data(self):
         """ Insert the financial data to the db """
         for symbol_data in self.financial_report.data_list:
-            for date, net_income in symbol_data.net_income.items():
-                query = project_conf.INSERT_FINANCIAL_DATA.format(project_conf.FINANCIAL_DATA_TABLE,
-                                                                  project_conf.COLUMNS_INSERT_FINANCIAL_DATA,
-                                                                  symbol_data.symbol,
-                                                                  datetime.datetime.strptime(date,
-                                                                                 project_conf.FORMAT_DATE_FINANCIAL),
-                                                                  net_income['Net Income'])
-                project_conf.logger.logger.debug(project_conf.INSERT_SYMBOL_FINANCIAL_DATA .format(symbol_data.symbol))
-                self.cur.execute(query)
-                self.connection.commit()
+            if symbol_data.net_income:
+                for date, net_income in symbol_data.net_income.items():
+                    query = project_conf.INSERT_FINANCIAL_DATA.format(project_conf.FINANCIAL_DATA_TABLE,
+                                                                      project_conf.COLUMNS_INSERT_FINANCIAL_DATA,
+                                                                      symbol_data.symbol,
+                                                                      datetime.datetime.strptime(date,
+                                                                                     project_conf.FORMAT_DATE_FINANCIAL),
+                                                                      net_income['Net Income'])
+                    project_conf.logger.logger.debug(project_conf.INSERT_SYMBOL_FINANCIAL_DATA .format(symbol_data.symbol))
+                    self.cur.execute(query)
+                    self.connection.commit()

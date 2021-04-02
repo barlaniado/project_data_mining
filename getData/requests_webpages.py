@@ -4,7 +4,6 @@ from configuration import project_conf
 from utilities import utilities
 
 
-
 def get_content_sector_page(page_url):
     """
     The function gets a url to a sector page and returns the content of the page as BeautifulSoup object.
@@ -13,7 +12,7 @@ def get_content_sector_page(page_url):
         page = requests.get(page_url, headers=project_conf.HEADERS)
         page.raise_for_status() # raise an exception if status is not 200
     except requests.exceptions.ConnectionError:
-        project_conflogger.logger.error(" ConnectionError - sector page scraping")
+        project_conf.logger.logger.error(" ConnectionError - sector page scraping")
         raise requests.exceptions.ConnectionError
     except requests.exceptions.HTTPError:
         project_conf.logger.logger.error(" HTTPError - sector page scraping")

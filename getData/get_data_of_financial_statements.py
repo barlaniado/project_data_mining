@@ -95,7 +95,7 @@ class FinancialReportsDataScraper:
         The method gets a list of all the companies symbols
          abd iterates over the list while calling _get_data_financial_statements(symbol) for each symbol.
         """
-        for symbol in list_symbols[0:2]:
+        for symbol in list_symbols:
             self._get_data_financial_statements(symbol)
             self._update_counter_symbols() # The programs should sleep sometimes
     
