@@ -1,7 +1,7 @@
 # DB Configurations
 HOST = 'localhost'
 USER = 'root'
-PASSWORD = 'PUT_YOUR_PASSWORD'
+PASSWORD = 'Bar9506903'
 DB = 'stock_data'
 CHARSET = 'utf8mb4'
 # main scraper
@@ -57,7 +57,7 @@ F_MESSAGE = "If the flag is specified the software will scrape the financial dat
 # requests_webpages
 
 SECTORS = ["Technology", "Basic Materials", "Healthcare", "Energy", "Communication Services",
-           "Consumer Cyclical", "consumer Defensive", "Financial Services", "Industrials", "Real Estate",
+           "Consumer Cyclical", "Consumer Defensive", "Financial Services", "Industrials", "Real Estate",
            "utilities"]
 
 COUNT = 100

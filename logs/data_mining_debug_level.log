@@ -1,0 +1,809 @@
+2021-05-02 17:35:05,854-ERROR-FILE:main_file.py-FUNC:main-LINE:20- Non-existent sectors were inserted
+2021-05-02 17:37:16,790-ERROR-FILE:main_file.py-FUNC:main-LINE:20- Non-existent sectors were inserted
+2021-05-02 17:37:19,597-ERROR-FILE:main_file.py-FUNC:main-LINE:20- Non-existent sectors were inserted
+2021-05-02 17:37:21,247-ERROR-FILE:main_file.py-FUNC:main-LINE:20- Non-existent sectors were inserted
+2021-05-02 17:37:47,639-INFO-FILE:get_daily_data.py-FUNC:_scrape_sector_pages-LINE:52-Started to scrape sectors pages
+2021-05-02 17:37:48,864-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:22-The code of the current request: 200
+2021-05-02 17:37:56,006-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:27-Return a BeautifulSoup object
+2021-05-02 17:37:56,009-INFO-FILE:get_daily_data.py-FUNC:_scrape_sector_pages-LINE:70-The Technology has 448 symbols and 5 pages
+2021-05-02 17:37:56,013-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: AAPL
+2021-05-02 17:37:56,014-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for AAPL on 2021-05-02 17:37:56.013931:
+Price: 131.46
+Price change: -2.02
+Change in percentages: -1.51
+Volume: 109.839M
+Average volume: 100.992M
+2021-05-02 17:37:56,014-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,014-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: MSFT
+2021-05-02 17:37:56,014-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for MSFT on 2021-05-02 17:37:56.014928:
+Price: 252.18
+Price change: -0.33
+Change in percentages: -0.13
+Volume: 30.945M
+Average volume: 28.231M
+2021-05-02 17:37:56,015-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,015-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: TSM
+2021-05-02 17:37:56,015-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for TSM on 2021-05-02 17:37:56.015926:
+Price: 116.74
+Price change: -2.36
+Change in percentages: -1.98
+Volume: 7.833M
+Average volume: 11.567M
+2021-05-02 17:37:56,015-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,015-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: NVDA
+2021-05-02 17:37:56,016-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for NVDA on 2021-05-02 17:37:56.015926:
+Price: 600.38
+Price change: -12.61
+Change in percentages: -2.06
+Volume: 4.667M
+Average volume: 8.399M
+2021-05-02 17:37:56,016-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,016-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: ASML
+2021-05-02 17:37:56,016-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for ASML on 2021-05-02 17:37:56.016923:
+Price: 648.1
+Price change: -14.38
+Change in percentages: -2.17
+Volume: 562,981
+Average volume: 969,653
+2021-05-02 17:37:56,016-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,016-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: ADBE
+2021-05-02 17:37:56,017-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for ADBE on 2021-05-02 17:37:56.016923:
+Price: 508.34
+Price change: -7.75
+Change in percentages: -1.5
+Volume: 1.951M
+Average volume: 2.552M
+2021-05-02 17:37:56,017-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,017-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: INTC
+2021-05-02 17:37:56,017-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for INTC on 2021-05-02 17:37:56.017921:
+Price: 57.53
+Price change: -0.75
+Change in percentages: -1.29
+Volume: 30.732M
+Average volume: 30.796M
+2021-05-02 17:37:56,017-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,017-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: ORCL
+2021-05-02 17:37:56,018-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for ORCL on 2021-05-02 17:37:56.017921:
+Price: 75.79
+Price change: -0.08
+Change in percentages: -0.11
+Volume: 7.169M
+Average volume: 13.729M
+2021-05-02 17:37:56,018-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,018-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: CSCO
+2021-05-02 17:37:56,021-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for CSCO on 2021-05-02 17:37:56.021699:
+Price: 50.91
+Price change: -0.55
+Change in percentages: -1.07
+Volume: 19.931M
+Average volume: 21.158M
+2021-05-02 17:37:56,022-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,022-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: CRM
+2021-05-02 17:37:56,022-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for CRM on 2021-05-02 17:37:56.022736:
+Price: 230.32
+Price change: -4.04
+Change in percentages: -1.72
+Volume: 4.546M
+Average volume: 6.504M
+2021-05-02 17:37:56,022-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,023-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: ACN
+2021-05-02 17:37:56,023-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for ACN on 2021-05-02 17:37:56.023700:
+Price: 289.97
+Price change: -2.57
+Change in percentages: -0.88
+Volume: 1.969M
+Average volume: 2.081M
+2021-05-02 17:37:56,023-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,023-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: AVGO
+2021-05-02 17:37:56,023-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for AVGO on 2021-05-02 17:37:56.023700:
+Price: 456.2
+Price change: -10.09
+Change in percentages: -2.16
+Volume: 1.799M
+Average volume: 2.301M
+2021-05-02 17:37:56,024-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,024-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: SAP
+2021-05-02 17:37:56,024-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for SAP on 2021-05-02 17:37:56.024727:
+Price: 139.94
+Price change: -3.84
+Change in percentages: -2.67
+Volume: 798,586
+Average volume: 911,450
+2021-05-02 17:37:56,024-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,024-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: TXN
+2021-05-02 17:37:56,025-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for TXN on 2021-05-02 17:37:56.024727:
+Price: 180.51
+Price change: -4.29
+Change in percentages: -2.32
+Volume: 6.194M
+Average volume: 4.759M
+2021-05-02 17:37:56,025-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,025-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: QCOM
+2021-05-02 17:37:56,025-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for QCOM on 2021-05-02 17:37:56.025723:
+Price: 138.8
+Price change: -3.88
+Change in percentages: -2.72
+Volume: 11.375M
+Average volume: 11.542M
+2021-05-02 17:37:56,025-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,025-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: SHOP
+2021-05-02 17:37:56,026-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for SHOP on 2021-05-02 17:37:56.025723:
+Price: 1182.51
+Price change: -50.56
+Change in percentages: -4.1
+Volume: 1.532M
+Average volume: 1.468M
+2021-05-02 17:37:56,026-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,026-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: SONY
+2021-05-02 17:37:56,026-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for SONY on 2021-05-02 17:37:56.026719:
+Price: 100.16
+Price change: -4.69
+Change in percentages: -4.47
+Volume: 1.076M
+Average volume: 955,300
+2021-05-02 17:37:56,026-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,026-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: IBM
+2021-05-02 17:37:56,027-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for IBM on 2021-05-02 17:37:56.026719:
+Price: 141.88
+Price change: -2.36
+Change in percentages: -1.64
+Volume: 8.668M
+Average volume: 5.667M
+2021-05-02 17:37:56,036-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,036-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: AMAT
+2021-05-02 17:37:56,037-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for AMAT on 2021-05-02 17:37:56.036916:
+Price: 132.71
+Price change: -2.68
+Change in percentages: -1.98
+Volume: 8.692M
+Average volume: 9.835M
+2021-05-02 17:37:56,037-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,037-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: INTU
+2021-05-02 17:37:56,038-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for INTU on 2021-05-02 17:37:56.037925:
+Price: 412.16
+Price change: -3.99
+Change in percentages: -0.96
+Volume: 1.409M
+Average volume: 1.351M
+2021-05-02 17:37:56,038-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,038-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: SQ
+2021-05-02 17:37:56,038-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for SQ on 2021-05-02 17:37:56.038917:
+Price: 244.82
+Price change: -2.94
+Change in percentages: -1.19
+Volume: 5.574M
+Average volume: 10.978M
+2021-05-02 17:37:56,038-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,038-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: UBER
+2021-05-02 17:37:56,039-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for UBER on 2021-05-02 17:37:56.038917:
+Price: 54.77
+Price change: -0.16
+Change in percentages: -0.29
+Volume: 16.351M
+Average volume: 18.594M
+2021-05-02 17:37:56,039-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,039-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: NOW
+2021-05-02 17:37:56,039-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for NOW on 2021-05-02 17:37:56.039913:
+Price: 506.37
+Price change: 1.37
+Change in percentages: 0.27
+Volume: 3.441M
+Average volume: 1.562M
+2021-05-02 17:37:56,039-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,039-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: AMD
+2021-05-02 17:37:56,040-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for AMD on 2021-05-02 17:37:56.040910:
+Price: 81.62
+Price change: -2.29
+Change in percentages: -2.73
+Volume: 45.915M
+Average volume: 43.339M
+2021-05-02 17:37:56,040-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,040-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: MU
+2021-05-02 17:37:56,040-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for MU on 2021-05-02 17:37:56.040910:
+Price: 86.07
+Price change: -1.99
+Change in percentages: -2.26
+Volume: 14.548M
+Average volume: 20.034M
+2021-05-02 17:37:56,040-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,041-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: FIS
+2021-05-02 17:37:56,041-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for FIS on 2021-05-02 17:37:56.041907:
+Price: 152.9
+Price change: -2.79
+Change in percentages: -1.79
+Volume: 2.487M
+Average volume: 3.367M
+2021-05-02 17:37:56,041-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,042-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: LRCX
+2021-05-02 17:37:56,042-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for LRCX on 2021-05-02 17:37:56.042902:
+Price: 620.45
+Price change: -20.52
+Change in percentages: -3.2
+Volume: 1.367M
+Average volume: 1.638M
+2021-05-02 17:37:56,042-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,052-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: FISV
+2021-05-02 17:37:56,053-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for FISV on 2021-05-02 17:37:56.052643:
+Price: 120.12
+Price change: -2.14
+Change in percentages: -1.75
+Volume: 14.412M
+Average volume: 4.359M
+2021-05-02 17:37:56,053-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,053-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: INFY
+2021-05-02 17:37:56,054-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for INFY on 2021-05-02 17:37:56.053966:
+Price: 18.08
+Price change: -0.38
+Change in percentages: -2.06
+Volume: 7.019M
+Average volume: 8.167M
+2021-05-02 17:37:56,054-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,054-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: DELL
+2021-05-02 17:37:56,054-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for DELL on 2021-05-02 17:37:56.054644:
+Price: 98.33
+Price change: -1.67
+Change in percentages: -1.67
+Volume: 1.195M
+Average volume: 2.768M
+2021-05-02 17:37:56,054-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,055-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: VMW
+2021-05-02 17:37:56,055-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for VMW on 2021-05-02 17:37:56.055639:
+Price: 160.83
+Price change: -1.74
+Change in percentages: -1.07
+Volume: 679,312
+Average volume: 1.161M
+2021-05-02 17:37:56,055-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,055-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: SNOW
+2021-05-02 17:37:56,056-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for SNOW on 2021-05-02 17:37:56.055639:
+Price: 231.59
+Price change: 2.04
+Change in percentages: 0.89
+Volume: 1.885M
+Average volume: 3.978M
+2021-05-02 17:37:56,056-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,056-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: ADSK
+2021-05-02 17:37:56,056-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for ADSK on 2021-05-02 17:37:56.056636:
+Price: 291.91
+Price change: -4.37
+Change in percentages: -1.47
+Volume: 732,176
+Average volume: 1.277M
+2021-05-02 17:37:56,056-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,056-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: TEAM
+2021-05-02 17:37:56,057-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for TEAM on 2021-05-02 17:37:56.056636:
+Price: 237.56
+Price change: 9.44
+Change in percentages: 4.14
+Volume: 3.071M
+Average volume: 1.39M
+2021-05-02 17:37:56,057-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,057-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: WDAY
+2021-05-02 17:37:56,057-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for WDAY on 2021-05-02 17:37:56.057665:
+Price: 247.0
+Price change: -7.67
+Change in percentages: -3.01
+Volume: 2.023M
+Average volume: 1.716M
+2021-05-02 17:37:56,058-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,058-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: ADI
+2021-05-02 17:37:56,058-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for ADI on 2021-05-02 17:37:56.058662:
+Price: 153.16
+Price change: -4.85
+Change in percentages: -3.07
+Volume: 4.035M
+Average volume: 3.029M
+2021-05-02 17:37:56,058-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,068-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: NXPI
+2021-05-02 17:37:56,069-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for NXPI on 2021-05-02 17:37:56.068674:
+Price: 192.51
+Price change: -8.25
+Change in percentages: -4.11
+Volume: 3.509M
+Average volume: 4.124M
+2021-05-02 17:37:56,069-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,069-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: KLAC
+2021-05-02 17:37:56,069-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for KLAC on 2021-05-02 17:37:56.069680:
+Price: 315.35
+Price change: -11.01
+Change in percentages: -3.37
+Volume: 1.434M
+Average volume: 1.409M
+2021-05-02 17:37:56,069-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,070-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: ERIC
+2021-05-02 17:37:56,070-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for ERIC on 2021-05-02 17:37:56.070674:
+Price: 13.79
+Price change: -0.18
+Change in percentages: -1.29
+Volume: 3.686M
+Average volume: 6.498M
+2021-05-02 17:37:56,070-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,070-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: CRWD
+2021-05-02 17:37:56,071-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for CRWD on 2021-05-02 17:37:56.070674:
+Price: 208.51
+Price change: -3.02
+Change in percentages: -1.43
+Volume: 2.029M
+Average volume: 3.982M
+2021-05-02 17:37:56,071-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,071-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: TEL
+2021-05-02 17:37:56,071-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for TEL on 2021-05-02 17:37:56.071671:
+Price: 134.47
+Price change: -3.71
+Change in percentages: -2.68
+Volume: 1.616M
+Average volume: 1.829M
+2021-05-02 17:37:56,071-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,071-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: HPQ
+2021-05-02 17:37:56,072-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for HPQ on 2021-05-02 17:37:56.071671:
+Price: 34.11
+Price change: -0.59
+Change in percentages: -1.7
+Volume: 8.399M
+Average volume: 10.01M
+2021-05-02 17:37:56,072-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,072-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: PLTR
+2021-05-02 17:37:56,072-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for PLTR on 2021-05-02 17:37:56.072698:
+Price: 23.04
+Price change: -0.33
+Change in percentages: -1.41
+Volume: 24.415M
+Average volume: 79.928M
+2021-05-02 17:37:56,072-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,072-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: DOCU
+2021-05-02 17:37:56,073-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for DOCU on 2021-05-02 17:37:56.072698:
+Price: 222.94
+Price change: -1.65
+Change in percentages: -0.73
+Volume: 1.289M
+Average volume: 2.994M
+2021-05-02 17:37:56,073-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,073-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: CTSH
+2021-05-02 17:37:56,073-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for CTSH on 2021-05-02 17:37:56.073695:
+Price: 80.4
+Price change: -0.96
+Change in percentages: -1.18
+Volume: 2.733M
+Average volume: 3.148M
+2021-05-02 17:37:56,073-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,073-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: MCHP
+2021-05-02 17:37:56,074-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for MCHP on 2021-05-02 17:37:56.073695:
+Price: 150.29
+Price change: -5.62
+Change in percentages: -3.6
+Volume: 2.005M
+Average volume: 2.113M
+2021-05-02 17:37:56,074-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,084-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: SNPS
+2021-05-02 17:37:56,085-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for SNPS on 2021-05-02 17:37:56.084200:
+Price: 247.06
+Price change: -5.45
+Change in percentages: -2.16
+Volume: 673,756
+Average volume: 980,775
+2021-05-02 17:37:56,085-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,085-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: CDNS
+2021-05-02 17:37:56,085-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for CDNS on 2021-05-02 17:37:56.085204:
+Price: 131.77
+Price change: -1.69
+Change in percentages: -1.27
+Volume: 1.64M
+Average volume: 1.917M
+2021-05-02 17:37:56,085-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,086-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: WIT
+2021-05-02 17:37:56,086-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for WIT on 2021-05-02 17:37:56.086199:
+Price: 7.16
+Price change: -0.15
+Change in percentages: -2.05
+Volume: 2.094M
+Average volume: 1.795M
+2021-05-02 17:37:56,086-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,086-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: OKTA
+2021-05-02 17:37:56,086-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for OKTA on 2021-05-02 17:37:56.086199:
+Price: 269.7
+Price change: -3.92
+Change in percentages: -1.43
+Volume: 1.346M
+Average volume: 1.809M
+2021-05-02 17:37:56,087-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,087-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: PANW
+2021-05-02 17:37:56,087-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for PANW on 2021-05-02 17:37:56.087196:
+Price: 353.39
+Price change: -1.76
+Change in percentages: -0.5
+Volume: 588,629
+Average volume: 1.132M
+2021-05-02 17:37:56,087-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,087-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: GLW
+2021-05-02 17:37:56,088-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for GLW on 2021-05-02 17:37:56.087196:
+Price: 44.21
+Price change: -0.94
+Change in percentages: -2.08
+Volume: 4.114M
+Average volume: 4.769M
+2021-05-02 17:37:56,088-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,088-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: STM
+2021-05-02 17:37:56,088-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for STM on 2021-05-02 17:37:56.088193:
+Price: 37.29
+Price change: -2.17
+Change in percentages: -5.5
+Volume: 3.671M
+Average volume: 2.475M
+2021-05-02 17:37:56,088-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,088-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: FTNT
+2021-05-02 17:37:56,089-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for FTNT on 2021-05-02 17:37:56.088193:
+Price: 204.23
+Price change: 8.76
+Change in percentages: 4.48
+Volume: 2.744M
+Average volume: 1.311M
+2021-05-02 17:37:56,089-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,089-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: MSI
+2021-05-02 17:37:56,089-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for MSI on 2021-05-02 17:37:56.089191:
+Price: 188.3
+Price change: -0.93
+Change in percentages: -0.49
+Volume: 696,289
+Average volume: 699,416
+2021-05-02 17:37:56,089-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,099-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: ANSS
+2021-05-02 17:37:56,100-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for ANSS on 2021-05-02 17:37:56.099163:
+Price: 365.66
+Price change: -6.14
+Change in percentages: -1.65
+Volume: 311,080
+Average volume: 484,166
+2021-05-02 17:37:56,100-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,100-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: XLNX
+2021-05-02 17:37:56,100-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for XLNX on 2021-05-02 17:37:56.100162:
+Price: 127.96
+Price change: -4.51
+Change in percentages: -3.4
+Volume: 4.902M
+Average volume: 2.521M
+2021-05-02 17:37:56,100-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,101-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: MRVL
+2021-05-02 17:37:56,101-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for MRVL on 2021-05-02 17:37:56.101160:
+Price: 45.21
+Price change: -2.05
+Change in percentages: -4.34
+Volume: 8.476M
+Average volume: 11.416M
+2021-05-02 17:37:56,101-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,101-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: SWKS
+2021-05-02 17:37:56,101-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for SWKS on 2021-05-02 17:37:56.101160:
+Price: 181.33
+Price change: -16.53
+Change in percentages: -8.35
+Volume: 7.121M
+Average volume: 2.257M
+2021-05-02 17:37:56,102-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,102-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: RNG
+2021-05-02 17:37:56,102-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for RNG on 2021-05-02 17:37:56.102157:
+Price: 318.95
+Price change: 2.45
+Change in percentages: 0.77
+Volume: 875,262
+Average volume: 942,825
+2021-05-02 17:37:56,102-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,102-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: U
+2021-05-02 17:37:56,103-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for U on 2021-05-02 17:37:56.102157:
+Price: 101.58
+Price change: -1.65
+Change in percentages: -1.6
+Volume: 1.067M
+Average volume: 4.765M
+2021-05-02 17:37:56,103-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,103-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: KEYS
+2021-05-02 17:37:56,103-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for KEYS on 2021-05-02 17:37:56.103154:
+Price: 144.35
+Price change: -4.04
+Change in percentages: -2.72
+Volume: 767,684
+Average volume: 1.105M
+2021-05-02 17:37:56,103-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,103-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: FTV-PA
+2021-05-02 17:37:56,104-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for FTV-PA on 2021-05-02 17:37:56.103154:
+Price: 993.5
+Price change: -20.15
+Change in percentages: -1.99
+Volume: 17,889
+Average volume: 9,432
+2021-05-02 17:37:56,104-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,104-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: GRMN
+2021-05-02 17:37:56,104-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for GRMN on 2021-05-02 17:37:56.104151:
+Price: 137.24
+Price change: -1.44
+Change in percentages: -1.04
+Volume: 634,249
+Average volume: 748,604
+2021-05-02 17:37:56,104-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,115-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: NET
+2021-05-02 17:37:56,116-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for NET on 2021-05-02 17:37:56.115120:
+Price: 84.74
+Price change: -0.15
+Change in percentages: -0.18
+Volume: 4.111M
+Average volume: 4.534M
+2021-05-02 17:37:56,116-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,116-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: DDOG
+2021-05-02 17:37:56,116-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for DDOG on 2021-05-02 17:37:56.116150:
+Price: 85.77
+Price change: -3.07
+Change in percentages: -3.46
+Volume: 2.588M
+Average volume: 3.589M
+2021-05-02 17:37:56,117-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,117-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: ZBRA
+2021-05-02 17:37:56,117-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for ZBRA on 2021-05-02 17:37:56.117147:
+Price: 487.74
+Price change: -8.89
+Change in percentages: -1.79
+Volume: 353,484
+Average volume: 365,082
+2021-05-02 17:37:56,117-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,117-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: EPAM
+2021-05-02 17:37:56,118-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for EPAM on 2021-05-02 17:37:56.117147:
+Price: 457.75
+Price change: -1.25
+Change in percentages: -0.27
+Volume: 340,011
+Average volume: 291,362
+2021-05-02 17:37:56,118-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,118-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: CDW
+2021-05-02 17:37:56,118-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for CDW on 2021-05-02 17:37:56.118113:
+Price: 178.33
+Price change: -4.17
+Change in percentages: -2.28
+Volume: 863,414
+Average volume: 796,301
+2021-05-02 17:37:56,118-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,119-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: MXIM
+2021-05-02 17:37:56,119-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for MXIM on 2021-05-02 17:37:56.119110:
+Price: 94.0
+Price change: -3.07
+Change in percentages: -3.17
+Volume: 2.496M
+Average volume: 2.293M
+2021-05-02 17:37:56,119-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,119-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: ZS
+2021-05-02 17:37:56,120-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for ZS on 2021-05-02 17:37:56.119110:
+Price: 187.64
+Price change: 0.36
+Change in percentages: 0.19
+Volume: 1.175M
+Average volume: 1.921M
+2021-05-02 17:37:56,120-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,120-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: VRSN
+2021-05-02 17:37:56,120-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for VRSN on 2021-05-02 17:37:56.120108:
+Price: 218.77
+Price change: -0.85
+Change in percentages: -0.39
+Volume: 588,009
+Average volume: 647,406
+2021-05-02 17:37:56,120-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,120-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: CAJ
+2021-05-02 17:37:56,121-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for CAJ on 2021-05-02 17:37:56.120108:
+Price: 23.73
+Price change: -0.16
+Change in percentages: -0.67
+Volume: 147,616
+Average volume: 240,259
+2021-05-02 17:37:56,121-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,130-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: WORK
+2021-05-02 17:37:56,131-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for WORK on 2021-05-02 17:37:56.130304:
+Price: 42.4
+Price change: -0.31
+Change in percentages: -0.73
+Volume: 3.938M
+Average volume: 5.78M
+2021-05-02 17:37:56,131-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,131-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: HUBS
+2021-05-02 17:37:56,132-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for HUBS on 2021-05-02 17:37:56.131307:
+Price: 526.45
+Price change: -13.78
+Change in percentages: -2.55
+Volume: 464,858
+Average volume: 552,712
+2021-05-02 17:37:56,132-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,132-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: FLT
+2021-05-02 17:37:56,132-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for FLT on 2021-05-02 17:37:56.132302:
+Price: 287.72
+Price change: -0.02
+Change in percentages: -0.01
+Volume: 477,206
+Average volume: 535,791
+2021-05-02 17:37:56,132-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,132-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: FTV
+2021-05-02 17:37:56,133-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for FTV on 2021-05-02 17:37:56.132302:
+Price: 70.82
+Price change: -4.04
+Change in percentages: -5.4
+Volume: 4.726M
+Average volume: 2.368M
+2021-05-02 17:37:56,133-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,133-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: ANET
+2021-05-02 17:37:56,133-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for ANET on 2021-05-02 17:37:56.133299:
+Price: 315.17
+Price change: -7.34
+Change in percentages: -2.28
+Volume: 538,375
+Average volume: 507,898
+2021-05-02 17:37:56,133-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,133-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: GIB
+2021-05-02 17:37:56,134-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for GIB on 2021-05-02 17:37:56.134297:
+Price: 88.46
+Price change: -0.4
+Change in percentages: -0.45
+Volume: 258,319
+Average volume: 143,079
+2021-05-02 17:37:56,134-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,134-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: PAYC
+2021-05-02 17:37:56,134-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for PAYC on 2021-05-02 17:37:56.134297:
+Price: 384.41
+Price change: -9.83
+Change in percentages: -2.49
+Volume: 300,671
+Average volume: 384,222
+2021-05-02 17:37:56,134-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,134-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: STX
+2021-05-02 17:37:56,135-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for STX on 2021-05-02 17:37:56.135324:
+Price: 92.84
+Price change: -3.99
+Change in percentages: -4.12
+Volume: 4.83M
+Average volume: 3.09M
+2021-05-02 17:37:56,135-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,135-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: WDC
+2021-05-02 17:37:56,135-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for WDC on 2021-05-02 17:37:56.135324:
+Price: 70.63
+Price change: -0.5
+Change in percentages: -0.7
+Volume: 11.015M
+Average volume: 4.658M
+2021-05-02 17:37:56,135-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,146-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: UMC
+2021-05-02 17:37:56,147-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for UMC on 2021-05-02 17:37:56.146506:
+Price: 9.92
+Price change: -0.21
+Change in percentages: -2.07
+Volume: 3.937M
+Average volume: 6.741M
+2021-05-02 17:37:56,147-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,147-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: QRVO
+2021-05-02 17:37:56,147-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for QRVO on 2021-05-02 17:37:56.147510:
+Price: 188.17
+Price change: -11.37
+Change in percentages: -5.7
+Volume: 1.356M
+Average volume: 1.313M
+2021-05-02 17:37:56,148-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,148-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: TER
+2021-05-02 17:37:56,148-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for TER on 2021-05-02 17:37:56.148504:
+Price: 125.08
+Price change: -5.73
+Change in percentages: -4.38
+Volume: 1.689M
+Average volume: 2.078M
+2021-05-02 17:37:56,148-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,148-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: HPE
+2021-05-02 17:37:56,149-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for HPE on 2021-05-02 17:37:56.148504:
+Price: 16.02
+Price change: -0.35
+Change in percentages: -2.14
+Volume: 11.699M
+Average volume: 11.997M
+2021-05-02 17:37:56,149-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,149-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: TRMB
+2021-05-02 17:37:56,149-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for TRMB on 2021-05-02 17:37:56.149501:
+Price: 82.0
+Price change: -1.66
+Change in percentages: -1.98
+Volume: 1.229M
+Average volume: 1.498M
+2021-05-02 17:37:56,149-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,149-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: SPLK
+2021-05-02 17:37:56,150-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for SPLK on 2021-05-02 17:37:56.149501:
+Price: 126.42
+Price change: -1.79
+Change in percentages: -1.4
+Volume: 1.604M
+Average volume: 2.473M
+2021-05-02 17:37:56,150-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,150-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: ZI
+2021-05-02 17:37:56,150-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for ZI on 2021-05-02 17:37:56.150498:
+Price: 51.86
+Price change: -0.2
+Change in percentages: -0.38
+Volume: 1.085M
+Average volume: 2.305M
+2021-05-02 17:37:56,150-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,150-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: APH
+2021-05-02 17:37:56,151-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for APH on 2021-05-02 17:37:56.150498:
+Price: 67.34
+Price change: -1.3
+Change in percentages: -1.89
+Volume: 3.717M
+Average volume: 2.909M
+2021-05-02 17:37:56,151-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,151-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: STNE
+2021-05-02 17:37:56,151-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for STNE on 2021-05-02 17:37:56.151496:
+Price: 64.64
+Price change: -2.49
+Change in percentages: -3.71
+Volume: 2.189M
+Average volume: 2.208M
+2021-05-02 17:37:56,151-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,162-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: COUP
+2021-05-02 17:37:56,163-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for COUP on 2021-05-02 17:37:56.162466:
+Price: 269.04
+Price change: 0.07
+Change in percentages: 0.03
+Volume: 1.189M
+Average volume: 1.312M
+2021-05-02 17:37:56,163-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,163-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: XM
+2021-05-02 17:37:56,164-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for XM on 2021-05-02 17:37:56.163465:
+Price: 37.35
+Price change: -1.24
+Change in percentages: -3.21
+Volume: 1.744M
+Average volume: 1.927M
+2021-05-02 17:37:56,164-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,164-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: SSNC
+2021-05-02 17:37:56,164-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for SSNC on 2021-05-02 17:37:56.164461:
+Price: 74.22
+Price change: -0.43
+Change in percentages: -0.58
+Volume: 1.082M
+Average volume: 1.406M
+2021-05-02 17:37:56,165-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,165-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: LOGI
+2021-05-02 17:37:56,165-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for LOGI on 2021-05-02 17:37:56.165458:
+Price: 110.88
+Price change: 1.74
+Change in percentages: 1.59
+Volume: 1.503M
+Average volume: 831,145
+2021-05-02 17:37:56,165-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,166-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: BR
+2021-05-02 17:37:56,166-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for BR on 2021-05-02 17:37:56.166456:
+Price: 158.63
+Price change: -2.83
+Change in percentages: -1.75
+Volume: 610,885
+Average volume: 533,061
+2021-05-02 17:37:56,166-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,166-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: LYFT
+2021-05-02 17:37:56,167-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for LYFT on 2021-05-02 17:37:56.167453:
+Price: 55.66
+Price change: -1.44
+Change in percentages: -2.52
+Volume: 10.842M
+Average volume: 7.205M
+2021-05-02 17:37:56,167-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,167-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: UI
+2021-05-02 17:37:56,168-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for UI on 2021-05-02 17:37:56.167453:
+Price: 285.33
+Price change: -0.4
+Change in percentages: -0.14
+Volume: 86,454
+Average volume: 123,688
+2021-05-02 17:37:56,168-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,168-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: AKAM
+2021-05-02 17:37:56,169-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for AKAM on 2021-05-02 17:37:56.168450:
+Price: 108.7
+Price change: -1.3
+Change in percentages: -1.18
+Volume: 1.668M
+Average volume: 2.032M
+2021-05-02 17:37:56,169-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:56,169-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:122-Found the symbol: WIX
+2021-05-02 17:37:56,170-DEBUG-FILE:get_daily_data.py-FUNC:_add_securities-LINE:132-Daily data for WIX on 2021-05-02 17:37:56.169448:
+Price: 317.88
+Price change: -6.37
+Change in percentages: -1.96
+Volume: 302,646
+Average volume: 665,382
+2021-05-02 17:37:56,170-INFO-FILE:get_daily_data.py-FUNC:_add_securities-LINE:133-The data was successfully added to the dictionary
+2021-05-02 17:37:57,705-INFO-FILE:requests_webpages.py-FUNC:get_content_sector_page-LINE:22-The code of the current request: 200

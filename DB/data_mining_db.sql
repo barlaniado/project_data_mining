@@ -8,7 +8,7 @@ CREATE TABLE sectors (
   );
   
   CREATE TABLE symbol_sector (
-  symbol varchar(10) NOT NULL PRIMARY KEY,
+  symbol varchar(100) NOT NULL PRIMARY KEY,
   id_sector SMALLINT,
   UNIQUE(symbol),
   FOREIGN KEY (id_sector) REFERENCES sectors(id_sector)

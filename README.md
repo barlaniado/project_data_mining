@@ -82,7 +82,7 @@ The financials data are annual so there is no need to scrap them on a daily basi
 **For example:**\
 In the case you want to scrape only "Technology" and "consumer Defensive" in debug mode and in addition get the financials data.\
 One can run the command:\
-python main_file.py -s "Technology" "consumer Defensive" -d -f
+python main_file.py -s "Technology" "Consumer Defensive" -d -f
 ## Storing The Collected Data
 All the collected data is stored in a relational database.\
 The database designed for the project contains 4 tables:
