@@ -169,6 +169,7 @@ class MainScraperSymbols:
                     self.connection.commit()
 
     def _insert_recommendations(self):
+        """ Insert the the recommendation to the db """
         for current_symbol_reco, reco_object in self.all_recommendations.dict_recommendations.items():
                 date_to_insert = reco_object.date_recommendation
                 if reco_object.data:

@@ -5,13 +5,14 @@ from datetime import date
 
 
 class StockRecommendation:
+    """ StockRecommendation object holds all the recommendations for a specific symbol in a specific date"""
     def __init__(self, symbol):
         self.symbol = symbol
         self.querystring = {"symbol": symbol}
         self.data = self._get_data()
 
-
     def _get_data(self):
+        """ Get the recommendations for the symbol using  Yahoo Finance API """
         response = requests.request("GET", project_conf.URL, headers=project_conf.HEADERS, params=self.querystring)
         dict_data = json.loads(response.text)
         self.date_recommendation = StockRecommendation.get_current_date()
@@ -36,6 +37,7 @@ class StockRecommendation:
 
 
 class Recommendations:
+    """ Recommendations object holds a list of StockRecommendation"""
     def __init__(self, list_symbol):
         self.symbols = list_symbol
         self.dict_recommendations = {}
