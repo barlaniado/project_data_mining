@@ -10,6 +10,8 @@ def main():
                         help=project_conf.S_MESSAGE)
     parser.add_argument('-d', '--debug', action='store_true', help=project_conf.D_MESSAGE)
     parser.add_argument('-f', '--financials', action='store_true', help=project_conf.F_MESSAGE)
+    parser.add_argument('-r', '--recommendations', action='store_true', help=project_conf.R_MESSAGE)
+
     args = parser.parse_args()
     project_conf.logger = logs.Logger(args.debug)
     if not args.sector_to_scrape:
@@ -21,7 +23,7 @@ def main():
             quit()
     # Build a MainScraperSymbols object. This object holds the scraped data.
     # If args.financials = True the financial data will be scraped also.
-    main_scraper.MainScraperSymbols(sector_to_scrape, args.financials)
+    main_scraper.MainScraperSymbols(sector_to_scrape, args.financials, args.recommendations)
 
 
 if __name__ == "__main__":

@@ -1,5 +1,6 @@
 from getData import get_daily_data as get_d
 from getData import get_data_of_financial_statements as get_f
+from getData import get_recommendations
 import pymysql.cursors
 from configuration import project_conf
 import datetime
@@ -11,7 +12,7 @@ class MainScraperSymbols:
     The data is added directly into the DB.
     Please update the configurations file to allow proper connection to DB."""
 
-    def __init__(self, sector_to_scrape, financials):
+    def __init__(self, sector_to_scrape, financials, recommendations):
         """ The constructor of this class gets sector to scrape and
          a boolean parameter (financial) that indicate whether to scrape the financials data also """
 
@@ -23,10 +24,14 @@ class MainScraperSymbols:
         self._connect_db(project_conf.HOST,
                          project_conf.USER, project_conf.PASSWORD, project_conf.DB, project_conf.CHARSET)
         self._get_daily_data(sector_to_scrape)  # build the DailyDataScraper object of the daily_data attribute
+        if financials or recommendations:
+            list_symbols = self.daily_data.get_list_of_symbols()
         if financials:
             # build the FinancialReportsDataScraper object of the d financial_report attribute
-            self._get_financial(self.daily_data.get_list_of_symbols())
-        self._add_all_scraped_date(financials)
+            self._get_financial(list_symbols)
+        if recommendations:
+            self.all_recommendations = get_recommendations.Recommendations(list_symbols)
+        self._add_all_scraped_date(financials,  recommendations)
 
     def _get_daily_data(self, sector_to_scrape):
         """ Create a DailyDataScraper object.
@@ -52,13 +57,15 @@ class MainScraperSymbols:
             quit()
         self.cur = self.connection.cursor()
 
-    def _add_all_scraped_date(self, financials):
+    def _add_all_scraped_date(self, financials, recommendations):
         """ Add the data to the DB """
         project_conf.logger.logger.info(project_conf.INSERT_DATA_TO_DB_MESSAGE)
         self._add_new_sectors_and_daily()
         if financials:
             project_conf.logger.logger.info(project_conf.INSERT_FINANCIAL_DATA_TO_DB_MESSAGE)
             self._insert_financial_data()
+        if recommendations:
+            self._insert_recommendations()
 
     def _add_new_sectors_and_daily(self):
         """ Add only sectors, symbols and daily data (This function is called by _add_all_scraped_date) """
@@ -160,3 +167,18 @@ class MainScraperSymbols:
                     project_conf.logger.logger.debug(project_conf.INSERT_SYMBOL_FINANCIAL_DATA .format(symbol_data.symbol))
                     self.cur.execute(query)
                     self.connection.commit()
+
+    def _insert_recommendations(self):
+        for current_symbol_reco, reco_object in self.all_recommendations.dict_recommendations.items():
+                date_to_insert = reco_object.date_recommendation
+                if reco_object.data:
+                    for type, how_many in reco_object.data.items():
+                        query = project_conf.INSERT_RECOMMENDATION.format(project_conf.RECOMMENDATIONS_TABLE,
+                                                                          project_conf.COLUMNS_INSERT_RECOMMENDATION,
+                                                                          current_symbol_reco,
+                                                                          date_to_insert,
+                                                                          type,
+                                                                          how_many)
+                        print(query)
+                        self.cur.execute(query)
+                        self.connection.commit()

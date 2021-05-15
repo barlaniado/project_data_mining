@@ -10,6 +10,7 @@ This project focuses on obtaining the following information for each company by 
 3) The change in the stock price from yesterday in percentages
 4) Daily volume
 5) Avg volume of 3 months
+6) Recommendations for each symbol: StrongSell, sell, hold, buy, StrongBuy
 
 Each target page looks like this:
 ![](appendix/daily_data.PNG)
@@ -21,13 +22,14 @@ choose the Financials tab, scroll down in the table till you reach the row: Net 
 ![](appendix/net_income.PNG)
 
 ## The final goal
-The goal of the project is to create a relational DB that contains all the collected data pulled from yahoo finance web-site.\
+The goal of the project is to create a relational DB that contains all the collected data
+pulled from yahoo finance web-site and from Yahoo Finance API.\
 The program can be used to generate a significant database, containing historical data.
 
 ## The motivation
 In the current times, advanced information may grant us insights regarding companies’ viability. 
 By using such program, meaningful information can be extracted and stored over time, 
-and allow us to compare different companies and research their performances. 
+and allow us to compare different companies and research their performances and their recommendations. 
 
 ## Installation
 
@@ -79,36 +81,44 @@ In both cases the logs will be added to 'data_mining_info_level' file.\
 **3) -f** \
 The financials data are annual so there is no need to scrap them on a daily basis,
  this will increase the program’s run time. Therefore only if the flag -f is indicated the financial data will be obtained, otherwise only daily data will be obtained.\
+**4) -r**\
+If the flag -r is indicated the recommendations for each symbol will be obtained.
+
 **For example:**\
-In the case you want to scrape only "Technology" and "consumer Defensive" in debug mode and in addition get the financials data.\
+In the case you want to scrape only "Technology" and "consumer Defensive" in debug mode and in addition
+get the financials data and the recommendations.\
 One can run the command:\
-python main_file.py -s "Technology" "Consumer Defensive" -d -f
+python main_file.py -s "Technology" "Consumer Defensive" -d -f -r 
 ## Storing The Collected Data
 All the collected data is stored in a relational database.\
-The database designed for the project contains 4 tables:
+The database designed for the project contains 5 tables:
 1. sectors - this table contains all the unique sectors.
 2. symbol_sector - contains all the companies symbols and the sector's ID that each company is belong to.
 3. daily_data - contains the daily stock's data.
-4. financial_data  - contains the financial stock's data.\
+4. financial_data  - contains the financial stock's data.
+5. recommendations - contains the recommendations for each symbol. \
 **ERD**
 \
 ![](appendix/ERD.JPG)
 ## The Scraper Implementation
 The project is implemented by hierarchy of classes:\
 \
-The most basic classes are: SymbolFinancialReportData and SecurityDailyLevel.\
+The most basic classes are: SymbolFinancialReportData and SecurityDailyLevel and StockRecommendation.\
 **SecurityDailyLevel:** creates object that contains daily data of specific symbol.\
 **SymbolFinancialReportData:** creates object that contains financial data of specific symbol.\
+**StockRecommendation**: creates object that contains all recommendations for a specific symbol in a specific date.\
 \
-In the next level there are: FinancialReportsDataScraper and DailyDataScraper.\
+In the next level there are: FinancialReportsDataScraper, DailyDataScraper and Recommendations.\
 **DailyDataScraper:**  creates object that contains a list of SecurityDailyLevel objects.\
 **FinancialReportsDataScraper:**  creates object that contains a list of SymbolFinancialReportData objects.\
+**Recommendations:** creates object that contains a list of StockRecommendation objects.\
 \
 In the last level there is: MainScraperSymbols.\
-**MainScraperSymbols:** creates object that contains: DailyDataScraper and FinancialReportsDataScraper objects.\
+**MainScraperSymbols:** creates object that contains: DailyDataScraper, FinancialReportsDataScraper and  Recommendations objects.\
 \
-In other words the main_file creates an object of MainScraperSymbols, this object creates the two objects: DailyDataScraper and FinancialReportsDataScraper.\
-Each of these objects creates objects of: SecurityDailyLevel and SymbolFinancialReportData respectively.
+In other words the main_file creates an object of MainScraperSymbols, this object creates the three objects: 
+DailyDataScraper, FinancialReportsDataScraper and Recommendations.\
+Each of these objects creates objects of: SecurityDailyLevel, SymbolFinancialReportData and  StockRecommendation respectively.
 
 ## Hope you will enjoy and start to invest in the stock market (;
 # Good Luck!

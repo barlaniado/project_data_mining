@@ -9,10 +9,13 @@ SECTORS_TABLE = 'sectors'
 SYMBOLS_SECTORS_TABLE = 'symbol_sector'
 DAILY_DATA_TABLE = 'daily_data'
 FINANCIAL_DATA_TABLE = 'financial_data'
+RECOMMENDATIONS_TABLE = 'recommendations'
 COLUMNS_INSERT_NEW_SYMBOL_SECTOR = 'symbol, id_sector'
 COLUMNS_INSERT_DAILY_DATA = 'symbol, time_scraped, price, price_change,' \
                             ' percentage_change, volume, avg_3_months_volume'
 COLUMNS_INSERT_FINANCIAL_DATA = 'symbol, date_report, net_income'
+COLUMNS_INSERT_RECOMMENDATION = 'symbol, date_recommendations, type_recommendation, how_many'
+
 
 # main file
 NON_EXISTING_SECTOR_ERROR_MESSAGE = " Non-existent sectors were inserted"
@@ -44,6 +47,9 @@ INSERT_DAILY_DATA = 'INSERT IGNORE INTO {0} ({1}) VALUES ("{2}", "{3}", {4}, {5}
 DAILY_DATA_SYMBOL_TIME = 'SELECT symbol FROM {0} WHERE symbol = "{1}" AND DAY(time_scraped) = "{2}";'
 INSERT_FINANCIAL_DATA = 'INSERT IGNORE INTO {0} ({1}) VALUES ("{2}", "{3}", {4});'
 CHECK_IF_SECTOR_EXISTS_LOG = "Checking if the sector ({0}) of the current symbol ({1}) exists"
+INSERT_RECOMMENDATION = 'INSERT IGNORE INTO {0} ({1}) VALUES ("{2}", "{3}", "{4}", {5});'
+
+
 
 # argparse
 S_MESSAGE = "Specify which sectors to scrape," \
@@ -53,12 +59,12 @@ S_MESSAGE = "Specify which sectors to scrape," \
             "-s \"Technology\" \"Basic Materials\""
 D_MESSAGE = "If the flag is specified the software will work in debug mode"
 F_MESSAGE = "If the flag is specified the software will scrape the financial data also"
+R_MESSAGE = "If the flag is specified the software will get recommendations for the symbols"
 
 # requests_webpages
 
 SECTORS = ["Technology", "Basic Materials", "Healthcare", "Energy", "Communication Services",
-           "Consumer Cyclical", "Consumer Defensive", "Financial Services", "Industrials", "Real Estate",
-           "utilities"]
+           "Consumer Cyclical", "Consumer Defensive", "Financial Services", "Industrials", "Real Estate", "Utilities"]
 
 COUNT = 100
 HTML_PARSER = 'html.parser'
@@ -152,6 +158,13 @@ NEXT_TO_COME_TITLES = 'Breakdown'
 NEXT_TO_COME_DATA_NET_INCOME = 'Net Income Common Stockholders'
 NO_DATA_MESSAGE_LOGGER = "Report data was not obtained - "
 DATA_FINANICIALS_ADDED = "The data on the financial statements have been added to the dictionary - "
+
+# Recommendations
+URL = "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-analysis"
+HEADERS = {
+    'x-rapidapi-key': "04e68b4793mshecf432f2a6e3f06p164accjsnbbcefff3aca3",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+}
 
 # logger
 logger = None
