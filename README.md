@@ -56,6 +56,11 @@ HOST: The default is 'localhost'\
 USER: your username\
 PASSWORD: your password
 
+**API Key**\
+In order to use Yahoo Finance API one need to put the key in the HEADERS_API constant
+ (HEADERS_API is located in the project_conf file). The free key give limited amount of requests.\
+ For study purposes I put a free key, if you have passed the monthly limit please put a new key.
+
 ## Usage
 **Command line interface**\
 You can execute the program directly from the command line.\

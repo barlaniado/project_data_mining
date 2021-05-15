@@ -161,8 +161,8 @@ DATA_FINANICIALS_ADDED = "The data on the financial statements have been added t
 
 # Recommendations
 URL = "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-analysis"
-HEADERS = {
-    'x-rapidapi-key': "04e68b4793mshecf432f2a6e3f06p164accjsnbbcefff3aca3",
+HEADERS_API = {
+    'x-rapidapi-key': "ff3a51609amsh336c6abfab4f7f9p1960ecjsnb7b04186ea66",
     'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
 }
 

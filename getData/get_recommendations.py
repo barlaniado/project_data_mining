@@ -13,8 +13,15 @@ class StockRecommendation:
 
     def _get_data(self):
         """ Get the recommendations for the symbol using  Yahoo Finance API """
-        response = requests.request("GET", project_conf.URL, headers=project_conf.HEADERS, params=self.querystring)
+        response = requests.request("GET", project_conf.URL, headers=project_conf.HEADERS_API, params=self.querystring)
         dict_data = json.loads(response.text)
+        if 'message' in dict_data.keys():
+            project_conf.logger.logger.error(f"The key has passed the monthly quota, please put a new key in the"
+                                               f" HEADRS_API variable in the project_conf file")
+            quit()
+
+
+        project_conf.logger.logger.debug(dict_data)
         self.date_recommendation = StockRecommendation.get_current_date()
         try:
             data = dict_data['recommendationTrend']['trend'][0]
