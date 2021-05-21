@@ -1,7 +1,7 @@
 # DB Configurations
 HOST = 'localhost'
 USER = 'root'
-PASSWORD = 'put_your_password'
+PASSWORD = 'password'
 DB = 'stock_data'
 CHARSET = 'utf8mb4'
 # main scraper
@@ -161,10 +161,54 @@ DATA_FINANICIALS_ADDED = "The data on the financial statements have been added t
 
 # Recommendations
 URL = "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-analysis"
-HEADERS_API = {
-    'x-rapidapi-key': "ff3a51609amsh336c6abfab4f7f9p1960ecjsnb7b04186ea66",
+HOW_MANY_HEADERS = 9
+HEADERS_API1 = {
+    'x-rapidapi-key': "e8fb0da187mshea921ee418d8780p1ae2b0jsn982aa6285f03",
     'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-}
+    }
+	
+HEADERS_API2 = {
+    'x-rapidapi-key': "c0f88278a6msh8b97a77ef3b4800p137a97jsn1af525830a7d",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
+
+
+
+HEADERS_API3 = {
+    'x-rapidapi-key': "08fca3b04fmsh5ad9b295541a35bp1bc129jsn4ff7ba351735",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
+
+HEADERS_API4 = {
+    'x-rapidapi-key': "cd67e9e550msh5bacf480cab5d8cp15e8e3jsn417e04d62252",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
+	
+	
+HEADERS_API5 = {
+    'x-rapidapi-key': "94fe37ec82msh2d05b1255320171p1276f0jsn4af7c2ca4436",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
+
+HEADERS_API6 = {
+    'x-rapidapi-key': "d6006dc5e0msh1616efc4b4db75cp14ba4ajsn83f64107c4a5",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
+
+HEADERS_API7 = {
+    'x-rapidapi-key': "152e8f19fbmsh5436b3b32a99cd1p19cebbjsn3d596d7c40cb",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
+
+HEADERS_API8 = {
+    'x-rapidapi-key': "3103b4fc2emshaaba5ed8cde43e0p1a65d7jsnd13395e277ef",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
+
+HEADERS_API9 = {
+    'x-rapidapi-key': "4a4f441d81msh44ca58776f274efp15d06cjsn3024e1aa8706",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
 
 # logger
 logger = None
