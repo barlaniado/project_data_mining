@@ -45,7 +45,7 @@ class StockRecommendation:
             project_conf.logger.logger.warning(f"There are no current recommendations for {self.symbol}")
             return None
         else:
-            project_conf.logger.logger.info(f"Got commendations for {self.symbol}")
+            project_conf.logger.logger.info(f"Got recommendations for {self.symbol}")
             return data
 
     @staticmethod

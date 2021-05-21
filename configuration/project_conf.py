@@ -161,50 +161,64 @@ DATA_FINANICIALS_ADDED = "The data on the financial statements have been added t
 
 # Recommendations
 URL = "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-analysis"
-HOW_MANY_HEADERS = 9
+HOW_MANY_HEADERS = 12
+
 HEADERS_API1 = {
-    'x-rapidapi-key': "e8fb0da187mshea921ee418d8780p1ae2b0jsn982aa6285f03",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-    }
-
-HEADERS_API2 = {
-    'x-rapidapi-key': "c0f88278a6msh8b97a77ef3b4800p137a97jsn1af525830a7d",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-    }
-
-HEADERS_API3 = {
-    'x-rapidapi-key': "08fca3b04fmsh5ad9b295541a35bp1bc129jsn4ff7ba351735",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-    }
-
-HEADERS_API4 = {
-    'x-rapidapi-key': "cd67e9e550msh5bacf480cab5d8cp15e8e3jsn417e04d62252",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-    }
-HEADERS_API5 = {
-    'x-rapidapi-key': "94fe37ec82msh2d05b1255320171p1276f0jsn4af7c2ca4436",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-    }
-HEADERS_API6 = {
-    'x-rapidapi-key': "d6006dc5e0msh1616efc4b4db75cp14ba4ajsn83f64107c4a5",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-    }
-HEADERS_API7 = {
-    'x-rapidapi-key': "152e8f19fbmsh5436b3b32a99cd1p19cebbjsn3d596d7c40cb",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-    }
-
-HEADERS_API8 = {
-    'x-rapidapi-key': "3103b4fc2emshaaba5ed8cde43e0p1a65d7jsnd13395e277ef",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-    }
-
-HEADERS_API9 = {
     'x-rapidapi-key': "4a4f441d81msh44ca58776f274efp15d06cjsn3024e1aa8706",
     'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
     }
-LIST_OF_HEADERS = [HEADERS_API1, HEADERS_API2 , HEADERS_API3, HEADERS_API4, HEADERS_API4, HEADERS_API5, HEADERS_API6, HEADERS_API7,
-HEADERS_API8, HEADERS_API9]
+HEADERS_API2 = {
+    'x-rapidapi-key': "038a585be0msh7891de29cb063bbp1fd56djsna64b8e248e39",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
+HEADERS_API3 = {
+    'x-rapidapi-key': "9a656250cfmshb1f4bed4ace8d32p1603cajsna784758f2377",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
+HEADERS_API4 = {
+    'x-rapidapi-key': "80d4a2e5bfmsh0ec79de61f2c54dp1b6760jsn8fec9d9aff88",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
+HEADERS_API5 = {
+    'x-rapidapi-key': "abfd5f45c6msh3ccd34f780a8df7p14fc60jsnf500ad221b67",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
+
+HEADERS_API6 = {
+    'x-rapidapi-key': "a8b6dca9b7mshf69f20a362243d8p1f8f94jsn2a832cef4bd3",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
+HEADERS_API7 = {
+    'x-rapidapi-key': "beb87cc525msh94385083163c164p114ec3jsn6194e679601f",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
+HEADERS_API8 = {
+    'x-rapidapi-key': "3b9b4f4249msh317027ef2e3ccbap158df3jsneb581e88d915",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
+HEADERS_API9= {
+    'x-rapidapi-key': "295c3a556bmsh87475d8feca158cp15fdeajsne59ff275636b",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
+HEADERS_API10= {
+    'x-rapidapi-key': "ea8216d4c3mshb62122af0bb3422p1a349ajsn558ee4065432",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
+
+HEADERS_API11 = {
+    'x-rapidapi-key': "0363f5dabcmshc391731c082c661p13e69bjsn69b86362a558",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
+
+HEADERS_API12 = {
+    'x-rapidapi-key': "271fe15c5fmsh96d3a2799a5c3b2p1eb404jsne0d4490409cd",
+    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    }
+
+
+
+LIST_OF_HEADERS = [HEADERS_API1, HEADERS_API2 , HEADERS_API3, HEADERS_API4, HEADERS_API4, HEADERS_API5, HEADERS_API6,
+                   HEADERS_API7, HEADERS_API8, HEADERS_API9, HEADERS_API10, , HEADERS_API11, , HEADERS_API12]
 
 # logger
 logger = None
