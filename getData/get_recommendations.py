@@ -22,8 +22,7 @@ class StockRecommendation:
                 dict_data = json.loads(response.text)
             except json.decoder.JSONDecodeError:
                 project_conf.logger.logger.warning(f"{self.symbol}: JSONDecodeError")
-
-
+                return None
             if 'message' in dict_data.keys():
                 project_conf.logger.logger.info(f"key{counter} has passed the monthly quota")
                 counter += 1
