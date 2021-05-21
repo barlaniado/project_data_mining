@@ -13,20 +13,19 @@ class StockRecommendation:
 
     def _get_data(self):
         """ Get the recommendations for the symbol using  Yahoo Finance API """
-	how_many_headers = project_conf.HOW_MANY_HEADERS
-	counter = 1
-	while counter <= how_many_headers:
-        	response = requests.request("GET", project_conf.URL, headers=project_conf.HEADERS_API+str(counter), params=self.querystring)
-        	dict_data = json.loads(response.text)
-        	if 'message' in dict_data.keys():
-            		project_conf.logger.logger.info(f"key{counter} has passed the monthly quota, please put a new key in the"
-                                               f" HEADRS_API variable in the project_conf file")
-			counter += 1
-		else:
-			break
-	if counter > how_many_headers:
-		project_conf.logger.logger.error("No more keys- please add new key") 
-		quit()
+        how_many_headers = project_conf.HOW_MANY_HEADERS
+        counter = 1
+        while counter <= how_many_headers:
+            response = requests.request("GET", project_conf.URL, headers=project_conf.HEADERS_API+str(counter), params=self.querystring)
+            dict_data = json.loads(response.text)
+            if 'message' in dict_data.keys():
+                project_conf.logger.logger.info(f"key{counter} has passed the monthly quota")
+                counter += 1
+            else:
+                break
+        if counter > how_many_headers:
+            project_conf.logger.logger.error("No more keys- please add new key")
+            quit()
         project_conf.logger.logger.debug(dict_data)
         self.date_recommendation = StockRecommendation.get_current_date()
         try:

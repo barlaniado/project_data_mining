@@ -1,7 +1,7 @@
 # DB Configurations
 HOST = 'localhost'
 USER = 'root'
-PASSWORD = 'password'
+PASSWORD = 'Bar9506903'
 DB = 'stock_data'
 CHARSET = 'utf8mb4'
 # main scraper
@@ -166,13 +166,11 @@ HEADERS_API1 = {
     'x-rapidapi-key': "e8fb0da187mshea921ee418d8780p1ae2b0jsn982aa6285f03",
     'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
     }
-	
+
 HEADERS_API2 = {
     'x-rapidapi-key': "c0f88278a6msh8b97a77ef3b4800p137a97jsn1af525830a7d",
     'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
     }
-
-
 
 HEADERS_API3 = {
     'x-rapidapi-key': "08fca3b04fmsh5ad9b295541a35bp1bc129jsn4ff7ba351735",
@@ -183,18 +181,14 @@ HEADERS_API4 = {
     'x-rapidapi-key': "cd67e9e550msh5bacf480cab5d8cp15e8e3jsn417e04d62252",
     'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
     }
-	
-	
 HEADERS_API5 = {
     'x-rapidapi-key': "94fe37ec82msh2d05b1255320171p1276f0jsn4af7c2ca4436",
     'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
     }
-
 HEADERS_API6 = {
     'x-rapidapi-key': "d6006dc5e0msh1616efc4b4db75cp14ba4ajsn83f64107c4a5",
     'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
     }
-
 HEADERS_API7 = {
     'x-rapidapi-key': "152e8f19fbmsh5436b3b32a99cd1p19cebbjsn3d596d7c40cb",
     'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
