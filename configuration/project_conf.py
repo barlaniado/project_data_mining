@@ -203,6 +203,8 @@ HEADERS_API9 = {
     'x-rapidapi-key': "4a4f441d81msh44ca58776f274efp15d06cjsn3024e1aa8706",
     'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
     }
+LIST_OF_HEADERS = [HEADERS_API1, HEADERS_API2 , HEADERS_API3, HEADERS_API4, HEADERS_API4, HEADERS_API5, HEADERS_API6, HEADERS_API7,
+HEADERS_API8, HEADERS_API9]
 
 # logger
 logger = None

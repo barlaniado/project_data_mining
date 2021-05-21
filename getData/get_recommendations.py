@@ -16,7 +16,8 @@ class StockRecommendation:
         how_many_headers = project_conf.HOW_MANY_HEADERS
         counter = 1
         while counter <= how_many_headers:
-            response = requests.request("GET", project_conf.URL, headers=project_conf.HEADERS_API+str(counter), params=self.querystring)
+            response = requests.request("GET", project_conf.URL, headers=project_conf.LIST_OF_HEADERS[counter - 1],
+                                        params=self.querystring)
             dict_data = json.loads(response.text)
             if 'message' in dict_data.keys():
                 project_conf.logger.logger.info(f"key{counter} has passed the monthly quota")
