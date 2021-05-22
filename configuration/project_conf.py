@@ -163,7 +163,7 @@ DATA_FINANICIALS_ADDED = "The data on the financial statements have been added t
 URL = "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-analysis"
 HOW_MANY_HEADERS = 1
 
-headers = {
+HEADERS_API1 = {
     'x-rapidapi-key': "04e68b4793mshecf432f2a6e3f06p164accjsnbbcefff3aca3",
     'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
     }
