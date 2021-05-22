@@ -172,6 +172,7 @@ class MainScraperSymbols:
         """ Insert the the recommendation to the db """
         for current_symbol_reco, reco_object in self.all_recommendations.dict_recommendations.items():
                 if reco_object.data:
+                    date_to_insert = get_recommendations.StockRecommendation.get_current_date()
                     for type, how_many in reco_object.data.items():
                         query = project_conf.INSERT_RECOMMENDATION.format(project_conf.RECOMMENDATIONS_TABLE,
                                                                           project_conf.COLUMNS_INSERT_RECOMMENDATION,
