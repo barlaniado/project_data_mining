@@ -110,7 +110,7 @@ class MainScraperSymbols:
                                                                           self.check_id_of_sector(
                                                                               current_symbol_daily.sector),
                                                                           current_symbol_daily.symbol)
-                project_conf.logger.logger.info(project_conf.UPDATE_SECTOR(project_conf.SECTORS_TABLE))
+                project_conf.logger.logger.info(project_conf.UPDATE_SECTOR.format(project_conf.SECTORS_TABLE))
                 project_conf.logger.logger.debug(query)
                 self.cur.execute(query)
                 self.connection.commit()

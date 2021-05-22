@@ -1,7 +1,7 @@
 # DB Configurations
 HOST = 'localhost'
 USER = 'root'
-PASSWORD = 'Password123#@!'
+PASSWORD = 'Bar9506903'
 DB = 'stock_data'
 CHARSET = 'utf8mb4'
 # main scraper
@@ -161,73 +161,14 @@ DATA_FINANICIALS_ADDED = "The data on the financial statements have been added t
 
 # Recommendations
 URL = "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-analysis"
-HOW_MANY_HEADERS = 13
+HOW_MANY_HEADERS = 1
 
-HEADERS_API1 = {
-    'x-rapidapi-key': "6f9df8abb4mshe24d1c070334264p1e54e0jsn47ddfd1cb4f2",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-}
-
-HEADERS_API2 = {
-    'x-rapidapi-key': "f7077a5b9fmshe2402a988b1fcdcp11af63jsnaf866e466f34",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-}
-
-HEADERS_API3 = {
-    'x-rapidapi-key': "8a8b36728emsh3469bf1d8521521p109200jsn1a2326a9eb03",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-}
-
-HEADERS_API4 = {
-    'x-rapidapi-key': "3ae6407b97msh45b0810bfa259a4p1abe26jsndc1924d1b200",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-}
-
-HEADERS_API5 = {
-    'x-rapidapi-key': "7bd79c4382msha526df7f1259f1ep17c11djsn0151c3fe4b12",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-}
-
-HEADERS_API6 = {
-    'x-rapidapi-key': "b1a9bb4903mshbbd52394daf924ep14912ajsn1cd71951d290",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-}
-HEADERS_API7 = {
-    'x-rapidapi-key': "acc98e4d96mshecf7097d7d227cbp17ed84jsn4433bfbd4e81",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-}
-HEADERS_API8 = {
-    'x-rapidapi-key': "2197bb34a7msh4d188ceb6ae4c05p10d500jsnbd31e7e2b04b",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-}
-HEADERS_API9 = {
-    'x-rapidapi-key': "bfb11a16demsh515ca8c1a7adefbp1d6debjsne40a600f4b24",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-}
-
-HEADERS_API10 = {
-    'x-rapidapi-key': "de9c2bb43cmsh3bbe05b548b8181p1c099ajsn17c95da5e425",
+headers = {
+    'x-rapidapi-key': "04e68b4793mshecf432f2a6e3f06p164accjsnbbcefff3aca3",
     'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
     }
 
-HEADERS_API11 = {
-    'x-rapidapi-key': "d597962f85msh8180f938d30c85ep1b8137jsne77bb686f196",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-    }
-HEADERS_API12 = {
-    'x-rapidapi-key': "8cca3d077emshab0c8ee7421bd9ep14f2fajsndad16330aba6",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-    }
-
-HEADERS_API13 = {
-    'x-rapidapi-key': "271fe15c5fmsh96d3a2799a5c3b2p1eb404jsne0d4490409cd",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
-    }
-
-
-
-LIST_OF_HEADERS = [HEADERS_API1, HEADERS_API2 , HEADERS_API3, HEADERS_API4, HEADERS_API4, HEADERS_API5, HEADERS_API6,
-                   HEADERS_API7, HEADERS_API8, HEADERS_API9, HEADERS_API10, HEADERS_API11, HEADERS_API12, HEADERS_API13]
+LIST_OF_HEADERS = [HEADERS_API1]
 
 # logger
 logger = None
